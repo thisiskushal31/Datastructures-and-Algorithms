@@ -1,6 +1,8 @@
 // Practice: https://practice.geeksforgeeks.org/problems/minimize-the-heights3351/1
 
 // Editorial: https://www.geeksforgeeks.org/minimize-the-maximum-difference-between-the-heights/
+// https://www.tutorialcup.com/interview/array/minimize-the-maximum-difference-between-the-heights.htm 
+
 
 import java.util.*;
 import java.lang.*;
