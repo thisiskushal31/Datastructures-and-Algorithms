@@ -4,7 +4,7 @@
 
 import java.util.*;
 
-class GFG {
+class Kth_Smallest {
 
     // A class for Max Heap
     class MinHeap {

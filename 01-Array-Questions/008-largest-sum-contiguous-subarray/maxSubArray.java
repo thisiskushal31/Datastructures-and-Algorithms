@@ -6,7 +6,7 @@ import java.io.*;
 // Java program to print largest contiguous array sum
 import java.util.*;
 
-class Kadane
+class maxSubArray
 {
 	public static void main (String[] args)
 	{

@@ -1,10 +1,10 @@
- //practice https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1
+// practice: https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1
 
- // solution https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+// solution: https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
 
 import java.io.*;
 
-class GFG {
+class Sort01s {
 	// Utility function to print the contents of an array
 	static void printArr(int arr[], int n)
 	{

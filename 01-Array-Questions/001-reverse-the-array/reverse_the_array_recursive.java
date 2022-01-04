@@ -2,8 +2,6 @@
 
 // Iterative java program to reverse an array recursive method
 
-//there will some error with the name fix by changing file name by "reverse_the_array_recursive"
-
 public class reverse_the_array_recursive {
     
     /* Function to reverse arr[] from

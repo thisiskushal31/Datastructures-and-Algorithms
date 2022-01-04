@@ -1,5 +1,4 @@
-//https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
-
+// Editorial:  https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
 
 public class min_max {
     /* Class Pair is used to return two values from getMinMax() */

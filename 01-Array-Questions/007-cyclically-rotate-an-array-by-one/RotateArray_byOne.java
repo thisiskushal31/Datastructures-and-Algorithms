@@ -4,7 +4,7 @@
 
 import java.util.Arrays;
 
-public class Test {
+public class RotateArray_byOne {
     static int arr[] = new int[] { 1, 2, 3, 4, 5 };
 
     // Method for rotation

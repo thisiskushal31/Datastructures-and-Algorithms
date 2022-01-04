@@ -2,7 +2,7 @@
 
 import java.io.*;
 
-class GFG {
+class MoveNegativeNo {
 
 	static void rearrange(int arr[], int n)
 	{
@@ -36,5 +36,3 @@ class GFG {
 		printArray(arr, n);
 	}
 }
-
-// This code is contributed by Nikita Tiwari.

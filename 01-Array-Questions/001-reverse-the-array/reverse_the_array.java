@@ -1,8 +1,5 @@
 // https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
 
-
-//there will some error with the name fix by changing file name by "reverse_the_array"
-
 // Iterative java program to reverse an array
 public class reverse_the_array {
 
