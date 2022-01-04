@@ -4,7 +4,7 @@
 
 import java.io.*;
 
-class Sort01s {
+class Sort012s {
 	// Utility function to print the contents of an array
 	static void printArr(int arr[], int n)
 	{

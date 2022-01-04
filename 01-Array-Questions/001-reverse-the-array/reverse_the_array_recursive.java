@@ -1,6 +1,4 @@
-// https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
-
-// Iterative java program to reverse an array recursive method
+// Editorial: https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/
 
 public class reverse_the_array_recursive {
     
