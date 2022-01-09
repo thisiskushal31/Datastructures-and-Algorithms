@@ -12,22 +12,22 @@ As I am developing some app I was bit struggling in the algorithm part, that why
 
 ## Order of Topics
 
-01-Arrays-&-Strings/
-02-Linked-List/
-03-Stacks-&-Queues/
-04-Trees/
-05-Binary-Tree/
-06-Binary-Search-Tree(BST)/
-07-Heap/
-08-Hashing/
-09-Two-Pointers/
-10-Searching-&-Sorting/
-11-Hash-Table/
-12-DFS/
-13-BFS/
-14-Trie/
-15-Dynamic-Programming/
-17-Bit-Manipulation/
+01-Arrays-&-Strings\
+02-Linked-List\
+03-Stacks-&-Queues\
+04-Trees\
+05-Binary-Tree\
+06-Binary-Search-Tree(BST)\
+07-Heap\
+08-Hashing\
+09-Two-Pointers\
+10-Searching-&-Sorting\
+11-Hash-Table\
+12-DFS\
+13-BFS\
+14-Trie\
+15-Dynamic-Programming\
+17-Bit-Manipulation\
 18-Divide-&-Conquer
 
 ## Questions Resource
