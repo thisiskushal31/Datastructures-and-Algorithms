@@ -14,7 +14,7 @@ As I am developing some app I was bit struggling in the algorithm part, that why
 
 01-Arrays-&-Strings/
 02-Linked-List/
-03-Stacks-&-Queues//
+03-Stacks-&-Queues/
 04-Trees/
 05-Binary-Tree/
 06-Binary-Search-Tree(BST)/
