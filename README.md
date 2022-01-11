@@ -28,7 +28,8 @@ As I am developing some app I was bit struggling in the algorithm part, that why
 14-Trie\
 15-Dynamic-Programming\
 17-Bit-Manipulation\
-18-Divide-&-Conquer
+18-Divide-&-Conquer\
+19-Mathmatical
 
 ## Questions Resource
 
