@@ -1,16 +1,9 @@
 
-# DSA For Placements
+# Data Structures and Algorithms
 
-This is my Data Structure and Algorithm Question repository where I will update all the questions and there solutions at the same time in this repository.
+This is my curated list of all the DSA basic to advanced concept and question with their solutions.                      
 
-
-
-## 🧵 Why this Repository!!
-
-As I am developing some app I was bit struggling in the algorithm part, that why I created this repository as for documentation and also it help in placements.
-
-
-## Order of Topics
+## List of Topics
 
 01-Arrays-&-Strings\
 02-Linked-List\
@@ -31,14 +24,14 @@ As I am developing some app I was bit struggling in the algorithm part, that why
 18-Divide-&-Conquer\
 19-Mathmatical
 
-## Questions Resource
+## Resources 
 
 GeeksForGeeks : https://practice.geeksforgeeks.org/
 Leetcode : https://leetcode.com/
 
 ## 🚀 About Me
 
-I am B.Tech Student from the India learning Web Development and trying out trending technology.
+I am B.Tech Student from the India learning Web Development and trying out trending technologies like React, Node.js, React Native, Express, etc.
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thisiskushalgupta/)
