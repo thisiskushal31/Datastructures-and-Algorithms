@@ -31,7 +31,7 @@ Leetcode : https://leetcode.com/
 
 ## 🚀 About Me
 
-I am B.Tech Student from the India learning Web Development and trying out trending technologies like React, Node.js, React Native, Express, etc.
+I am B.Tech Student from the India learning Web Development and trying out trending technologies.
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thisiskushalgupta/)
