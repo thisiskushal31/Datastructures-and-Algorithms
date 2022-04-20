@@ -3,6 +3,18 @@
 
 This is my curated list of all the DSA basic to advanced concept and question with their solutions.                      
 
+## Folder layout
+
+    .
+    ├── GeeksForGeeks                   # Compiled question and solutions from GeeksForGeeks
+    ├── Leetcode                        # Compiled question and solutions from Leetcode
+    ├── assets                          # Assets for readme and other files
+    ├── .gitignore                      # Ignore files                   
+    ├── LICENSE
+    └── README.md
+
+> This folder structure may varies time to time.
+
 ## List of Topics
 
 01-Arrays-&-Strings\
