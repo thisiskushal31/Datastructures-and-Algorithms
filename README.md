@@ -18,7 +18,7 @@ This is my curated list of all the DSA basic to advanced concept and question wi
 ## Resources 
 
 > GeeksForGeeks : https://practice.geeksforgeeks.org/                                 
-> Leetcode : https://leetcode.com/
+> Leetcode : https://leetcode.com/                                                           
 > Github: https://github.com/
 
 ## About Me
