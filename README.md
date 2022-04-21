@@ -13,7 +13,6 @@ This is my curated list of all the DSA basic to advanced concept and question wi
     ├── assets                          # Assets for readme and other files
     ├── Template                        # Template for all the problems in C++ and java
     ├── .gitignore                      # Ignore files                   
-    ├── LICENSE
     └── README.md
 
 ## Resources 
