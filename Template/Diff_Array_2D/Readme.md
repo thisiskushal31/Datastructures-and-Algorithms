@@ -11,7 +11,7 @@ The physical meaning of diff[i][j] is to take (i, j) as the upper left corner an
 
 Such operations can be performed multiple times. If we want to reconstruct the updated value of f, we need to do the following:  
 
-```
+```cpp
 for (int i=0; i<m; i++)
     for (int j=0; j<n; j++)
     {               
