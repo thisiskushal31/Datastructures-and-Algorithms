@@ -26,7 +26,7 @@ This is the basic problem of double pointer arithmetic, which must be mastered a
 ```cpp
  for (int a=0; a<nums.size(); a++)
  {
-    inner loop;
+    //inner loop
     while (nums[a]==nums[a+1]) a++;
  }
 ```
