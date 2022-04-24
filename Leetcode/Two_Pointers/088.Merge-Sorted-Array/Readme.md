@@ -23,3 +23,5 @@ while (tail2 >= 0) { //only need to combine with remaining nums2, if any
 > Approach #2: Two Pointers [Accepted - Java]
 
 [Leetcode Link](https://leetcode.com/problems/merge-sorted-array)
+
+[Best Leetcode Solution](https://leetcode.com/problems/merge-sorted-array/discuss/1189409/My-Java-Solution)

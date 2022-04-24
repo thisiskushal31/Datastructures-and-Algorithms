@@ -2,67 +2,69 @@
 
 > Topicwise Question in LeetCode
 
-#### [Two Pointers](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers)
+#### [Two Pointers](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers)
 
-[011.Container-With-Most-Water](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/011.Container-With-Most-Water) (M+)      
+[011.Container-With-Most-Water](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/011.Container-With-Most-Water) (M+)      
 [015.3Sum](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/015.3Sum)  (M)    
-[016.3Sum-Closet](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/016.3Sum-Closest) (M)   
+[016.3Sum-Closet](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/016.3Sum-Closet) (M) 
+[088.Merge Sorted Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/088.Merge-Sorted-Array) (M)   
 
-#### [Binary Search](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search)
+#### [Binary Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search)
 
-[69.Sqrt(x)](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/Binary_Search\069.Sqrt(x)) (E)  
+[033.Search-in-Rotated-Sorted-Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search/033.Search-in-Rotated-Sorted-Array) (M)
+[69.Sqrt(x)](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search/069.Sqrt(x)) (E)  
 
-#### [Hash Map](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Hash_Map)
+#### [Hash Map](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Hash_Map)
 
-#### [Heap](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Heap)
+#### [Heap](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Heap)
 
-#### [Tree](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Tree)
+#### [Tree](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Tree)
 
-#### [Segment Tree](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Segment_Tree)
+#### [Segment Tree](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Segment_Tree)
 
-#### [Binary Indexed Tree](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Indexed_Tree)
+#### [Binary Indexed Tree](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Indexed_Tree)
 
-#### [Design](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Design)
+#### [Design](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Design)
 
-#### [Stack](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Stack)
+#### [Stack](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Stack)
 
-#### [Queue](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Queue)
+#### [Queue](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Queue)
 
-#### [Deque](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Deque)
+#### [Deque](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Deque)
 
-#### [Priority Queue](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Priority_Queue)
+#### [Priority Queue](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Priority_Queue)
 
-#### [DFS](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/DFS)
+#### [DFS](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/DFS)
 
-#### [BFS](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/BFS)
+#### [BFS](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/BFS)
 
-#### [Trie](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Trie)
+#### [Trie](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Trie)
 
-#### [Linked List](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Linked_List)
+#### [Linked List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Linked_List)
 
-#### [Dynamic Programming](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Dynamic_Programming)
+#### [Dynamic Programming](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Dynamic_Programming)
 
-#### [Bit Manipulation](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Bit_Manipulation)
+#### [Bit Manipulation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Bit_Manipulation)
 
-#### [Dvide and Conquer](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Divide_and_Conquer)
+#### [Dvide and Conquer](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Divide_and_Conquer)
 
-#### [String](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/String)
+#### [String](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/String)
 
-#### [Union Find](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Union_Find)
+#### [Union Find](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Union_Find)
 
-#### [Recursion](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Recursion)
+#### [Recursion](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Recursion)
 
-#### [Graph](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Graph)
+#### [Graph](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Graph)
 
-#### [Math](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Math)
+#### [Math](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Math)
 
-#### [Greedy](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Greedy)
+#### [Greedy](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Greedy)
 
-#### [Backtracking](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Backtracking)
+#### [Backtracking](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Backtracking)
 
-#### [Simulation](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Simulation)
+#### [Simulation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Simulation)
 
-#### [Others](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Others)
+#### [Others](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Others)
 
 #### [Templates](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template)  
 
