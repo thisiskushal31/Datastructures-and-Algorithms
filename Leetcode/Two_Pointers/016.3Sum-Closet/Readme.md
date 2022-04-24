@@ -21,4 +21,8 @@ while (left<right)
 }
 ```
 
+> Approach #1: Two Pointers [Accepted - C++]
+> Approach #2: Two Pointers [Accepted - Java]
+> Algorithm #3: Two Pointers + Cleaner Code[Accepted - Java]
+
 [Leetcode Link](https://leetcode.com/problems/3sum-closest)

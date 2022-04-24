@@ -10,6 +10,8 @@
 
 #### [Binary Search](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search)
 
+[69.Sqrt(x)](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/Binary_Search\069.Sqrt(x)) (E)  
+
 #### [Hash Map](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Hash_Map)
 
 #### [Heap](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Heap)
@@ -75,4 +77,5 @@
 >[2D difference array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/master/Template/Diff_Array_2D)                          
 >[CPP_LANG](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template/CPP_LANG)
 
-> Above of the above template in C++ and java(Added soon).
+> Above of the above template in C++ and java.
+> Key Words: E-Easy, M-Medium, H-Hard and C-Contest.
