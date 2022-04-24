@@ -6,12 +6,12 @@
 
 [011.Container-With-Most-Water](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/011.Container-With-Most-Water) (M+)      
 [015.3Sum](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/015.3Sum)  (M)    
-[016.3Sum-Closet](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/016.3Sum-Closet) (M) 
-[088.Merge Sorted Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/088.Merge-Sorted-Array) (M)   
+[016.3Sum-Closet](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/016.3Sum-Closet) (M)       
+[088.Merge Sorted Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/088.Merge-Sorted-Array) (M)                        
 
 #### [Binary Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search)
 
-[033.Search-in-Rotated-Sorted-Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search/033.Search-in-Rotated-Sorted-Array) (M)
+[033.Search-in-Rotated-Sorted-Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search/033.Search-in-Rotated-Sorted-Array) (M)                    
 [69.Sqrt(x)](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search/069.Sqrt(x)) (E)  
 
 #### [Hash Map](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Hash_Map)
