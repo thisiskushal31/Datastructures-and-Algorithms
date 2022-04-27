@@ -9,4 +9,6 @@ Details: Pay attention to update Len under what conditions.
 > Solution 1: Two Pointers(Accepted-C++)   
 > Solution 2: Two Pointers(Accepted-Java)   
 
-[Leetcode Link](https://leetcode.com/problems/minimum-size-subarray-sum)
+[Leetcode Link](https://leetcode.com/problems/minimum-size-subarray-sum)          
+[Leetcode Solution](https://leetcode.com/problems/minimum-size-subarray-sum/discuss/59078/Accepted-clean-Java-O(n)-solution-(two-pointers)) -- C++    
+[Leetcode Solution](https://leetcode.com/problems/minimum-size-subarray-sum/discuss/1232367/C%2B%2B-sliding-window-solution) -- Java      
