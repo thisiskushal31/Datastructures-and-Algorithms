@@ -26,3 +26,6 @@ Because the initial position of the LEFT and the MID, there is an asynchronous o
 > Solution 2: One Pointer[Accepted -- Java]      
 
 [Leetcode Link](https://leetcode.com/problems/sort-colors)
+
+[Leetcode Solution](https://leetcode.com/problems/sort-colors/discuss/26549/Java-solution-both-2-pass-and-1-pass) -- Java          
+[Leetcode Solution](https://leetcode.com/problems/sort-colors/discuss/1408321/3-solutions-from-brute-force-to-optimization-or-c%2B%2B-solution) -- C++        
