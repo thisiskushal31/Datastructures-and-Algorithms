@@ -7,12 +7,21 @@
 [011.Container-With-Most-Water](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/011.Container-With-Most-Water) (M+)      
 [015.3Sum](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/015.3Sum)  (M)    
 [016.3Sum-Closet](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/016.3Sum-Closet) (M)       
-[088.Merge Sorted Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/088.Merge-Sorted-Array) (M)                        
+[088.Merge Sorted Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/088.Merge-Sorted-Array) (M)           
+[018.4Sum](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/018.4Sum) (M)           
+[259.3Sum-Smaller](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/259.3Sum-Smaller) (M+)       
+[075.Sort-Colors](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/075.Sort-Colors) (M+)    
+[209.Minimum-Size-Subarray-Sum](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/209.Minimum-Size-Subarray-Sum) (M)    
+[283.Move-Zeroes](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/283.Move-Zeroes) (M)      
+[141.Linked-List-Cycle](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/141.Linked-List-Cycle) (E+) (T)      
+[142.Linked-List-Cycle-II](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Linked_List/142.Linked-List-Cycle-II) (M+) (T)    
+[360.Sort-Transformed-Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/360.Sort-Transformed-Array) (M) (T)    
+[713.Subarray-Product-Less-Than-K](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/713.Subarray-Product-Less-Than-K) (M+) (T)    
 
 #### [Binary Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search)
 
 [033.Search-in-Rotated-Sorted-Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search/033.Search-in-Rotated-Sorted-Array) (M)                    
-[69.Sqrt(x)](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search/069.Sqrt(x)) (E)  
+[69.Sqrt(x)](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Binary_Search/069.Sqrt(x)) (E)      
 
 #### [Hash Map](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Hash_Map)
 
@@ -41,6 +50,11 @@
 #### [Trie](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Trie)
 
 #### [Linked List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Linked_List)
+
+[061.Rotate-List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Linked_List/061.Rotate-List) (M) (T)    
+082.Remove-Duplicates-from-Sorted-List-II (M+) (T)     
+[086.Partition-List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Linked_List/086.Partition-List) (M) (T)     
+[142.Linked-List-Cycle-II](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Linked_List/142.Linked-List-Cycle-II) (M+) (T)      
 
 #### [Dynamic Programming](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Dynamic_Programming)
 
