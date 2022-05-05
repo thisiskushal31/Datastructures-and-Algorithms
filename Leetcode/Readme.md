@@ -12,7 +12,7 @@
 [075.Sort-Colors](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/075.Sort-Colors) (M+)    
 [209.Minimum-Size-Subarray-Sum](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/209.Minimum-Size-Subarray-Sum) (M)    
 [259.3Sum-Smaller](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/259.3Sum-Smaller) (M+) (T)       
-[283.Move-Zeroes](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/283.Move-Zeroes) (M) (T)      
+[283.Move-Zeroes](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/283.Move-Zeroes) (M)      
 [141.Linked-List-Cycle](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/141.Linked-List-Cycle) (E+)      
 [142.Linked-List-Cycle-II](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Linked_List/142.Linked-List-Cycle-II) (M+) (T)    
 [360.Sort-Transformed-Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode/Two_Pointers/360.Sort-Transformed-Array) (M) (T)    
