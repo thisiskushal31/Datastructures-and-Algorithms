@@ -6,6 +6,9 @@ This is my curated list of all the DSA basic to advanced concept and question wi
 ## Folder layout
 
     .
+    ├── Datastructures                    # DataStructure Basic to Advanced
+            ├── Topicwise_Datastructure_Explanation          # DataStructure Explained in Readme
+            └── README.md      
     ├── GeeksForGeeks                     # Compiled question and solutions from GeeksForGeeks
             ├── Topicwise_Folder          # Topicwise folder
             └── README.md
