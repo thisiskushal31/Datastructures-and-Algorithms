@@ -9,4 +9,21 @@ Before we start we need to understand the concept of [Time Complexity and Space 
 | # | Name | Explanation |
 | - | ------------- | ------------- |
 | 00 | Time Complexity and Space Complexity  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/00_Time_Complexity_and_Space_Complexity.md) |
-| 01 | Bubble Sort  | [Click Here] |
+| 01 | Sorting Algorithms  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/01_Sorting_Algorithms.md) |
+| 02 | Greedy Algo  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/02_Greedy_Algo.md) |
+| 03 | Dynamic Programming | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/03_Dynamic_Programming.md) |
+| 04 | Pattern Searching | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/04_Pattern_Searching.md) |
+| 05 | Other String Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/05_Other_String_Algorithms.md) |
+| 06 | Backtracking | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/06_Backtracking.md) |
+| 07 | Divide and Conquer | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/07_Divide_and_Conquer.md) |
+| 08 | Geometric Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/08_Geometric_Algorithms.md) |
+| 09 | Mathematical Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/09_Mathematical_Algorithms.md) |
+| 10 | Bit Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/10_Bit_Algorithms.md) |
+| 11 | Graph Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/11_Graph_Algorithms.md) |
+| 12 | Randomized Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/12_Randomized_Algorithms.md) |
+| 13 | Randomized Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/13_Branch_and_Bound.md) |
+
+
+##### Credit
+
+>  [Geeks for Geeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=lbp)
