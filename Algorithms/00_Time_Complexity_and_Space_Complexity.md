@@ -14,9 +14,9 @@ In order to understand the time complexity and space complexity of an algorithm,
 
 Here are some ways to find the pen and what the O order is.  
 
-> **O(n2):** You go and ask the first person of the class, if he has the pen. Also, you ask this person about other 99 people in the classroom if they have that pen and so on, This is what we call O(n2). 
-> **O(n):** Going and asking each student individually is O(N). 
-> **O(log n):** Now I divide the class into two groups, then ask: “Is it on the left side, or the right side of the classroom?” Then I take that group and divide it into two and ask again, and so on. Repeat the process till you are left with one student who has your pen. This is what you mean by O(log n). 
+> **O(n2):** You go and ask the first person of the class, if he has the pen. Also, you ask this person about other 99 people in the classroom if they have that pen and so on, This is what we call O(n2).         
+> **O(n):** Going and asking each student individually is O(N).         
+> **O(log n):** Now I divide the class into two groups, then ask: “Is it on the left side, or the right side of the classroom?” Then I take that group and divide it into two and ask again, and so on. Repeat the process till you are left with one student who has your pen. This is what you mean by O(log n).       
 
 **NOTE:** *The above O -> is called Big – Oh which is an asymptotic notation. There are other asymptotic notations like theta and Omega*.
 
@@ -59,11 +59,38 @@ For Example: Take Two Machine **A B** and **Machine A** is Faster than **Machine
     |10^9   | ~ 6.3 years       | ~ 8.3 h           |
     -------------------------------------------------          
 
-But this **not the best way to find the efficiency of an algorithm** as 
+But this **not the best way to find the efficiency of an algorithm** because 
 1. Asymptotic analysis considers machine constraints in case when the both the machine is same it will fails.    
 2. Asymptotic analysis considers the input sizes larger than a constant value. It might be possible that those large inputs are never given to your software and an algorithm which is asymptotically slower, always performs better for your particular situation. So, you may end up choosing an algorithm that is Asymptotically slower but faster for your software.    
 
-##### Credits
+#### Analysis of Algorithms | Set 2 (Worst, Average and Best Cases)
+
+We can have three cases to analyze an algorithm: 
+1) The Worst Case 
+2) Average Case 
+3) Best Case
+
+Lets take the following implementation of Linear Search. 
+```cpp
+    for (i = 0; i < n; i++) {
+        if (arr[i] == x)
+            return i;
+    }
+```
+
+> **Worst Case Analysis (Usually Done):** In the worst-case analysis, we calculate the upper bound on the running time of an algorithm. We say that the running time of an algorithm is upper bounded by the running time of the worst case. The worst case is the case in which the algorithm takes the maximum amount of time to execute. So, the worst-case time complexity of linear search would be Θ(n) when element is not found or at the last of the array.      
+> **Average Case Analysis (Sometimes done):** In average case analysis, we take all possible inputs and calculate computing time for all of the inputs. Sum all the calculated values and divide the sum by the total number of inputs. We must know (or predict) the distribution of cases. For the linear search problem, let us assume that all cases are uniformly distributed (including the case of x not being present in the array). So we sum all the cases and divide the sum by (n+1). Following is the value of average-case time complexity. 
+![Average Case Analysis](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/formula_average_case.png?raw=true)
+> **Best Case Analysis (Bogus):** In the best case analysis, we calculate the lower bound on the running time of an algorithm, that is not helpful as it lower bound does not tell us anything about the efficiency of the algorithm.
+
+##### Which case to use for analysis of algorithms? 
+Answer is: *Use the worst case analysis* as the worst case analysis gives us at what extent the algorithm is breaking so that we improve the efficiency of the algorithm in time of need.
+
+[Worst, Average and Best Cases More Brief Information](https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis)
+#### Analysis of Algorithms | Set 3 (Asymptotic Notations)
+
+
+#### Credits
 
 > **Source:** *GeeksforGeeks*           
 > [https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/](https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/)        
