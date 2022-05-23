@@ -78,16 +78,16 @@ Lets take the following implementation of Linear Search.
     }
 ```
 
-> **Worst Case Analysis (Usually Done):** In the worst-case analysis, we calculate the upper bound on the running time of an algorithm. We say that the running time of an algorithm is upper bounded by the running time of the worst case. The worst case is the case in which the algorithm takes the maximum amount of time to execute. So, the worst-case time complexity of linear search would be Θ(n) when element is not found or at the last of the array.      
-> **Average Case Analysis (Sometimes done):** In average case analysis, we take all possible inputs and calculate computing time for all of the inputs. Sum all the calculated values and divide the sum by the total number of inputs. We must know (or predict) the distribution of cases. For the linear search problem, let us assume that all cases are uniformly distributed (including the case of x not being present in the array). So we sum all the cases and divide the sum by (n+1). Following is the value of average-case time complexity. 
-![Average Case Analysis](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/formula_average_case.png?raw=true)
-> **Best Case Analysis (Bogus):** In the best case analysis, we calculate the lower bound on the running time of an algorithm, that is not helpful as it lower bound does not tell us anything about the efficiency of the algorithm.
+> **Worst Case Analysis (Usually Done):** In the worst-case analysis, we calculate the upper bound on the running time of an algorithm. We say that the running time of an algorithm is upper bounded by the running time of the worst case. The worst case is the case in which the algorithm takes the maximum amount of time to execute. So, the worst-case time complexity of linear search would be Θ(n) when element is not found or at the last of the array.               
+> **Average Case Analysis (Sometimes done):** In average case analysis, we take all possible inputs and calculate computing time for all of the inputs. Sum all the calculated values and divide the sum by the total number of inputs. We must know (or predict) the distribution of cases. For the linear search problem, let us assume that all cases are uniformly distributed (including the case of x not being present in the array). So we sum all the cases and divide the sum by (n+1). Following is the value of average-case time complexity.         
+![Average Case Analysis](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/formula_average_case.png?raw=true)            
+> **Best Case Analysis (Bogus):** In the best case analysis, we calculate the lower bound on the running time of an algorithm, that is not helpful as it lower bound does not tell us anything about the efficiency of the algorithm.        
 
 ##### Which case to use for analysis of algorithms? 
-Answer is: *Use the worst case analysis* as the worst case analysis gives us at what extent the algorithm is breaking so that we improve the efficiency of the algorithm in time of need.
+Answer is: *Use the worst case analysis* as the worst case analysis gives us at what extent the algorithm is breaking so that we improve the efficiency of the algorithm in time of need.             
 
 [Worst, Average and Best Cases More Brief Information](https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis)
-#### Analysis of Algorithms | Set 3 (Asymptotic Notations)
+#### Analysis of Algorithms | Set 3 (Asymptotic Notations)     
 
 
 #### Credits
