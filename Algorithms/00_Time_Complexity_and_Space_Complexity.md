@@ -89,7 +89,30 @@ Answer is: *Use the worst case analysis* as the worst case analysis gives us at 
 [Worst, Average and Best Cases More Brief Information](https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis)
 #### Analysis of Algorithms | Set 3 (Asymptotic Notations)     
 
-To be added
+Asymptotic notations are used to represent the complexities of algorithms for asymptotic analysis. These notations are mathematical tools to represent the complexities. There are three notations that are commonly used.      
+
+**1. Big-Oh(O) Notation:** Big-Oh (O) notation gives an upper bound for a function f(n) to within a constant factor.     
+![Big Oh Notation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/big_oh_notation.jpg?raw=true)       
+We write f(n) = O(g(n)), If there are positive constants n0  and c such that, to the right of n0 the f(n) always lies on or below c*g(n).   
+   
+    O(g(n)) = { f(n) : There exist positive constant c and n0 such that 0 ≤ f(n) ≤ c g(n), for all n ≥ n0}
+
+**2. Big-Omega(Ω) Notation:** Big-Omega (Ω) notation gives a lower bound for a function f(n) to within a constant factor.     
+
+![big_omega_notation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/big_omega_notation.jpg?raw=true)     
+
+We write f(n) = Ω(g(n)), If there are positive constantsn0  and c such that, to the right of n0 the f(n) always lies on or above c*g(n).     
+
+    Ω(g(n)) = { f(n) : There exist positive constant c and n0 such that 0 ≤ c g(n) ≤ f(n), for all n ≥ n0}
+
+**3. Big-Theta(Θ) Notation:** Big-Theta(Θ) notation gives bound for a function f(n) to within a constant factor.     
+
+![big_theta_notation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/big_theta_notation.jpg?raw=true)     
+
+We write f(n) = Θ(g(n)), If there are positive constantsn0  and c1 and c2 such that, to the right of n0 the f(n) always lies between c1*g(n) and c2*g(n) inclusive.       
+
+    Θ(g(n)) = {f(n) : There exist positive constant c1, c2 and n0 such that 0 ≤ c1 g(n) ≤ f(n) ≤ c2 g(n), for all n ≥ n0}
+
 #### Credits
 
 > **Source:** *GeeksforGeeks*           

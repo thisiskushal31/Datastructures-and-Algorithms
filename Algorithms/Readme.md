@@ -26,4 +26,4 @@ Before we start we need to understand the concept of [Time Complexity and Space 
 
 ##### Credit
 
->  [Geeks for Geeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=lbp)
+>  [Geeks for Geeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms)
