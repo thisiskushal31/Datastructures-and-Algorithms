@@ -116,10 +116,117 @@ We write f(n) = Θ(g(n)), If there are positive constantsn0  and c1 and c2 such 
 
 [Asymptotic Notations More Brief Information](https://www.geeksforgeeks.org/analysis-of-algorithms-set-3asymptotic-notations)
 
+<details>
+<summary>More Resources</summary>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/analysis-of-algorithems-little-o-and-little-omega-notations/">Little-o and Little-Omega Notations</a></li>
+<li><a href="https://www.geeksforgeeks.org/lower-and-upper-bound-theory/">Lower and Upper Bound Theory</a></li>
+</ul>
+</details>
+
 #### Analysis of Algorithms | Set 4 (Analysis of Loops)
 
-1) **O(1):** Time complexity of a function (or set of statements) is considered as O(1) if it doesn’t contain loop, recursion, and call to any other non-constant time function.
+- **O(1):** Time complexity of a function (or set of statements) is considered as O(1) if it *doesn’t contain loop, recursion, and call to any other non-constant time function*.             
 
+```cpp
+    void swap(int &x, int &y)
+    {
+        int temp = x; 
+        x = y;
+        y = temp;
+    }
+# This function has O(1) time complexity.
+```            
+
+A loop or recursion that runs a constant number of times is also considered as O(1). For example, the following loop is O(1).      
+
+```cpp
+   // Here c is a constant   
+   for (int i = 1; i <= c; i++) {  
+        // some O(1) expressions
+   }
+```
+
+- **O(n):** Time Complexity of a loop is considered as O(n) if the loop variables are incremented/decremented by a constant amount.      
+
+```cpp
+   // Here c is a positive integer constant   
+   for (int i = 1; i <= n; i += c) {  
+        // some O(1) expressions
+   }
+
+   for (int i = n; i > 0; i -= c) {
+        // some O(1) expressions
+   }
+```
+
+- **O(n<sup>c</sup>):** Time complexity of nested loops is equal to the number of times the innermost statement is executed. For example, the following sample loops have O(n<sup>2</sup>) time complexity     
+
+```cpp
+   for (int i = 1; i <=n; i += c) {
+       for (int j = 1; j <=n; j += c) {
+          // some O(1) expressions
+       }
+   }
+
+   for (int i = n; i > 0; i -= c) {
+       for (int j = i+1; j <=n; j += c) {
+          // some O(1) expressions
+   }
+```
+
+- **O(Logn):** Time Complexity of a loop is considered as O(Logn) if the loop variables are divided/multiplied by a constant amount. And also for recursive call in recursive function the Time Complexity is considered as O(Logn).   
+
+```cpp
+   for (int i = 1; i <=n; i *= c) {
+       // some O(1) expressions
+   }
+   for (int i = n; i > 0; i /= c) {
+       // some O(1) expressions
+   }
+
+    //Recursive function
+    void recurse(n)
+    {
+        if(n==0)
+            return;
+        else{
+            // some O(1) expressions
+        }
+        recurse(n-1);
+    }
+```
+
+For example,
+```cpp
+int mid = low + (high – low)/2; // mid is the middle index
+i.e divide & conquer binary search
+```
+has O(Log n) time complexity. Let us see mathematically how it is O(Log n). The series that we get in the first loop is $1$, $c$, $c^2$, $c^3$, … $c^k$. If we put k equals to $log{_c}{n}$, we get c<sup>$log{_c}{n}$</sup> which is n.
+
+- **O(LogLogn):** Time Complexity of a loop is considered as O(LogLogn) if the loop variables are reduced/increased exponentially by a constant amount.    
+
+```cpp
+   // Here c is a constant greater than 1   
+   for (int i = 2; i <=n; i = pow(i, c)) { 
+       // some O(1) expressions
+   }
+   //Here fun is sqrt or cuberoot or any other constant root
+   for (int i = n; i > 1; i = fun(i)) { 
+       // some O(1) expressions
+   }
+```
+For Mathmetical Details of Logarithmic Time Complexity, See [Exponentially Algorithm-Expand and Shrinks](https://www.geeksforgeeks.org/time-complexity-loop-loop-variable-expands-shrinks-exponentially/).
+<details>
+<summary>More Resources</summary>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/analysis-of-algorithms-set-4-analysis-of-loops">Analysis of Loops</a></li>
+</ul>
+</details>
+
+#### Analysis of Algorithm | Set 4 (Solving Recurrences)
+
+To be added
 #### Credits
 
 > **Source:** *GeeksforGeeks*           
