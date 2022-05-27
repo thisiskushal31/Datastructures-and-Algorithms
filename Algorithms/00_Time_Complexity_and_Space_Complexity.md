@@ -93,6 +93,7 @@ Asymptotic notations are used to represent the complexities of algorithms for as
 
 **1. Big-Oh(O) Notation:** Big-Oh (O) notation gives an upper bound for a function f(n) to within a constant factor.     
 ![Big Oh Notation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/big_oh_notation.jpg?raw=true)       
+
 We write f(n) = O(g(n)), If there are positive constants n0  and c such that, to the right of n0 the f(n) always lies on or below c*g(n).   
    
     O(g(n)) = { f(n) : There exist positive constant c and n0 such that 0 ≤ f(n) ≤ c g(n), for all n ≥ n0}
@@ -111,7 +112,13 @@ We write f(n) = Ω(g(n)), If there are positive constantsn0  and c such that, to
 
 We write f(n) = Θ(g(n)), If there are positive constantsn0  and c1 and c2 such that, to the right of n0 the f(n) always lies between c1*g(n) and c2*g(n) inclusive.       
 
-    Θ(g(n)) = {f(n) : There exist positive constant c1, c2 and n0 such that 0 ≤ c1 g(n) ≤ f(n) ≤ c2 g(n), for all n ≥ n0}
+    Θ(g(n)) = {f(n) : There exist positive constant c1, c2 and n0 such that 0 ≤ c1 g(n) ≤ f(n) ≤ c2 g(n), for all n ≥ n0}   
+
+[Asymptotic Notations More Brief Information](https://www.geeksforgeeks.org/analysis-of-algorithms-set-3asymptotic-notations)
+
+#### Analysis of Algorithms | Set 4 (Analysis of Loops)
+
+1) **O(1):** Time complexity of a function (or set of statements) is considered as O(1) if it doesn’t contain loop, recursion, and call to any other non-constant time function.
 
 #### Credits
 
