@@ -316,7 +316,24 @@ In recurrence tree method, we calculate total work done. If the work done at lea
 
 #### Analysis of Algorithm | Set 5 (Amortized Analysis Introduction)
 
-To be added
+*Amortized Analysis* is used when the occasional operation is very slow, but most of the operations which are executing very frequently are faster. Data structures we need amortized analysis for Hash Tables, Disjoint Sets etc.
+
+In the Hash-table, the most of the time the searching time complexity is O(1), but sometimes it executes O(n) operations. When we want to search or insert an element in a hash table for most of the cases it is constant time taking the task, but when a collision occurs, it needs O(n) times operations for collision resolution.
+
+**Aggregate Method**
+
+The aggregate method is used to find the total cost. If we want to add a bunch of data, then we need to find the amortized cost by this formula.    
+
+For a sequence of n operations, the cost is −     
+![Aggregate Method](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/costnoperations.jpg?raw=true)
+
+<details>
+<summary>More Resources and Brief Details</summary>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/analysis-algorithm-set-5-amortized-analysis-introduction">Amortized Analysis Introduction GFG</a></li>
+<li><a href="https://www.tutorialspoint.com/Amortized-Analysis">Amortized Analysis Tutorial Points</a></li>
+</ul>
+</details>
 
 #### Credits
 
