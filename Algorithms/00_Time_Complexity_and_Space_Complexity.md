@@ -217,6 +217,7 @@ has O(Log n) time complexity. Let us see mathematically how it is O(Log n). The 
    }
 ```
 For Mathmetical Details of Logarithmic Time Complexity, See [Exponentially Algorithm-Expand and Shrinks](https://www.geeksforgeeks.org/time-complexity-loop-loop-variable-expands-shrinks-exponentially/).
+
 <details>
 <summary>More Resources</summary>
 <ul>
@@ -295,6 +296,27 @@ There are following three cases:
 2. If f(n) = Θ(n<sup>c</sup>) where c = $Log{_b}{a}$ then T(n) = Θ(n<sup>c</sup>Log n) 
 3. If f(n) = Ω(n<sup>c</sup>) where c > $Log{_b}{a}$ then T(n) = Θ(f(n))
 
+**How does this work?**      
+
+Master method is mainly derived from recurrence tree method. If we draw recurrence tree of T(n) = aT(n/b) + f(n), we can see that the work done at root is f(n) and work done at all leaves is Θ(n<sup>c</sup>) where c is $Log{_b}{a}$. And the height of recurrence tree is $Log{_b}{n}$    
+
+![Masters Theorem](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/AlgoAnalysis.png?raw=true)          
+
+In recurrence tree method, we calculate total work done. If the work done at leaves is polynomially more, then leaves are the dominant part, and our result becomes the work done at leaves (Case 1). If work done at leaves and root is asymptotically same, then our result becomes height multiplied by work done at any level (Case 2). If work done at root is asymptotically more, then our result becomes work done at root (Case 3).       
+
+[Master Method Brief Details](https://www.javatpoint.com/daa-master-method)
+
+<details>
+<summary>More Resources</summary>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/analysis-algorithm-set-4-master-method-solving-recurrences">Solving Recurrences</a></li>
+<li><a href="https://www.javatpoint.com/daa-asymptotic-analysis-of-algorithms">DAA Documentation by Javatpoint</a></li>
+</ul>
+</details>
+
+#### Analysis of Algorithm | Set 5 (Amortized Analysis Introduction)
+
+To be added
 
 #### Credits
 
