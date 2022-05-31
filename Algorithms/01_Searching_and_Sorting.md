@@ -1,6 +1,6 @@
 ### Searching and Sorting - In Algorithms
 
-
+Here we gonna learn about searching and sorting algorithms. below everything is categorized by type of algorithm. Hope you will find it useful.
 ### Searching
 
 Searching Algorithms are designed to check for an element or retrieve an element from any data structure where it is used. Given below is explanation of some of the most common searching algorithms.
