@@ -6,6 +6,16 @@ Here we gonna learn about searching and sorting algorithms. below everything is 
 Searching Algorithms are designed to check for an element or retrieve an element from any data structure where it is used. Given below is explanation of some of the most common searching algorithms.
 #### Linear Search
 
+Linear Search sequentially checks each element of the list until a match is found or the whole list has been searched.
+
+A simple approach is to do a linear search, i.e      
+- Start from the leftmost element of arr[] and one by one compare x with each element of arr[]
+- If x matches with an element, return the index.
+- If x doesn’t match with any of elements, return -1.
+
+![Linear Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Linear_Search.png?raw=true)
+
+>Note-But in case we wanna make Linear Search more efficient we can also use Divide_and_Conquer and then we gonna do a linear search.
 #### Binary Search
 
 #### Jump Search
