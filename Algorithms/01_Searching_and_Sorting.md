@@ -6,6 +6,7 @@ Here we gonna learn about searching and sorting algorithms. below everything is 
 Searching Algorithms are designed to check for an element or retrieve an element from any data structure where it is used. Given below is explanation of some of the most common searching algorithms.
 #### Linear Search
 
+<<<<<<< HEAD
 A simple approach is to do a linear search, i.e       
 - Start from the leftmost element of arr[] and one by one compare x with each element of arr[]
 - If x matches with an element, return the index.
@@ -25,7 +26,42 @@ Time Complexity: O(n)
 ```
 ![Linear Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Linear_Search.jpeg?raw=true)
 
+=======
+Linear Search sequentially checks each element of the list until a match is found or the whole list has been searched.
+
+A simple approach is to do a linear search, i.e      
+- Start from the leftmost element of arr[] and one by one compare x with each element of arr[]
+- If x matches with an element, return the index.
+- If x doesn’t match with any of elements, return -1.          
+
+![Linear Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Linear_Search.png?raw=true)         
+
+>Note-But in case we wanna make Linear Search more efficient we can also use Divide_and_Conquer and then we gonna do a linear search.     
+
+[More Detail on Linear Search](https://www.geeksforgeeks.org/linear-search/)     
+>>>>>>> 0dbb622fdf835be634735af1537ddfb8f007e8b2
 #### Binary Search
+
+*Binary Search* is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n).       
+
+**Binary Search Algorithm:** The basic steps to perform Binary Search are:   
+
+- Begin with the mid element of the whole array as search key.
+- If the value of the search key is equal to the item then return index of the search key.
+- Or if the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half.
+- Otherwise, narrow it to the upper half.
+- Repeatedly check from the second point until the value is found or the interval is empty.
+
+![Binary Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Binary_Search.jpg?raw=true)      
+
+**Step-by-step Binary Search Algorithm:** We basically ignore half of the elements just after one comparison.
+   
+1. Compare x with the middle element.
+2. If x matches with the middle element, we return the mid index.
+3. Else If x is greater than the mid element, then x can only lie in the right half subarray after the mid element. So we recur for the right half.
+4. Else (x is smaller) recur for the left half.
+
+There is two types of binary search also one is Recursive and other is Iterative both of then uses some process as above but there is just a bit of diferent in code.     
 
 #### Jump Search
 
