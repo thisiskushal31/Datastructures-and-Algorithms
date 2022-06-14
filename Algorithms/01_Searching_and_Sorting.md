@@ -6,11 +6,12 @@ Here we gonna learn about searching and sorting algorithms. below everything is 
 Searching Algorithms are designed to check for an element or retrieve an element from any data structure where it is used. Given below is explanation of some of the most common searching algorithms.
 #### Linear Search
 
-<<<<<<< HEAD
-A simple approach is to do a linear search, i.e       
+Linear Search sequentially checks each element of the list until a match is found or the whole list has been searched.
+
+A simple approach is to do a linear search, i.e      
 - Start from the leftmost element of arr[] and one by one compare x with each element of arr[]
 - If x matches with an element, return the index.
-- If x doesn’t match with any of elements, return -1.      
+- If x doesn’t match with any of elements, return -1.
 
 ```cpp
 int search(int arr[], int n, int x)
@@ -21,25 +22,14 @@ int search(int arr[], int n, int x)
             return i;
     return -1;
 }
-
-Time Complexity: O(n)
 ```
-![Linear Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Linear_Search.jpeg?raw=true)
-
-=======
-Linear Search sequentially checks each element of the list until a match is found or the whole list has been searched.
-
-A simple approach is to do a linear search, i.e      
-- Start from the leftmost element of arr[] and one by one compare x with each element of arr[]
-- If x matches with an element, return the index.
-- If x doesn’t match with any of elements, return -1.          
 
 ![Linear Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Linear_Search.png?raw=true)         
 
->Note-But in case we wanna make Linear Search more efficient we can also use Divide_and_Conquer and then we gonna do a linear search.     
+> Note-But in case we wanna make Linear Search more efficient we can also use Divide_and_Conquer and then we gonna do a linear search.     
 
 [More Detail on Linear Search](https://www.geeksforgeeks.org/linear-search/)     
->>>>>>> 0dbb622fdf835be634735af1537ddfb8f007e8b2
+
 #### Binary Search
 
 *Binary Search* is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n).       
