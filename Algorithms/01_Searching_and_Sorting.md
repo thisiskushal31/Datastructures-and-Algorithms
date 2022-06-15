@@ -51,18 +51,68 @@ int search(int arr[], int n, int x)
 3. Else If x is greater than the mid element, then x can only lie in the right half subarray after the mid element. So we recur for the right half.
 4. Else (x is smaller) recur for the left half.
 
-There is two types of binary search also one is Recursive and other is Iterative both of then uses some process as above but there is just a bit of diferent in code.     
+There is two *Types of Binary Search* also one is Recursive and other is Iterative both of then uses some process as above but there is just a bit of diferent in code.     
 
-- Recursive Binary Search:
-- Iterative Binary Search:
+- **Recursive Binary Search:** A recursive binary search function. It returns location of x in given array arr[l..r] is present, otherwise -1.     
+
+```cpp
+int binarySearch(int arr[], int l, int r, int x)
+{
+    if (r >= l) {
+        int mid = l + (r - l) / 2;
+        if (arr[mid] == x)
+            return mid;
+        
+        if (arr[mid] > x)
+            return binarySearch(arr, l, mid - 1, x);
+        
+        return binarySearch(arr, mid + 1, r, x);
+    }
+    return -1;
+}
+```
+    Auxiliary Space : O(log n) | Time Complexity : O(log n)
+
+- **Iterative Binary Search:** A Iterative binary search check covers all cases, so need to check for *mid = low - (high-low)/2*     
+
+```cpp
+int binarySearch(vector<int> v, int To_Find)
+{
+    int lo = 0, hi = v.size() - 1;
+    int mid;
+    while (hi - lo > 1) {
+        int mid = (hi + lo) / 2;
+        if (v[mid] < To_Find) {
+            lo = mid + 1;
+        }
+        else {
+            hi = mid;
+        }
+    }
+    if (v[lo] == To_Find) {
+        cout << "Found"
+             << " At Index " << lo << endl;
+    }
+    else if (v[hi] == To_Find) {
+        cout << "Found"
+             << " At Index " << hi << endl;
+    }
+    else {
+        cout << "Not Found" << endl;
+    }
+}
+```
+
+    Time Complexity: O (log n) | Auxiliary Space: O (1)
+
 #### Jump Search
 
 Let’s consider the following array: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610). The length of the array is 16. The Jump search will find the value of 55 with the following steps assuming that the block size to be jumped is 4. 
-- STEP 1: Jump from index 0 to index 4; 
-- STEP 2: Jump from index 4 to index 8; 
-- STEP 3: Jump from index 8 to index 12; 
-- STEP 4: Since the element at index 12 is greater than 55, we will jump back a step to come to index 8. 
-- STEP 5: Perform a linear search from index 8 to get the element 55.
+- Step 1: Jump from index 0 to index 4; 
+- Step 2: Jump from index 4 to index 8; 
+- Step 3: Jump from index 8 to index 12; 
+- Step 4: Since the element at index 12 is greater than 55, we will jump back a step to come to index 8. 
+- Step 5: Perform a linear search from index 8 to get the element 55.
 
 ![Jump Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Jump_Search.jpg?raw=true)
 
