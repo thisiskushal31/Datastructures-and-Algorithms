@@ -118,7 +118,92 @@ Let’s consider the following array: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 
 
 #### Interpolation Search
 
-The Interpolation Search is an improvement over Binary Search for instances, where the values in a sorted array are uniformly distributed. Interpolation constructs new data points within the range of a discrete set of known data points. Binary Search always goes to the middle element to check. On the other hand, interpolation search may go to different locations according to the value of the key being searched. For example, if the value of the key is closer to the last element, interpolation search is likely to start search toward the end side.       
+Interpolation similar to binary search but it uses better way to find mid element and *Interpolation search works better than Binary Search for a Sorted and Uniformly Distributed array.*
+
+Interpolation constructs new data points within the range of a discrete set of known data points. Binary Search always goes to the middle element to check. On the other hand, interpolation search may go to different locations according to the value of the key being searched. For example, if the value of the key is closer to the last element, interpolation search is likely to start search toward the end side.       
+
+The idea of formula is to return higher value of pos when element to be searched is closer to arr[hi] and smaller value when closer to arr[lo]. 
+
+##### What is Uniformly Distributed Array?
+
+*Here is simple Explanation of Uniformly Distributed Array.*     
+
+Usually an array is considered as uniformly distributed when the difference between the elements are equal or almost same. Example 1: 1,2,3,4,5,6 (Difference is 1)     
+
+Example 2: 10,20,31,40,55,60,73,80(Here the difference between the two adjacent elements are almost close to 10).    
+
+Interpolation search is to be used when the given array is both sorted and uniformly distributed to have log(log n) time complexity.    
+
+```cpp
+To find the position to be searched, it uses the following formula: 
+pos = lo + (x - arr[lo]) *(hi - lo)/(arr[hi] - arr[lo])
+
+arr[] ==> Array where elements need to be searched
+x     ==> Element to be searched
+lo    ==> Starting index in arr[]
+hi    ==> Ending index in arr[]
+```
+
+*The formula for pos can be derived as follows.*      
+
+```cpp
+General equation of line : y = m*x + c.
+y is the value in the array and x is its index.
+
+Now putting value of lo,hi and x in the equation
+arr[hi] = m*hi+c ----(1)
+arr[lo] = m*lo+c ----(2)
+x = m*pos + c     ----(3)
+
+m = (arr[hi] - arr[lo] )/ (hi - lo)
+
+subtracting eqxn (2) from (3)
+x - arr[lo] = m * (pos - lo)
+lo + (x - arr[lo])/m = pos
+pos = lo + (x - arr[lo]) *(hi - lo)/(arr[hi] - arr[lo])
+```
+
+##### Algorithm 
+*The rest of the Interpolation algorithm is the same except for the above partition logic.* 
+- **Step1:** In a loop, calculate the value of “pos” using the probe position formula. 
+- **Step2:** If it is a match, return the index of the item, and exit. 
+- **Step3:** If the item is less than arr[pos], calculate the probe position of the left sub-array. Otherwise, calculate the same in the right sub-array. 
+- **Step4:** Repeat until a match is found or the sub-array reduces to zero.       
+
+*Below is the implementation of the algorithm.*
+
+```cpp
+// If x is present in arr[0..n-1], then returns
+// index of it, else returns -1.
+int interpolationSearch(int arr[], int lo, int hi, int x)
+{
+    int pos;
+  
+    // Since array is sorted, an element present
+    // in array must be in range defined by corner
+    if (lo <= hi && x >= arr[lo] && x <= arr[hi]) {
+  
+        // Probing the position with keeping
+        // uniform distribution in mind.
+        pos = lo
+              + (((double)(hi - lo) / (arr[hi] - arr[lo]))
+                 * (x - arr[lo]));
+  
+        // Condition of target found
+        if (arr[pos] == x)
+            return pos;
+  
+        // If x is larger, x is in right sub array
+        if (arr[pos] < x)
+            return interpolationSearch(arr, pos + 1, hi, x);
+  
+        // If x is smaller, x is in left sub array
+        if (arr[pos] > x)
+            return interpolationSearch(arr, lo, pos - 1, x);
+    }
+    return -1;
+}
+```
 #### Exponential Search
 
 #### Ternary Search
