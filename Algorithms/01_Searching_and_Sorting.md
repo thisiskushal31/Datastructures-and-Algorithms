@@ -105,6 +105,7 @@ int binarySearch(vector<int> v, int To_Find)
 
     Time Complexity: O (log n) | Auxiliary Space: O (1)
 
+[More Detail on Binary Search](https://www.geeksforgeeks.org/binary-search/)    
 #### Jump Search
 
 Let’s consider the following array: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610). The length of the array is 16. The Jump search will find the value of 55 with the following steps assuming that the block size to be jumped is 4. 
@@ -115,6 +116,8 @@ Let’s consider the following array: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 
 - Step 5: Perform a linear search from index 8 to get the element 55.
 
 ![Jump Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Jump_Search.jpg?raw=true)
+
+[More Detail on Jump Search](https://www.geeksforgeeks.org/jump-search/)
 
 #### Interpolation Search
 
@@ -142,7 +145,9 @@ arr[] ==> Array where elements need to be searched
 x     ==> Element to be searched
 lo    ==> Starting index in arr[]
 hi    ==> Ending index in arr[]
-```
+```      
+
+![Interpolation Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Interpolation_Search_Formula.png?raw=true)        
 
 *The formula for pos can be derived as follows.*      
 
@@ -203,9 +208,80 @@ int interpolationSearch(int arr[], int lo, int hi, int x)
     }
     return -1;
 }
-```
+```    
+
+[More Details On Interpolation Search](https://www.geeksforgeeks.org/interpolation-search/)
 #### Exponential Search
 
+**Exponential search involves two steps:**     
+- Find range where element is present   
+- Do Binary Search in above found range.   
+
+##### How to find the range where element may be present? 
+
+The idea is to start with subarray size 1, compare its last element with x, then try size 2, then 4 and so on until last element of a subarray is not greater.       
+
+Once we find an index i (after repeated doubling of i), we know that the element must be present between i/2 and i (Why i/2? because we could not find a greater value in previous iteration)       
+
+*Given below are the implementations of above steps.*
+
+```cpp
+// Returns position of first occurrence of
+// x in array
+int exponentialSearch(int arr[], int n, int x)
+{
+    // If x is present at first location itself
+    if (arr[0] == x)
+        return 0;
+  
+    // Find range for binary search by repeated doubling
+    int i = 1;
+    while (i < n && arr[i] <= x)
+        i = i*2;
+  
+    //  Call binary search for the found range.
+    return binarySearch(arr, i/2, 
+                            min(i, n-1), x);
+}
+  
+// A recursive binary search function. It returns
+// location of x in  given array arr[l..r] is
+// present, otherwise -1
+int binarySearch(int arr[], int l, int r, int x)
+{
+    if (r >= l)
+    {
+        int mid = l + (r - l)/2;
+  
+        // If the element is present at the middle itself
+        if (arr[mid] == x)
+            return mid;
+  
+        // If element is smaller than mid, then it
+        // can only be present n left subarray
+        if (arr[mid] > x)
+            return binarySearch(arr, l, mid-1, x);
+  
+        // Else the element can only be present
+        // in right subarray
+        return binarySearch(arr, mid+1, r, x);
+    }
+  
+    // We reach here when element is not present in array
+    return -1;
+}
+```
+
+- **Time Complexity :** O(Log n) 
+- **Auxiliary Space :** The above implementation of Binary Search is recursive and requires O(Log n) space. With iterative Binary Search, we need only O(1) space.
+
+
+**Applications of Exponential Search:**     
+
+- Exponential Binary Search is particularly useful for unbounded searches, where size of array is infinite.
+- It works better than Binary Search for bounded arrays, and also when the element to be searched is closer to the first element.
+
+[More Details on Exponential Search](https://www.geeksforgeeks.org/exponential-search/)
 #### Ternary Search
 
 
