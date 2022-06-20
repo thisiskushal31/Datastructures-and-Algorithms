@@ -477,6 +477,74 @@ void selectionSort(int arr[], int n)
 [More Details on Selection Sort](https://www.geeksforgeeks.org/selection-sort/)
 #### Bubble Sort
 
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for *large data sets as its average and worst case time complexity is quite high*.     
+
+**How Bubble Sort Works?**      
+
+Consider an array arr[] = **[ 6, 2, 8, 4, 10 ]**
+
+Bubble sort starts with very first two elements, comparing them to check which one is greater swap if needed and then move to next two elements and compare them and swap if needed and so on until its done with all the elements.
+
+![Bubble Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Bubble_Sort.png?raw=true)
+
+Following are the implementations of Bubble Sort.    
+
+```cpp
+// A function to implement bubble sort
+void bubbleSort(int arr[], int n)
+{
+    int i, j;
+    for (i = 0; i < n - 1; i++)
+ 
+        // Last i elements are already
+        // in place
+        for (j = 0; j < n - i - 1; j++)
+            if (arr[j] > arr[j + 1])
+                swap(arr[j], arr[j + 1]);
+}
+```    
+   
+**Optimized Implementation of Bubble Sort:**   
+*The above function always runs O(n^2) time even if the array is sorted. It can be optimized by stopping the algorithm if the inner loop didn’t cause any swap.*    
+
+Below is the implementation for the above approach:    
+```cpp
+// An optimized version of Bubble Sort
+void bubbleSort(int arr[], int n)
+{
+   int i, j;
+   bool swapped;
+   for (i = 0; i < n-1; i++)
+   {
+     swapped = false;
+     for (j = 0; j < n-i-1; j++)
+     {
+        if (arr[j] > arr[j+1])
+        {
+           swap(arr[j], arr[j+1]);
+           swapped = true;
+        }
+     }
+ 
+     // IF no two elements were swapped
+     // by inner loop, then break
+     if (swapped == false)
+        break;
+   }
+}
+```   
+
+- Time Complexity: O(N<sup>2</sup>)  
+- Auxiliary Space: O(1)  
+
+**Worst Case Time Analysis:**   
+- **Worst and Average Case Time Complexity:** O(N<sup>2</sup>). The worst case occurs when an array is reverse sorted.  
+
+- **Best Case Time Complexity:** O(N). The best case occurs when an array is already sorted.  
+
+- **Auxiliary Space:** O(1)   
+
+[More Details on Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)
 #### Insertion Sort
 
 #### Merge Sort
