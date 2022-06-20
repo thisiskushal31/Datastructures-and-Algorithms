@@ -425,7 +425,56 @@ In every iteration of selection sort, the minimum element (considering ascending
 
 **How does selection sort work?**     
 
-*Lets consider the following array as an example: **arr[ ] = {64, 25, 12, 22, 11}***   
+*Selection sort algorithm starts by comparing first two elements of an array and swapping if necessary, i.e., if you want to sort the elements of array in ascending order and if the first element is greater than second then, you need to swap the elements but, if the first element is smaller than second, leave the elements as it is. Then, again first element and third element are compared and swapped if necessary. This process goes on until first and last element of an array is compared. This completes the first step of selection sort.*    
+
+Selection sort algorithm starts by comparing first two elements of an array and swapping if necessary, i.e., if you want to sort the elements of array in ascending order and if the first element is greater than second then, you need to swap the elements but, if the first element is smaller than second, leave the elements as it is. Then, again first element and third element are compared and swapped if necessary. This process goes on until first and last element of an array is compared. This completes the first step of selection sort.        
+
+*Lets consider the following array as an example: **arr[ ] = {20, 12, 10, 15, 2}***      
+
+![Selection Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Selection_Sort.jpg?raw=true)
+
+**Approach:**    
+- Initialize minimum value(min_idx) to location 0
+- Traverse the array to find the minimum element in the array
+- While traversing if any element smaller than min_idx is found then swap both the values.
+- Then, increment min_idx to point to next element
+- Repeat until array is sorted
+
+```cpp
+//Swap function
+void swap(int *xp, int *yp)
+{
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
+ 
+void selectionSort(int arr[], int n)
+{
+    int i, j, min_idx;
+ 
+    // One by one move boundary of
+    // unsorted subarray
+    for (i = 0; i < n-1; i++)
+    {
+       
+        // Find the minimum element in
+        // unsorted array
+        min_idx = i;
+        for (j = i+1; j < n; j++)
+        if (arr[j] < arr[min_idx])
+            min_idx = j;
+ 
+        // Swap the found minimum element
+        // with the first element
+        swap(&arr[min_idx], &arr[i]);
+    }
+}
+```
+- **Time Complexity:**  *O(n<sup>2</sup>) as there are two nested loops(One loop to select an element of Array one by one & Another loop to compare that element with every other Array element)*.    
+- **Auxiliary Space:** *O(1) as the only extra memory used is for temporary variable while swapping two values in Array.*     
+
+[More Details on Selection Sort](https://www.geeksforgeeks.org/selection-sort/)
 #### Bubble Sort
 
 #### Insertion Sort
