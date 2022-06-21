@@ -592,8 +592,93 @@ void insertionSort(int arr[], int n)
 [More Details on Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/)   
 #### Merge Sort
 
+*Merge Sort* is a *Divide and Conquer* algorithm. It divides the input array into two halves, calls itself for the two halves, and then it merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.    
 
+**Pseudocode :**   
 
+```cpp
+•    Declare left variable to 0 and right variable to n-1 
+•    Find mid by medium formula. mid = (left+right)/2
+•    Call merge sort on (left,mid)
+•    Call merge sort on (mid+1,rear)
+•    Continue till left is less than right
+•    Then call merge function to perform merge sort.
+```   
+
+![Merge Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Merge_Sort.png?raw=true)          
+
+Below is the implementation of Merge Sort.    
+
+```cpp
+// Merges two subarrays of array[].
+// First subarray is arr[begin..mid]
+// Second subarray is arr[mid+1..end]
+void merge(int array[], int const left, int const mid, int const right)
+{
+    auto const subArrayOne = mid - left + 1;
+    auto const subArrayTwo = right - mid;
+ 
+    // Create temp arrays
+    auto *leftArray = new int[subArrayOne],
+         *rightArray = new int[subArrayTwo];
+ 
+    // Copy data to temp arrays leftArray[] and rightArray[]
+    for (auto i = 0; i < subArrayOne; i++)
+        leftArray[i] = array[left + i];
+    for (auto j = 0; j < subArrayTwo; j++)
+        rightArray[j] = array[mid + 1 + j];
+ 
+    auto indexOfSubArrayOne = 0, // Initial index of first sub-array
+        indexOfSubArrayTwo = 0; // Initial index of second sub-array
+    int indexOfMergedArray = left; // Initial index of merged array
+ 
+    // Merge the temp arrays back into array[left..right]
+    while (indexOfSubArrayOne < subArrayOne && indexOfSubArrayTwo < subArrayTwo) {
+        if (leftArray[indexOfSubArrayOne] <= rightArray[indexOfSubArrayTwo]) {
+            array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
+            indexOfSubArrayOne++;
+        }
+        else {
+            array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
+            indexOfSubArrayTwo++;
+        }
+        indexOfMergedArray++;
+    }
+    // Copy the remaining elements of
+    // left[], if there are any
+    while (indexOfSubArrayOne < subArrayOne) {
+        array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
+        indexOfSubArrayOne++;
+        indexOfMergedArray++;
+    }
+    // Copy the remaining elements of
+    // right[], if there are any
+    while (indexOfSubArrayTwo < subArrayTwo) {
+        array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
+        indexOfSubArrayTwo++;
+        indexOfMergedArray++;
+    }
+}
+ 
+// begin is for left index and end is
+// right index of the sub-array
+// of arr to be sorted */
+void mergeSort(int array[], int const begin, int const end)
+{
+    if (begin >= end)
+        return; // Returns recursively
+ 
+    auto mid = begin + (end - begin) / 2;
+    mergeSort(array, begin, mid);
+    mergeSort(array, mid + 1, end);
+    merge(array, begin, mid, end);
+}
+```    
+
+- Time Complexity: O(n logn), in all 3 cases (worst, average and best) as merge sort always divides the array into two halves and takes linear time to merge two halves and has a recurrence relation *T(n) = 2T(n/2) + θ(n)* can solved using Recurrence Tree method or the Master method.   
+- Auxiliary Space: O(n) as in merge sort all elements are copied into an auxiliary array so N auxiliary space is required for merge sort.  
+
+[More Details on Merge Sort](https://www.geeksforgeeks.org/merge-sort/)     
 #### Heap Sort
 
 #### QuickSort
