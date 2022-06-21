@@ -547,7 +547,52 @@ void bubbleSort(int arr[], int n)
 [More Details on Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)
 #### Insertion Sort
 
+*Insertion sort* is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.    
+
+**How Insertion Sort Works?**     
+
+*To sort an array of size N in ascending order:*    
+- Iterate from arr[1] to arr[N] over the array.    
+- Compare the current element (key) to its predecessor.    
+- If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.   
+
+![Insertion Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Insertion_Sort.jpg?raw=true)
+
+Below is the implementation of Insertion Sort.    
+
+```cpp
+// Function to sort an array using insertion sort
+void insertionSort(int arr[], int n)
+{
+    int i, key, j;
+    for (i = 1; i < n; i++)
+    {
+        key = arr[i];
+        j = i - 1;
+ 
+        // Move elements of arr[0..i-1], that are greater than key, to one position ahead of their current position
+        while (j >= 0 && arr[j] > key)
+        {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+```
+- Time Complexity: O($N^2$) 
+- Auxiliary Space: O(1)   
+
+**More Variations of Insertion Sort:**   
+
+- *Binary Insertion Sort(where Binary Search is used to reduce time to find the proper location to insert the selected item at each iteration)*: [https://www.geeksforgeeks.org/binary-insertion-sort/](https://www.geeksforgeeks.org/binary-insertion-sort/)     
+- *Insertion Sort in Linked List:* [https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/](https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/)   
+
+
+[More Details on Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/)   
 #### Merge Sort
+
+
 
 #### Heap Sort
 
