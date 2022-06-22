@@ -693,7 +693,93 @@ A Binary Heap is a Complete Binary Tree where items are stored in a special orde
 
 **2. Why array based representation for Binary Heap :** It is easy to represent in array in case of *Complete Binary Tree* and the array-based representation is space-efficient. If the parent node is stored at index $I$, the left child can be calculated by $(2 * I + 1)$ and the right child by $(2 * I + 2)$ (assuming the indexing starts at 0).       
 
-**3. How to “heapify” a tree :** 
+**3. How to “heapify” a tree :** The process of reshaping a binary tree into a Heap data structure is known as ‘heapify’. A binary tree is a tree data structure that has two child nodes at max. If a node’s children nodes are ‘heapified’, then only ‘heapify’ process can be applied over that node. A heap should always be a complete binary tree.    
+
+```cpp
+// Algorithm for Heapify
+heapify(array)
+ Root = array[0]
+
+   Largest = largest( array[0] , array [2 * 0 + 1]. array[2 * 0 + 2])
+if(Root != Largest)
+ Swap(Root, Largest)
+```    
+
+[Heapify Algorithms Brief Details](https://www.geeksforgeeks.org/building-heap-from-array/)      
+
+**Heap Sort Algorithm for sorting in increasing order:**   
+- Build a max heap from the input data. 
+- At this point, the largest item is stored at the root of the heap. Replace it with the last item of the heap followed by reducing the size of heap by 1. Finally, heapify the root of the tree. 
+- Repeat step 2 while the size of the heap is greater than 1.  
+
+*So, Basically we make a binary tree with the given unordered array and make it max heap and convert it back to array or given data structure*    
+
+![Heap Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Heap_Sort.png?raw=true)   
+
+*Below is Code Implementation*
+
+```cpp
+// To heapify a subtree rooted with node i
+// which is an index in arr[]. 
+// n is size of heap
+void heapify(int arr[], int n, int i)
+{
+    
+  // Initialize largest as root
+    int largest = i; 
+    
+  // left = 2*i + 1
+    int l = 2 * i + 1; 
+    
+  // right = 2*i + 2
+    int r = 2 * i + 2; 
+  
+    // If left child is larger than root
+    if (l < n && arr[l] > arr[largest])
+        largest = l;
+  
+    // If right child is larger than largest 
+    // so far
+    if (r < n && arr[r] > arr[largest])
+        largest = r;
+  
+    // If largest is not root
+    if (largest != i) {
+        swap(arr[i], arr[largest]);
+  
+        // Recursively heapify the affected 
+        // sub-tree
+        heapify(arr, n, largest);
+    }
+}
+  
+// Main function to do heap sort
+void heapSort(int arr[], int n)
+{
+    
+    // Build heap (rearrange array)
+    for (int i = n / 2 - 1; i >= 0; i--)
+        heapify(arr, n, i);
+  
+    // One by one extract an element 
+    // from heap
+    for (int i = n - 1; i > 0; i--) {
+        
+        // Move current root to end
+        swap(arr[0], arr[i]);
+  
+        // call max heapify on the reduced heap
+        heapify(arr, i, 0);
+    }
+}
+```   
+
+- **Time Complexity:** *O(n logn)*, 
+    - *Time complexity of heapify is O(Logn).* 
+    - *Time complexity of createAndBuildHeap() is O(n)* 
+    - *And, hence the overall time complexity of Heap Sort is O(nLogn).*
+
+[More Details on Heap Sort](https://www.geeksforgeeks.org/heap-sort/)
 #### QuickSort
 
 #### Radix Sort
