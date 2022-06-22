@@ -681,6 +681,19 @@ void mergeSort(int array[], int const begin, int const end)
 [More Details on Merge Sort](https://www.geeksforgeeks.org/merge-sort/)     
 #### Heap Sort
 
+Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the minimum element and place the minimum element at the beginning. We repeat the same process for the remaining elements.   
+
+**Prerequisite for Heap Sort**
+
+**1. What is Binary Heap?**    
+
+Let us first define a Complete Binary Tree. A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.    
+
+A Binary Heap is a Complete Binary Tree where items are stored in a special order such that the value in a parent node is greater(or smaller) than the values in its two children nodes. The former is called max heap and the latter is called min-heap. The heap can be represented by a binary tree or array.     
+
+**2. Why array based representation for Binary Heap :** It is easy to represent in array in case of *Complete Binary Tree* and the array-based representation is space-efficient. If the parent node is stored at index $I$, the left child can be calculated by $(2 * I + 1)$ and the right child by $(2 * I + 2)$ (assuming the indexing starts at 0).       
+
+**3. How to “heapify” a tree :** 
 #### QuickSort
 
 #### Radix Sort
@@ -696,6 +709,7 @@ void mergeSort(int array[], int const begin, int const end)
 #### Pigeonhole Sort
 
 #### Cycle Sort
+
 #### More Searching and Sorting Algorithms
 
 > **Source:** *GeeksforGeeks*           
