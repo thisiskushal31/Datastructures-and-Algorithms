@@ -882,8 +882,19 @@ $T(n) = T(n/9) + T(9n/10) + \theta(n)$
 
 **More Variations of Quick Sort**
 
-**1. 3-Way QuickSort:** In QuickSort algorithm, we select an element as pivot, partition the array around pivot and recur for subarrays on left and right of pivot. [3-Way-Quick-Sort](https://www.geeksforgeeks.org/3-way-quicksort-dutch-national-flag/)
+**1. 3-Way QuickSort:** In QuickSort algorithm, we select an element as pivot, partition the array around pivot and recur for subarrays on left and right of pivot.    
+Consider an array which has many redundant elements. For example, {1, 4, 2, 4, 2, 4, 1, 2, 4, 1, 2, 2, 2, 2, 4, 1, 4, 4, 4}. If 4 is picked as pivot in Simple QuickSort, we fix only one 4 and recursively process remaining occurrences. In 3 Way QuickSort, an array arr[l..r] is divided in 3 parts:    
+- arr[l..i] elements less than pivot. 
+- arr[i+1..j-1] elements equal to pivot. 
+- arr[j..r] elements greater than pivot.   
 
+See [3-Way-Quick-Sort-Implementation](https://www.geeksforgeeks.org/3-way-quicksort-dutch-national-flag/)   
+
+**2. QuickSort for Linked Lists:** Simply see the implementation on singly and doubly linked list [QuickSort on Singly Linked List](https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/) & [QuickSort on Doubly Linked List](https://www.geeksforgeeks.org/quicksort-for-linked-list/)    
+
+**3. Iterative Quick Sort:** Above is the recursive implementation of Quick Sort. Following is [iterative implementation of Quick Sort](https://www.geeksforgeeks.org/iterative-quick-sort/).    
+
+[More Detail on Quick Sort](https://www.geeksforgeeks.org/quick-sort/)    
 #### Radix Sort
 
 #### Counting Sort
