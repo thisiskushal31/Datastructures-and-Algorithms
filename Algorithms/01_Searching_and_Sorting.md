@@ -788,6 +788,101 @@ QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and pa
 - Pick a random element as pivot.
 - Pick median as pivot.
 
+*The key process in **quickSort** is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.*     
+
+![Quick Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Quick_Sort_Partition.png?raw=true)
+
+**Partitioning Algorithm:** There is lots of Partition work best for this Sort. Start from the leftmost element and keep track of index of smaller (or equal to) elements as i. While traversing, if we find a smaller element, we swap current element with arr[i]. Otherwise we ignore current element.   
+
+Below is the code implementation of Quick Sort.    
+
+**Implementation of QuickSort using last element as pivot:**   
+
+```cpp
+ 
+/* This function takes last element as pivot, places the pivot element at its correct position in sorted
+array, and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot */
+int partition_last_element(int arr[], int low, int high)
+{
+    int pivot = arr[high]; // pivot
+    int i = (low - 1); // Index of smaller element and indicates the right position of pivot found so far
+ 
+    for (int j = low; j <= high - 1; j++)
+    {
+        // If current element is smaller than the pivot
+        if (arr[j] < pivot)
+        {
+            i++; // increment index of smaller element
+            swap(&arr[i], &arr[j]);
+        }
+    }
+    swap(&arr[i + 1], &arr[high]);
+    return (i + 1);
+}
+
+/* The main function that implements QuickSort
+arr[] --> Array to be sorted,
+low --> Starting index,
+high --> Ending index */
+void quickSort(int arr[], int low, int high)
+{
+    if (low < high)
+    {
+        /* pi is partitioning index, arr[p] is now
+        at right place */
+        int pi = partition_last_element(arr, low, high);
+ 
+        // Separately sort elements before
+        // partition and after partition
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+
+```
+
+**Implementation of QuickSort using first element as pivot:**
+
+```cpp
+int partition_first_element(int arr[], int low, int high)
+{
+    int i = low;
+    int j = high;
+    int pivot = arr[low];
+    while (i < j)
+    {
+        while (pivot >= arr[i])
+            i++;
+        while (pivot < arr[j])
+            j--;
+        if (i < j)
+            swap(arr[i], arr[j]);
+    }
+    swap(arr[low], arr[j]);
+    return j;
+}
+```  
+**Analysis of QuickSort**   
+
+Time taken by QuickSort, in general, can be written as following.   
+$T(n) = T(k) + T(n-k-1) + Θ(n)$   
+The time taken by QuickSort depends upon the input array and partition strategy. Following are three cases.  
+
+- **Worst Case:** The worst case occurs when the partition process always picks greatest or smallest element as pivot. If we consider above partition strategy where last element is always picked as pivot, the worst case would occur when the array is already sorted in increasing or decreasing order. Following is recurrence for worst case. 
+    $T(n) = T(0) + T(n-1) + \theta(n)$ Which is equivalent to $T(n) = T(n-1) + \theta(n)$  
+    
+    **The solution of above recurrence is (n2).**  
+- **Best Case:** The best case occurs when the partition process always picks the middle element as pivot. Following is recurrence for best case. 
+    $ T(n) = 2T(n/2) + \theta(n)$
+    **The solution of above recurrence is (nLogn). It can be solved using case 2 of Master Theorem.**
+- **Average Case:** To do average case analysis, we need to consider all possible permutation of array and calculate time taken by every permutation which doesn’t look easy.    
+We can get an idea of average case by considering the case when partition puts O(n/9) elements in one set and O(9n/10) elements in other set. Following is recurrence for this case.  
+$T(n) = T(n/9) + T(9n/10) + \theta(n)$    
+    **The solution of above recurrence is also O(nLogn)**
+
+**More Variations of Quick Sort**
+
+**1. 3-Way QuickSort:** In QuickSort algorithm, we select an element as pivot, partition the array around pivot and recur for subarrays on left and right of pivot. [3-Way-Quick-Sort](https://www.geeksforgeeks.org/3-way-quicksort-dutch-national-flag/)
 
 #### Radix Sort
 
