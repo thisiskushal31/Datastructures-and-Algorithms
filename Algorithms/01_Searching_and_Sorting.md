@@ -861,7 +861,10 @@ int partition_first_element(int arr[], int low, int high)
     swap(arr[low], arr[j]);
     return j;
 }
-```  
+
+// QuickSort Function will be same as above, but this time we will use first element as pivot.
+```    
+
 **Analysis of QuickSort**   
 
 Time taken by QuickSort, in general, can be written as following.   
@@ -897,8 +900,98 @@ See [3-Way-Quick-Sort-Implementation](https://www.geeksforgeeks.org/3-way-quicks
 [More Detail on Quick Sort](https://www.geeksforgeeks.org/quick-sort/)    
 #### Radix Sort
 
+The idea of Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort. Using Radix Sort an array in linear time.     
+
+**Radix Sort Algorithm**
+
+- Find the maximum element of the array, let it be $max$.
+- Find the number of digits in $max$, let it be $k$.
+- For each, $i$ ranging from $1$ To $k$, apply the counting sort algorithm for the $i^{th}$ least-significant digit of each element. If any element has less than $i$ digits consider $0$ at its place (Because $29$ can also be represented as $029$).    
+
+![Radix Sort Algorithm](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Radix_Sort_Format.png?raw=true)    
+
+**Radix Sort Pseudocode**     
+
+```cpp
+RadixSort(a[], n):
+    // Finding the maximum element
+    max=a[0]
+    For (i=1 to n-1):
+        If (a[i]>max):
+            max=a[i]
+            
+    // Calling countingSort for 
+    // k times using For loop.
+    For (div=1 to max/div>0):
+        countingSort(a, n, div)
+        div=div*10
+```   
+
+**Example :**   
+
+![Radix Sort Example](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Radix_Sort_Example.png?raw=true)    
+
+**Explanation :**    
+
+- *Original, unsorted list: 326, 453, 608, 835, 751, 435, 704, 690.*  
+- *1st LSD i.e. Sorting by least significant digit (1s place) will be sorted in assending order as we need to sort this list in assending order.*   
+- *Then 2nd LSD i.e. Sorting by next digit (10s place) will and sorted.*   
+- *Then 3rd MSD Sorting by the most significant digit (100s place).*   
+
+```cpp
+// A function to do counting sort of arr[] according to the digit represented by exp.
+void countSort(int arr[], int n, int exp)
+{
+    int output[n]; // output array
+    int i, count[10] = { 0 };
+  
+    // Store count of occurrences in count[]
+    for (i = 0; i < n; i++)
+        count[(arr[i] / exp) % 10]++;
+  
+    // Change count[i] so that count[i] now contains actual position of this digit in output[]
+    for (i = 1; i < 10; i++)
+        count[i] += count[i - 1];
+  
+    // Build the output array
+    for (i = n - 1; i >= 0; i--) {
+        output[count[(arr[i] / exp) % 10] - 1] = arr[i];
+        count[(arr[i] / exp) % 10]--;
+    }
+  
+    // Copy the output array to arr[], so that arr[] now contains sorted numbers according to current digit
+    for (i = 0; i < n; i++)
+        arr[i] = output[i];
+}
+  
+// The main function to that sorts arr[] of size n using Radix Sort
+void radixsort(int arr[], int n)
+{
+    // Find the maximum number to know number of digits
+    int m = getMax(arr, n);
+  
+    // Do counting sort for every digit. Note that instead of passing digit number, exp 
+    // is passed. exp is 10^i where i is current digit number
+    for (int exp = 1; m / exp > 0; exp *= 10)
+        countSort(arr, n, exp);
+}
+```
+
+- **Time Complexity:** Let there be $d$ digits in input integers. Radix Sort takes $O(d*(n+b))$ time where $b$ is the base for representing numbers, for example, for the decimal system, $b$ is $10$. What is the value of $d$? If $k$ is the maximum possible value, then $d$ would be $O(logb(k))$. So overall time complexity is $O((n+b) * logb(k))$.   
+
+- **Space Complexity:** In this algorithm, we have two auxiliary arrays cnt of size $b$ (base) and tempArray of size $n$ (number of elements), and an input array arr of size $n$. So, Overall space complexity is $O(n+b)$.    
+
+**More Details:**   
+
+- [Time and Space Complexity of Radix Sort](https://iq.opengenus.org/time-and-space-complexity-of-radix-sort/)   
+- [Radix Sort on GeeksforGeeks](https://www.geeksforgeeks.org/radix-sort/)  
+- [Radix Sort on Scaler](https://www.scaler.com/topics/data-structures/radix-sort/)
+
 #### Counting Sort
 
+Counting sort is a linear time sorting algorithm that sort in O(n+k) time when elements are in the range from 1 to k.
+
+**What if the elements are in the range from 1 to n2 :** We can’t use counting sort because counting sort will take O(n2) which is worse than comparison-based sorting algorithms. 
 #### Bucket Sort
 
 #### ShellSort
