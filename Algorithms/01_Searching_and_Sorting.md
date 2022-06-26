@@ -1083,7 +1083,7 @@ void countSort(char arr[])
 
 **More Details:**   
 
-- [- [Counting Sort on GeekforGeeks](https://www.geeksforgeeks.org/counting-sort/)   on InterviewCake](https://www.interviewcake.com/concept/python/counting-sort)  
+- [Counting Sort on InterviewCake](https://www.interviewcake.com/concept/python/counting-sort)  
 - [Counting Sort on Simplilearn](https://www.simplilearn.com/tutorials/data-structure-tutorial/counting-sort-algorithm)  
 - [Counting Sort on GeekforGeeks](https://www.geeksforgeeks.org/counting-sort/)  
 - [Counting Sort Pseudocode](https://www.codingeek.com/algorithms/counting-sort-explanation-pseudocode-and-implementation/)    
