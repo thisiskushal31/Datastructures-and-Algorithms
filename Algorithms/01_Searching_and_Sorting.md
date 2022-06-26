@@ -127,7 +127,7 @@ Interpolation constructs new data points within the range of a discrete set of k
 
 The idea of formula is to return higher value of pos when element to be searched is closer to arr[hi] and smaller value when closer to arr[lo]. 
 
-##### What is Uniformly Distributed Array?
+**What is Uniformly Distributed Array?**   
 
 *Here is simple Explanation of Uniformly Distributed Array.*     
 
@@ -168,7 +168,8 @@ lo + (x - arr[lo])/m = pos
 pos = lo + (x - arr[lo]) *(hi - lo)/(arr[hi] - arr[lo])
 ```
 
-##### Algorithm 
+**Algorithm**  
+
 *The rest of the Interpolation algorithm is the same except for the above partition logic.* 
 - **Step1:** In a loop, calculate the value of “pos” using the probe position formula. 
 - **Step2:** If it is a match, return the index of the item, and exit. 
@@ -217,7 +218,7 @@ int interpolationSearch(int arr[], int lo, int hi, int x)
 - Find range where element is present   
 - Do Binary Search in above found range.   
 
-##### How to find the range where element may be present? 
+**How to find the range where element may be present?**   
 
 The idea is to start with subarray size 1, compare its last element with x, then try size 2, then 4 and so on until last element of a subarray is not greater.       
 
@@ -989,9 +990,104 @@ void radixsort(int arr[], int n)
 
 #### Counting Sort
 
-Counting sort is a linear time sorting algorithm that sort in O(n+k) time when elements are in the range from 1 to k.
+Counting sort is a linear time sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then do some arithmetic to calculate the position of each object in the output sequence. It sort in O(n+k) time when elements are in the range from 1 to k.    
 
-**What if the elements are in the range from 1 to n2 :** We can’t use counting sort because counting sort will take O(n2) which is worse than comparison-based sorting algorithms. 
+*Counting sort makes assumptions about the data*, for example, it assumes that values are going to be in the range of 0 to 10 or 10 – 99 etc, Some other assumptions counting sort makes are input data will be all real numbers. Like other algorithms this sorting algorithm is not a comparison-based algorithm, it hashes the value in a temporary count array and uses them for sorting. It uses a temporary array making it a *Non-In-Place-Algorithm*.    
+
+**Algorithm :**   
+
+- *Consider a given array that needs to be sorted. First, you’ll have to find the largest element in the array and set it to the max.* 
+- *To store the sorted data, you will now initialize a new count array with length "max+1" and all elements set to 0.*
+- *Later, as shown in the figure, you will store elements of the given array with the corresponding index in the count array.*
+- *Now, you will change the count array by adding the previous counts to produce the cumulative sum of an array, as shown below.*
+- *Because the original array has nine inputs, you will create another empty array with nine places to store the sorted data, place the elements in their correct positions, and reduce the count by one.*
+- *As a result, the sorted array is: shown below*
+
+![Count Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/countingsort.gif?raw=true)
+
+**Pseudocode of Counting Sort**
+
+```cpp
+CountingSort(A)
+  //A[]-- Initial Array to Sort
+  // Complexity: O(k)
+  for i = 0 to k do
+  c[i] = 0
+  // Storing Count of each element
+  // Complexity: O(n)
+  for j = 0 to n do
+  c[A[j]] = c[A[j]] + 1
+  // Change C[i] such that it contains actual position of these elements in output array
+  // Complexity: O(k)
+  for i = 1 to k do
+  c[i] = c[i] + c[i-1]
+  // Build Output array from C[i]
+  // Complexity: O(n)
+  for j = n-1 downto 0 do
+  B[ c[A[j]]-1 ] = A[j]
+  c[A[j]] = c[A[j]] - 1
+end func
+```
+
+*Below is code implementation.*
+
+```cpp
+// The main function that sort the given string arr[] in alphabetical order
+void countSort(char arr[])
+{
+    int RANGE=255;
+    // The output character array that will have sorted arr
+    char output[strlen(arr)];
+ 
+    // Create a count array to store count of individual characters and initialize count array as 0
+    int count[RANGE + 1], i;
+    memset(count, 0, sizeof(count));
+ 
+    // Store count of each character
+    for (i = 0; arr[i]; ++i)
+        ++count[arr[i]];
+ 
+    // Change count[i] so that count[i] now contains actual position of this character in output array
+    for (i = 1; i <= RANGE; ++i)
+        count[i] += count[i - 1];
+ 
+    // Build the output character array
+    for (i = 0; arr[i]; ++i) {
+        output[count[arr[i]] - 1] = arr[i];
+        --count[arr[i]];
+    }
+ 
+    /*
+    For Stable algorithm
+    for (i = sizeof(arr)-1; i>=0; --i)
+    {
+        output[count[arr[i]]-1] = arr[i];
+        --count[arr[i]];
+    }
+    */
+ 
+    // Copy the output array to arr, so that arr now contains sorted characters
+    for (i = 0; arr[i]; ++i)
+        arr[i] = output[i];
+}
+```
+- **Time Complexity:** O(n+k) where n is the number of elements in the input array and k is the range of input. 
+- **Auxiliary Space:** O(n+k) 
+
+**Facts:**   
+
+**1. What if the elements are in the range from $1$ to $n^2$ :** We can’t use counting sort because counting sort will take O(n2) which is worse than comparison-based sorting algorithms. **Can we sort such an array in linear time?:-** *Radix Sort is the answer. The idea of Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort.*   
+*2. Counting sort is efficient if the range of input data is not significantly greater than the number of objects to be sorted. Consider the situation where the input sequence is between range 1 to 10K and the data is 10, 5, 10K, 5K.*   
+*3. It is not a comparison-based sorting. Its running time complexity is O(n) with space proportional to the range of data.*   
+*4. Counting sort is able to achieve this because we are making assumptions about the data we are sorting.*  
+
+**More Details:**   
+
+- [- [Counting Sort on GeekforGeeks](https://www.geeksforgeeks.org/counting-sort/)   on InterviewCake](https://www.interviewcake.com/concept/python/counting-sort)  
+- [Counting Sort on Simplilearn](https://www.simplilearn.com/tutorials/data-structure-tutorial/counting-sort-algorithm)  
+- [Counting Sort on GeekforGeeks](https://www.geeksforgeeks.org/counting-sort/)  
+- [Counting Sort Pseudocode](https://www.codingeek.com/algorithms/counting-sort-explanation-pseudocode-and-implementation/)    
+
 #### Bucket Sort
 
 #### ShellSort
