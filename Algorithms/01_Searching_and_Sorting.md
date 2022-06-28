@@ -1070,7 +1070,8 @@ void countSort(char arr[])
     for (i = 0; arr[i]; ++i)
         arr[i] = output[i];
 }
-```
+``` 
+
 - **Time Complexity:** O(n+k) where n is the number of elements in the input array and k is the range of input. 
 - **Auxiliary Space:** O(n+k) 
 
@@ -1090,6 +1091,8 @@ void countSort(char arr[])
 
 #### Bucket Sort
 
+Bucket sort is mainly useful when input is uniformly distributed over a range. For example, consider the following problem. *Sort a large set of floating point numbers which are in range from 0.0 to 1.0 and are uniformly distributed across the range. How do we sort the numbers efficiently?*   
+A simple way is to apply a comparison based sorting algorithm. The lower bound for Comparison based sorting algorithm (Merge Sort, Heap Sort, Quick-Sort .. etc) is $Ω(n Log n)$, i.e., they cannot do better than $nlogn$.   
 #### ShellSort
 
 #### Comb Sort
@@ -1102,4 +1105,3 @@ void countSort(char arr[])
 
 > **Source:** *GeeksforGeeks*           
 > [https://www.geeksforgeeks.org/fundamentals-of-algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting)        
-> [https://www.geeksforgeeks.org/difference-between-searching-and-sorting-algorithms/](https://www.geeksforgeeks.org/difference-between-searching-and-sorting-algorithms/)
