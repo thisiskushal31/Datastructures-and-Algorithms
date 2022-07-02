@@ -1157,13 +1157,64 @@ Shell sort is mainly a variation of Insertion Sort. In insertion sort, we move e
 
 *The interval between the elements is reduced based on the sequence used. Some of the optimal sequences that can be used in the shell sort algorithm are:*
 
-- Shell's original sequence: N/2 , N/4 , …, 1
-- Knuth's increments: 1, 4, 13, …, (3k – 1) / 2
-- Sedgewick's increments: 1, 8, 23, 77, 281, 1073, 4193, 16577...4j+1+ 3·2j+ 1
-- Hibbard's increments: 1, 3, 7, 15, 31, 63, 127, 255, 511…
-- Papernov & Stasevich increment: 1, 3, 5, 9, 17, 33, 65,...
-- Pratt: 1, 2, 3, 4, 6, 9, 8, 12, 18, 27, 16, 24, 36, 54, 81....
+- Shell's original sequence: N/2 , N/4 , …, 1  
+- Knuth's increments: 1, 4, 13, …, (3k – 1) / 2  
+- Sedgewick's increments: 1, 8, 23, 77, 281, 1073, 4193, 16577...4j+1+ 3·2j+ 1  
+- Hibbard's increments: 1, 3, 7, 15, 31, 63, 127, 255, 511…  
+- Papernov & Stasevich increment: 1, 3, 5, 9, 17, 33, 65,...   
+- Pratt: 1, 2, 3, 4, 6, 9, 8, 12, 18, 27, 16, 24, 36, 54, 81....     
 
+**Algorithm:**   
+**Step 1** − Start
+**Step 2** − Initialize the value of gap size. Example: h
+**Step 3** − Divide the list into smaller sub-part. Each must have equal intervals to h
+**Step 4** − Sort these sub-lists using insertion sort
+**Step 5** – Repeat this step 2 until the list is sorted.
+**Step 6** – Print a sorted list.
+**Step 7** – Stop.
+
+![Shell Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Shell_Sort.png?raw=true)   
+
+Below is code implementation
+
+```cpp
+/* function to sort arr using shellSort */
+int shellSort(int arr[], int n)
+{
+    // Start with a big gap, then reduce the gap
+    for (int gap = n/2; gap > 0; gap /= 2)
+    {
+        // Do a gapped insertion sort for this gap size.
+        // The first gap elements a[0..gap-1] are already in gapped order
+        // keep adding one more element until the entire array is
+        // gap sorted 
+        for (int i = gap; i < n; i += 1)
+        {
+            // add a[i] to the elements that have been gap sorted
+            // save a[i] in temp and make a hole at position i
+            int temp = arr[i];
+  
+            // shift earlier gap-sorted elements up until the correct 
+            // location for a[i] is found
+            int j;            
+            for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
+                arr[j] = arr[j - gap];
+              
+            //  put temp (the original a[i]) in its correct location
+            arr[j] = temp;
+        }
+    }
+    return 0;
+}
+```    
+
+- **Time Complexity:** Time complexity of the above implementation of Shell sort is Worst Case $O(n^2)$. There are many other ways to reduce gaps as given above which leads to better time complexity.  
+- **Space Complexity:** $O(1)$
+
+**More Details:**   
+
+- [ShellSort on GeeksforGeeks](https://www.geeksforgeeks.org/shellsort/)
+- [ShellSort on Javatpoint](https://www.javatpoint.com/shell-sort)  
 #### Comb Sort
 
 #### Pigeonhole Sort
