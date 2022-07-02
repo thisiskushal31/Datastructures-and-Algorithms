@@ -1091,8 +1091,7 @@ void countSort(char arr[])
 
 #### Bucket Sort
 
-Bucket sort is mainly useful when input is uniformly distributed over a range. For example, consider the following problem. *Sort a large set of floating point numbers which are in range from 0.0 to 1.0 and are uniformly distributed across the range. How do we sort the numbers efficiently?*   
-A simple way is to apply a comparison based sorting algorithm. The lower bound for Comparison based sorting algorithm (Merge Sort, Heap Sort, Quick-Sort .. etc) is $Ω(n Log n)$, i.e., they cannot do better than $nlogn$.   
+Bucket sort is mainly useful when input is uniformly distributed over a range and with floating-point values or even integers. It uses Scatter-gather approach as given below. Hence, it work great for smaller values but not for larger values.
 
 The idea is to use bucket sort. Following is bucket algorithm.    
 
@@ -1103,7 +1102,54 @@ bucketSort(arr[], n)
 .......a) Insert arr[i] into bucket[n*array[i]]
 3) Sort individual buckets using insertion sort.
 4) Concatenate all sorted buckets.
-```
+```   
+
+*The basic procedure of performing the bucket sort is given as follows -*
+
+- First, partition the range into a fixed number of buckets.    
+- Then, toss every element into its appropriate bucket.    
+- After that, sort each bucket individually by applying a sorting algorithm.    
+- And at last, concatenate all the sorted buckets.   
+
+![Bucket Sort Image](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Bucket_Sort.png?raw=true)   
+
+Below is code implementation.    
+
+```cpp
+// Function to sort arr[] of
+// size n using bucket sort
+void bucketSort(float arr[], int n)
+{
+     
+    // 1) Create n empty buckets
+    vector<float> b[n];
+ 
+    // 2) Put array elements
+    // in different buckets
+    for (int i = 0; i < n; i++) {
+        int bi = n * arr[i]; // Index in bucket
+        b[bi].push_back(arr[i]);
+    }
+ 
+    // 3) Sort individual buckets
+    for (int i = 0; i < n; i++)
+        sort(b[i].begin(), b[i].end());
+ 
+    // 4) Concatenate all buckets into arr[]
+    int index = 0;
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < b[i].size(); j++)
+            arr[index++] = b[i][j];
+}
+```   
+
+- **Time Complexity:** Best and Average-case complexity of bucket sort is $O(n + k)$, and the worst-case complexity of bucket sort is $O(n^2)$, where n is the number of items.
+
+- **Space Complexity:** $O(n*k)$ as it is not a in-place sorting algorithm.
+
+**More Details:**   
+- [Bucket Sort on GeeksforGeeks](https://www.geeksforgeeks.org/bucket-sort-2/)
+- [Bucket Sort on JavaTpoint](https://www.javatpoint.com/bucket-sort)
 
 #### ShellSort
 
