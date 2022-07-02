@@ -1149,9 +1149,20 @@ void bucketSort(float arr[], int n)
 
 **More Details:**   
 - [Bucket Sort on GeeksforGeeks](https://www.geeksforgeeks.org/bucket-sort-2/)
-- [Bucket Sort on JavaTpoint](https://www.javatpoint.com/bucket-sort)
+- [Bucket Sort on Javatpoint](https://www.javatpoint.com/bucket-sort)
 
 #### ShellSort
+
+Shell sort is mainly a variation of Insertion Sort. In insertion sort, we move elements only one position ahead. When an element has to be moved far ahead, many movements are involved. The idea of ShellSort is to allow the exchange of far items. In Shell sort, we make the array h-sorted for a large value of h. We keep reducing the value of h until it becomes 1. An array is said to be h-sorted if all sublists of every h’th element are sorted.   
+
+*The interval between the elements is reduced based on the sequence used. Some of the optimal sequences that can be used in the shell sort algorithm are:*
+
+- Shell's original sequence: N/2 , N/4 , …, 1
+- Knuth's increments: 1, 4, 13, …, (3k – 1) / 2
+- Sedgewick's increments: 1, 8, 23, 77, 281, 1073, 4193, 16577...4j+1+ 3·2j+ 1
+- Hibbard's increments: 1, 3, 7, 15, 31, 63, 127, 255, 511…
+- Papernov & Stasevich increment: 1, 3, 5, 9, 17, 33, 65,...
+- Pratt: 1, 2, 3, 4, 6, 9, 8, 12, 18, 27, 16, 24, 36, 54, 81....
 
 #### Comb Sort
 
