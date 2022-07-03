@@ -1228,6 +1228,8 @@ Comb Sort is mainly an improvement over Bubble Sort. Bubble sort always compares
 
 ![Comb Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Comb_Sort.png?raw=true)   
 
+Below is code implementation.    
+
 ```cpp
 // To find gap between elements
 int getNextGap(int gap)
@@ -1296,6 +1298,8 @@ To perform this sort, we need to make some holes. The number of holes needed is 
 
 ![Pigeonhole Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Pigeonhole_Sort.jpg?raw=true)
 
+Below is code implementation.    
+
 ```cpp
 // Sorts the array using pigeonhole algorithm
 void pigeonholeSort(int arr[], int n)
@@ -1343,6 +1347,83 @@ void pigeonholeSort(int arr[], int n)
 
 #### Cycle Sort
 
+Cycle sort is a comparison sorting algorithm that forces array to be factored into the number of cycles where each of them can be rotated to produce a sorted array. It is theoretically optimal in the sense that it reduces the number of writes to the original array.   
+It is an in-place and unstable sorting algorithm. Cycle sort forces an array to be factored into a number of cycles where every element can rotate in order to produce a sorted array.   
+
+**Algorithm**  
+Suppose there is an array arr with n distinct elements. Given an element A, we can find its index by counting the number of elements smaller than A.  
+
+- If the element is at its correct position, simply leave it as it is.
+- Else, we have to find the correct position of A by counting the number of elements smaller than it. Another element B is replaced to be moved to its correct position. This process continues until we get an element at the original position of A.
+
+The above-illustrated process constitutes a cycle. Repeat this cycle for every element of the list until the list is sorted.
+
+![Cycle Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Cycle_Sort.png?raw=true)   
+
+Below is code implementation.    
+
+```cpp
+// Function sort the array using Cycle sort
+void cycleSort(int arr[], int n)
+{
+    // count number of memory writes
+    int writes = 0;
+ 
+    // traverse array elements and put it to on
+    // the right place
+    for (int cycle_start = 0; cycle_start <= n - 2; cycle_start++) {
+        // initialize item as starting point
+        int item = arr[cycle_start];
+ 
+        // Find position where we put the item. We basically
+        // count all smaller elements on right side of item.
+        int pos = cycle_start;
+        for (int i = cycle_start + 1; i < n; i++)
+            if (arr[i] < item)
+                pos++;
+ 
+        // If item is already in correct position
+        if (pos == cycle_start)
+            continue;
+ 
+        // ignore all duplicate  elements
+        while (item == arr[pos])
+            pos += 1;
+ 
+        // put the item to it's right position
+        if (pos != cycle_start) {
+            swap(item, arr[pos]);
+            writes++;
+        }
+ 
+        // Rotate rest of the cycle
+        while (pos != cycle_start) {
+            pos = cycle_start;
+ 
+            // Find position where we put the element
+            for (int i = cycle_start + 1; i < n; i++)
+                if (arr[i] < item)
+                    pos += 1;
+ 
+            // ignore all duplicate  elements
+            while (item == arr[pos])
+                pos += 1;
+ 
+            // put the item to it's right position
+            if (item != arr[pos]) {
+                swap(item, arr[pos]);
+                writes++;
+            }
+        }
+    }
+ 
+    // Number of memory writes or swaps
+    // cout << writes << endl ;
+}
+```
+
+- **Time Complexity:** $O(n^2)$ in best,average,worst case
+- **Space Complexity:** $O(1)$, space complexity is constant cause this algorithm is in place so it does not use any extra memory to sort.
 #### More Searching and Sorting Algorithms
 
 > **Source:** *GeeksforGeeks*           
