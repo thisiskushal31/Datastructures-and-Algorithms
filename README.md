@@ -1,7 +1,6 @@
-
 # Data Structures and Algorithms
 
-This is my curated list of all the DSA basic to advanced concept and question with their solutions. Here my approach is add most optimised code possible and explain the logic behind it.
+This is my curated list of all the DSA basic to advanced concept and question with their solutions. Here my approach is add most optimized code possible and explain the logic behind it.
 
 ## Folder layout
 
@@ -33,15 +32,15 @@ This is my curated list of all the DSA basic to advanced concept and question wi
 
 ## Resources 
 
-> GeeksForGeeks : https://practice.geeksforgeeks.org/                                 
-> Leetcode : https://leetcode.com/                                                           
-> Github: https://github.com/            
+> GeeksForGeeks : https://practice.geeksforgeeks.org/    
+> Leetcode : https://leetcode.com/    
+> Github: https://github.com/    
 
 ## About Me
 
-I am CS Student from the India learning Web Development and trying out trending technologies.             
+I am CS Student learning Web Development and trying out trending technologies.             
 
-## Contact Me
+## Lets Connect
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thisiskushalgupta/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thisis_kushal)
 [![github](https://img.shields.io/badge/github-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thisiskushal31/)
