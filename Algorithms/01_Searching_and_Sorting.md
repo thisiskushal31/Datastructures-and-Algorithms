@@ -1459,10 +1459,10 @@ It is better explained in the geeksforgeeks [article](https://www.geeksforgeeks.
 
 #### Searching Algorithms
 
-Here is list of all the algorithm discussed above with there time ans space complexity.
+Here is list of all the algorithm discussed above with there time and space complexity.
 
 | Algorithm  | Best Time Complexity | Average Time Complexity | Worst Time Complexity | Space Complexity |
-| ---- | ---- | ---- | ---- | ---- | ---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **Linear Search** | $O(1)$ | $O(n)$ | $O(n)$ | $O(1)$ |
 | **Binary Search** | $O(1)$ | $O(log n)$ | $O(log n)$ | $O(1)$ |
 | **Jump Search**   | $O(1)$ | $O(√n)$ | $O(√n)$ | $O(1)$ |
@@ -1473,6 +1473,7 @@ Here is list of all the algorithm discussed above with there time ans space comp
 
 #### Sorting Algorithms
 
+Here is list of all the algorithm discussed above with there time and space complexity.   
 
 | Algorithm  | In Place | Stable | Best | Average | Worst | Remarks |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
