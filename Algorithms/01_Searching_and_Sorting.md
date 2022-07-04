@@ -28,6 +28,9 @@ int search(int arr[], int n, int x)
 
 > Note-But in case we wanna make Linear Search more efficient we can also use Divide_and_Conquer and then we gonna do a linear search.     
 
+- Time Complexity: 
+- Space Complexity: 
+
 [More Detail on Linear Search](https://www.geeksforgeeks.org/linear-search/)     
 
 #### Binary Search
@@ -101,9 +104,10 @@ int binarySearch(vector<int> v, int To_Find)
         cout << "Not Found" << endl;
     }
 }
-```
+```   
 
-    Time Complexity: O (log n) | Auxiliary Space: O (1)
+- Time Complexity: $O(log n)$ 
+- Auxiliary Space: $O(1)$  
 
 [More Detail on Binary Search](https://www.geeksforgeeks.org/binary-search/)    
 #### Jump Search
@@ -119,6 +123,11 @@ Let’s consider the following array: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 
 
 [More Detail on Jump Search](https://www.geeksforgeeks.org/jump-search/)
 
+- **Time Complexity**
+    - **Average Case:** The jump sort algorithm runs $n/m$ times where $n$ is the number of elements, and m is the block size. Linear search requires$ m-1$ comparisons making the total time expression $n/m + m-1$. The most optimal value of $m$ minimizing the time expression is $√n$, making the time complexity $n/√n + √n$, i.e. $√n$. The time complexity of the Jump Search Algorithm is $O(√n)$.
+    - **Best Case:** The best-case time complexity is $O(1)$. It occurs when the element to be searched is the first element present inside the array.
+    - **Worst-Case:** The worst-case occurs when we do $n/m$ jumps, and the last value we checked is greater than the element we are searching for, and $m-1$ comparisons are performed for linear search. The worst-case time complexity is $O(√n)$.
+- **Space Complexity:** This algorithm’s space complexity is $O(1)$ because it doesn’t require any data structure other than temporary variables.
 #### Interpolation Search
 
 Interpolation similar to binary search but it uses better way to find mid element and *Interpolation search works better than Binary Search for a Sorted and Uniformly Distributed array.*
@@ -210,6 +219,11 @@ int interpolationSearch(int arr[], int lo, int hi, int x)
     return -1;
 }
 ```    
+- **Time Complexity:** 
+    - **Average Case:** The algorithm’s average-case time complexity is of the order of $O(log(logn))$. It happens when all the elements inside the array are uniformly distributed.
+    - **Best Case:** The best-case occurs when the element we are searching for is the first element probed by interpolation search. The best-case time complexity of the algorithm is $O(1)$.
+    - **Worst-Case:** The worst-case occurs when the numerical values of the targets increase exponentially. The worst-case time complexity of the algorithm is $O(n)$.
+- **Space Complexity:** This algorithm’s space complexity is $O(1)$ because it doesn’t require any data structure other than temporary variables.
 
 [More Details On Interpolation Search](https://www.geeksforgeeks.org/interpolation-search/)
 #### Exponential Search
@@ -1424,7 +1438,38 @@ void cycleSort(int arr[], int n)
 
 - **Time Complexity:** $O(n^2)$ in best,average,worst case
 - **Space Complexity:** $O(1)$, space complexity is constant cause this algorithm is in place so it does not use any extra memory to sort.
-#### More Searching and Sorting Algorithms
+
+**More Details:**   
+
+- [Cycle Sort on GeeksforGeeks](https://www.geeksforgeeks.org/cycle-sort/)  
+- [Cycle Sort Sort on Javatpoint](https://www.javatpoint.com/cycle-sort)  
+
+#### Tim Sort 
+
+TimSort is a sorting algorithm based on Insertion Sort and Merge Sort.  
+
+It is better explained in the geeksforgeeks [article](https://www.geeksforgeeks.org/timsort/) and also in [delftstack](https://www.delftstack.com/tutorial/algorithm/tim-sort/).
+### Summary   
+
+#### Searching  
+
+| Algorithm  | Best Time Complexity | Average Time Complexity | Worst Time Complexity | Space Complexity |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| **Linear Search** | $O(1)$ | $O(n)$ | $O(n)$ | $O(1)$ |
+| **Binary Search** | $O(1)$ | $O(log n)$ | $O(log n)$ | $O(1)$ |
+| **Jump Search**   | $O(1)$ | $O(√n)$ | $O(√n)$ | $O(1)$ |
+| **Interpolation Search** | $O(1)$ | $O(log(logn))$ | $O(n)$ | $O(1)$ | $O(1)$ |
+| **Exponential Search** | $O(1)$ | $O(1)$ | $O(1)$ | $O(1)$ | $O(1)$ |
+| **Ternary Search** | $O(1)$ | $O(1)$ | $O(1)$ | $O(1)$ |$O(1)$ |
+
+
+
+
+| Algorithm  | In Place | Stable | Best | Average | Worst | Remarks |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Selection Sort | right foo     |
+| left bar      | right bar     |
+| left baz      | right baz     |
 
 > **Source:** *GeeksforGeeks*           
 > [https://www.geeksforgeeks.org/fundamentals-of-algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting)        
