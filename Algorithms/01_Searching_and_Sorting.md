@@ -296,7 +296,8 @@ int binarySearch(int arr[], int l, int r, int x)
 - Exponential Binary Search is particularly useful for unbounded searches, where size of array is infinite.
 - It works better than Binary Search for bounded arrays, and also when the element to be searched is closer to the first element.
 
-[More Details on Exponential Search](https://www.geeksforgeeks.org/exponential-search/)
+[More Details on Exponential Search on GeeksforGeeks](https://www.geeksforgeeks.org/exponential-search/)
+[More Details on Exponential Search on Delftstack](https://www.delftstack.com/tutorial/algorithm/exponential-search/)
 #### Ternary Search
 
 *Ternary search* is a decrease(by constant) and conquer algorithm that can be used to find an element in an array. It is similar to binary search where we divide the array into two parts but in this algorithm, we divide the given array into three parts and determine which has the key (searched element). We can divide the array into three parts by taking mid1 and mid2 which can be calculated as shown below. Initially, l and r will be equal to 0 and n-1 respectively, where n is the length of the array.     
@@ -418,7 +419,12 @@ int ternarySearch(int l, int r, int key, int ar[])
 
 **Binary search Vs Ternary Search:** [https://www.geeksforgeeks.org/binary-search-preferred-ternary-search/](https://www.geeksforgeeks.org/binary-search-preferred-ternary-search/)
 
-[More Details on the Ternary Search](https://www.geeksforgeeks.org/ternary-search/)
+[More Details on the Ternary Search on geeksforgeeks](https://www.geeksforgeeks.org/ternary-search/)   
+[More Details on the Ternary Search on iq.opengenus](https://iq.opengenus.org/ternary-search-algorithm/)   
+
+#### Fibonacci Search 
+
+Its is better explained in [Delftstack](https://www.delftstack.com/tutorial/algorithm/fibonacci-search/).
 
 ### Sorting
 
@@ -1446,23 +1452,26 @@ void cycleSort(int arr[], int n)
 
 #### Tim Sort 
 
-TimSort is a sorting algorithm based on Insertion Sort and Merge Sort.  
+*TimSort* is a sorting algorithm based on Insertion Sort and Merge Sort.  
 
-It is better explained in the geeksforgeeks [article](https://www.geeksforgeeks.org/timsort/) and also in [delftstack](https://www.delftstack.com/tutorial/algorithm/tim-sort/).
+It is better explained in the geeksforgeeks [article](https://www.geeksforgeeks.org/timsort/) and also on [delftstack](https://www.delftstack.com/tutorial/algorithm/tim-sort/).
 ### Summary   
 
-#### Searching  
+#### Searching Algorithms
+
+Here is list of all the algorithm discussed above with there time ans space complexity.
 
 | Algorithm  | Best Time Complexity | Average Time Complexity | Worst Time Complexity | Space Complexity |
 | ---- | ---- | ---- | ---- | ---- | ---- |
 | **Linear Search** | $O(1)$ | $O(n)$ | $O(n)$ | $O(1)$ |
 | **Binary Search** | $O(1)$ | $O(log n)$ | $O(log n)$ | $O(1)$ |
 | **Jump Search**   | $O(1)$ | $O(√n)$ | $O(√n)$ | $O(1)$ |
-| **Interpolation Search** | $O(1)$ | $O(log(logn))$ | $O(n)$ | $O(1)$ | $O(1)$ |
-| **Exponential Search** | $O(1)$ | $O(1)$ | $O(1)$ | $O(1)$ | $O(1)$ |
-| **Ternary Search** | $O(1)$ | $O(1)$ | $O(1)$ | $O(1)$ |$O(1)$ |
+| **Interpolation Search** | $O(1)$ | $O(log(logn))$ | $O(n)$ | $O(1)$ |
+| **Exponential Search** | $O(1)$ | $O(log n)$ | $O(log n)$ | $O(1)$ |
+| **Ternary Search** | $O(1)$ | $O(log{_3}n)$ | $O(log{_3}n)$ | $O(1)$ |
+| **Fibonacci Search** | $O(1)$ | $O(logn)$ | $O(logn)$ | $O(1)$ |
 
-
+#### Sorting Algorithms
 
 
 | Algorithm  | In Place | Stable | Best | Average | Worst | Remarks |
