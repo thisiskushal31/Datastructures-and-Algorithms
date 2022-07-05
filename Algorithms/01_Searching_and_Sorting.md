@@ -1231,10 +1231,12 @@ int shellSort(int arr[], int n)
 - **Time Complexity:** Time complexity of the above implementation of Shell sort is Worst Case $O(n^2)$. There are many other ways to reduce gaps as given above which leads to better time complexity.  
 - **Space Complexity:** $O(1)$
 
+
 **More Details:**   
 
 - [ShellSort on GeeksforGeeks](https://www.geeksforgeeks.org/shellsort/)
 - [ShellSort on Javatpoint](https://www.javatpoint.com/shell-sort)  
+- [ShellSort on Programiz](https://www.programiz.com/dsa/shell-sort) 
 
 #### Comb Sort
 
@@ -1449,6 +1451,7 @@ void cycleSort(int arr[], int n)
 
 - [Cycle Sort on GeeksforGeeks](https://www.geeksforgeeks.org/cycle-sort/)  
 - [Cycle Sort Sort on Javatpoint](https://www.javatpoint.com/cycle-sort)  
+- [Cycle Sort Sort on Opengenus](https://iq.opengenus.org/cycle-sort/)  
 
 #### Tim Sort 
 
@@ -1475,11 +1478,32 @@ Here is list of all the algorithm discussed above with there time and space comp
 
 Here is list of all the algorithm discussed above with there time and space complexity.   
 
-| Algorithm  | In Place | Stable | Best | Average | Worst | Remarks |
+| Algorithm  | In Place | Stable | Best Time Complexity | Average Time Complexity | Worst Time Complexity | Space Complexity |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Selection Sort | right foo     |
-| left bar      | right bar     |
-| left baz      | right baz     |
+| **Selection Sort** | Yes | Unstable | $O(n^2)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ |
+| **Bubble Sort**    | Yes | Stable | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ |
+| **Insertion Sort** | Yes | Stable | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ |
+| **Merge Sort**     | No | Stable | $O(nlogn)$ | $O(nlogn)$ | $O(nlogn)$ | $O(n)$ |
+| **Heap Sort**      | Yes | Unstable | $O(nlogn)$ | $O(nlogn)$ | $O(nlogn)$ | $O(1)$ |
+| **Quick Sort**     | No | Unstable | $O(nlogn)$ | $O(nlogn)$ | $O(n^2)$ | Worst-$O(n)$ Best-$O(logn)$ |
+| **Radix Sort(1)**     | No | Stable | $O(n*k)$ | $O(n*k)$ | $O(n*k)$ | $O(n+k)$ |
+| **Counting Sort(2)**  | No | Stable | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | $O(k)$ |
+| **Bucket Sort(3)**    | No | Depends on the sorting algorithm used to sort the bucket | $O(n)$ | $O(n+n^{2}/k + k)$ | $O(n^2)$ | $O(n*k)$ |
+| **Shell Sort**     | Yes | Unstable | $O(nlogn)$ | $O(nlogn)$ | $O(n^2)$ | $O(1)$ |
+| **Comb Sort**      | Yes | Stable | $O(nlogn)$ | $O(n^2/2^p)$(p is a number of increment) | $O(n^2)$ | $O(1)$ |
+| **Pigeonhole Sort(4)**| No | Stable | $O(n+N)$ | $O(n+N)$ | $O(n+N)$ | $O(n+N)$ |
+| **Cycle Sort**     | Yes | Unstable | $O(n^2)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ |
+| **Tim Sort**       | No | Hybrid Stable | $O(n)$ | $O(nlogn)$ | $O(nlogn)$ | $O(n)$ |
+
+-  *(1)-k represents the number of digits in the largest number in the array*
+- *(2)- k represents the difference between the smallest and the largest array value*
+- *(3)- k represents the number of buckets*
+- *(4)- n is the number of elements and N is the range of the input data*
+
+**References**   
+
+- [Sorting Algorithm CheatSheat](https://www.interviewcake.com/sorting-algorithm-cheat-sheet)  
+
 
 > **Source:** *GeeksforGeeks*           
 > [https://www.geeksforgeeks.org/fundamentals-of-algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting)        
