@@ -28,8 +28,8 @@ int search(int arr[], int n, int x)
 
 > Note-But in case we wanna make Linear Search more efficient we can also use Divide_and_Conquer and then we gonna do a linear search.     
 
-- Time Complexity: 
-- Space Complexity: 
+- Time Complexity: $O(n)$
+- Space Complexity: $O(1)$
 
 [More Detail on Linear Search](https://www.geeksforgeeks.org/linear-search/)     
 
