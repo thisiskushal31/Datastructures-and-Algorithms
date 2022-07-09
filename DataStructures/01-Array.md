@@ -16,8 +16,10 @@ The above image can be looked at as a top-level view of a staircase where you ar
 - **n (N-based indexing):** The base index of an array can be freely chosen. Usually, programming languages allowing n-based indexing also allow negative index values, and other scalar data types like enumerations, or characters may be used as an array index.   
 #### Types of Arrays
 
-1. One dimensional array (1-D arrays)
-2. Multidimensional array
+1. **One dimensional array (1-D arrays):** 
+2. **Multidimensional array:** 
+
+
 
 **Credit:**  
 > **GeeksforGeeks:** [https://www.geeksforgeeks.org/array-data-structure/](https://www.geeksforgeeks.org/array-data-structure/)  
