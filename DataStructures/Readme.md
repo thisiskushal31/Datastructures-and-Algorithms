@@ -6,7 +6,7 @@ A data structure is a particular way of organizing data in a computer so that it
 
 | # | Name | Explanation | Status |
 | - | ------------- | ------------- | ----- |
-| 001 | Array  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/01-Array.md) | ⬜️ |
+| 001 | Array & String  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/01-Array_&_String.md) | ⬜️ |
 | 002 | Linked List  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/02-Linked_List.md) | ⬜️ |
 | 003 | Stack  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/03-Stack.md) | ⬜️ |
 | 004 | Queue  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/04-Queue.md) | ⬜️ |
