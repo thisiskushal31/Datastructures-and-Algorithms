@@ -159,20 +159,24 @@ On the other, notice that except if considering performance, you don't need to w
 
 **Source:** [Stack Overflow](https://stackoverflow.com/questions/3802470/array-string-difference-in-java-vs-c)  
 
-### Advantages of array data structure:
+### Dynamic Array vs Static Array
+
+A Dynamic array ([Vector in C++](https://www.geeksforgeeks.org/vector-in-cpp-stl/), [ArrayList in Java](https://www.geeksforgeeks.org/arraylist-in-java/)) automatically grows when we try to insert a new item and there is no more space available, and it shrinks when we don't need it, unlike a static array, which cannot be changed once declared.   
+
+In a dynamic array, the area usually doubles in size. A simple dynamic array can be created by allocating a fixed-size array that is typically larger than the number of elements that are immediately required. The elements of the dynamic array are stored concurrently at the beginning of the underlying array, and the remaining positions near the end of the underlying array are reserved, or unused.   
+
+**More Information on Dynamic Array:** [Array vs Arraylist in Java](https://www.javatpoint.com/array-vs-arraylist-in-java) [Dynamic arrays in Java](https://www.geeksforgeeks.org/how-do-dynamic-arrays-work/) [Static vs Dynamic Array in C/C++](https://dotnettutorials.net/lesson/static-vs-dynamic-array/)     
+
+### Advantages of array data structure
 
 - Arrays store multiple data of similar types with the same name.
 - It allows random access to elements.
 - As the array is of fixed size and stored in contiguous memory locations there is no memory shortage or overflow.
 - It is helpful to store any type of data with a fixed size.
-- Since the elements in the array are stored at contiguous memory locations it is easy to iterate in this data structure and unit time is required to access an element if the index is known.
-
-### Why we need 
-
+- Since the elements in the array are stored at contiguous memory locations it is easy to iterate in this data structure and unit time is required to access an element if the index is known. 
 
 **More Details on this Topic:**     
-- [Scaler String in Data Structure](https://www.scaler.com/topics/data-structures/string-in-data-structure/)
-
-
-**Credit:**  
-> **GeeksforGeeks:** [https://www.geeksforgeeks.org/array-data-structure/](https://www.geeksforgeeks.org/array-data-structure/)  
+> [Scaler String in Data Structure](https://www.scaler.com/topics/data-structures/string-in-data-structure/)
+> [GeeksforGeeks String in Data Structure](https://www.geeksforgeeks.org/string-data-structure/)
+> [GeeksforGeeks Array Data Structure](https://www.geeksforgeeks.org/array-data-structure/)
+> [Java Arrays in Javatpoint](https://www.javatpoint.com/array-in-java)  
