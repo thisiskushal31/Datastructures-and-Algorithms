@@ -19,3 +19,48 @@ Linked list can be visualized as a chain of nodes, where every node points to th
 - Each link carries a data field(s) and a link field called next.
 - Each link is linked with its next link using its next link.
 - Last link carries a link as null to mark the end of the list.
+
+### Advantage and Disadavantage of using Linked List
+
+**Advantages of Linked Lists:**
+- Insertion and deletion in linked lists are very efficient.
+- Linked list can be expanded in constant time.
+- For implementation of stacks and queues and for representation of trees and graphs.
+- Linked lists are used for dynamic memory allocation which means effective memory utilization hence, no memory wastage.
+
+**Disadvantages of Linked Lists:**
+- Use of pointers is more in linked lists hence, complex and requires more memory.
+- Searching an element is costly and requires O(n) time complexity.
+- Traversing is more time consuming and reverse traversing is not possible in singly linked lists.
+- Random access is not possible due to dynamic memory allocation.
+
+### Types of Linked List
+
+Following are the various types of linked list.
+- **Simple Linked List** - Item navigation is forward only.
+- **Doubly Linked List** - Items can be navigated forward and backward.
+- **Circular Linked List** − Last item contains link of the first element as next and the first element has a link to the last element as previous.
+- **Skip List** - Create multiple layers so that we can skip some nodes faster searching.
+- **Doubly Circular Linked List** - Two consecutive elements are linked or connected by previous and next pointer and the last node points to first node by next pointer and also the first node points to last node by the previous pointer.
+- **Unrolled Linked List** - Storing multiple elements at each node and it also has the advantage of fast insertion and deletion as that of a linked list.
+- **Multilevel Linked List** - 2D data structure that comprises several linked lists and each node in a multilevel linked list has a next and child pointer.
+
+### Simple Linked List
+
+### Doubly Linked List
+
+### Circular Linked List
+
+### Skip List
+
+### Doubly Circular Linked List 
+
+### Unrolled Linked List
+
+### Multilevel Linked List
+
+
+
+**More Details on this Topic:**
+> [Linked List on Tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
+> []()
