@@ -62,7 +62,7 @@ Following are the various types of linked list.
 
 
 **More Details on this Topic:**
-> [Linked List on Tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
-> [Linked List on JavaTpoint](https://www.javatpoint.com/ds-linked-list)
-> [Linked List on GeeksforGeeks](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
-> [Linked List Different Articles & Programs](https://www.geeksforgeeks.org/data-structures/linked-list/)
+> [Linked List on Tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)    
+> [Linked List on JavaTpoint](https://www.javatpoint.com/ds-linked-list)    
+> [Linked List on GeeksforGeeks](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)    
+> [Linked List Different Articles & Programs](https://www.geeksforgeeks.org/data-structures/linked-list/)    
