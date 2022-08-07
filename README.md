@@ -1,4 +1,12 @@
-# Data Structures and Algorithms
+<div align="center">
+  <h1>Data Structures and Algorithms</h1>
+</div>   
+
+<p align="center">
+<a href="https://github.com/thisiskushal31/DTaxy-Ridesharing-app"><img src="https://img.shields.io/github/workflow/status/dwyl/auth_plug/Elixir%20CI?label=build&style=flat-square&logo=github"></a>
+<a href="https://github.com/thisiskushal31/DTaxy-Ridesharing-app"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+<a href="https://github.com/thisiskushal31/DTaxy-Ridesharing-app"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
+</p>   
 
 This is my curated list of all the DSA basic to advanced concept and question with their solutions. Here my approach is add most optimized code possible and explain the logic behind it.
 
@@ -43,4 +51,4 @@ I am CS Student learning Web Development and trying out trending technologies.
 ## Lets Connect
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thisiskushalgupta/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thisis_kushal)
-[![github](https://img.shields.io/badge/github-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thisiskushal31/)
+[![github](https://img.shields.io/badge/github-3d4653?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thisiskushal31/)
