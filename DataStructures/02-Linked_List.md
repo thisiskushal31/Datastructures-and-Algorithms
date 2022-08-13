@@ -105,7 +105,7 @@ struct node
 {  
     int data;  
     struct node *next;  
-}  
+}
 ```
 
 A circular linked list is a sequence of elements in which each node has a link to the next node, and the last node is having a link to the first node. The representation of the circular linked list will be similar to the singly linked list, as shown below:   
