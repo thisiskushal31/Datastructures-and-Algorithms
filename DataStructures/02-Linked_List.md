@@ -127,7 +127,7 @@ struct node
     int data;  
     struct node *next;  
     struct node *prev;   
-}  
+}
 ```    
 
 More Information on various [Operation on Doubly Circular Linked List](https://www.javatpoint.com/circular-doubly-linked-list)   
