@@ -73,7 +73,7 @@ struct node
 {  
     int data;  
     struct node *next;  
-}  
+}
 ```    
 
 More Information on various [Operation on Singly Linked List](https://www.javatpoint.com/singly-linked-list)    
