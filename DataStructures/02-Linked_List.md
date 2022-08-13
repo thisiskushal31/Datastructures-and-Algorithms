@@ -68,6 +68,7 @@ Suppose we have three nodes, and the addresses of these three nodes are 100, 200
 ![Single_Linked_List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_Single1.png?raw=true)   
 
 **Representation of the node in a singly linked list**     
+
 ```cpp
 struct node  
 {  
@@ -85,7 +86,8 @@ Suppose we have three nodes, and the address of these nodes are 100, 200 and 300
 
 ![Doubly_Linked_List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_Double.png?raw=true)     
 
-**Representation of the node in a doubly linked list**     
+**Representation of the node in a doubly linked list**   
+
 ```cpp
 struct node  
 {  
@@ -138,6 +140,7 @@ Skips list creates multiple layers so that we can skip some nodes. See the follo
 Suppose we want to search for 50, we start from the first node of the “express lane” and keep moving on the “express lane” till we find a node whose next is greater than 50. Once we find such a node (30 is the node in the following example) on “express lane”, we move to “normal lane” using a pointer from this node, and linearly search for 50 on “normal lane”. In the following example, we start from 30 on the “normal lane” and with linear search, we find 50.     
 
 **Representation of the node in a Skip List**  
+
 ```cpp
 struct Node
 {
@@ -145,7 +148,7 @@ struct Node
     // Array to hold pointers to node of different level
     Node **forward;
     Node(int, int);
-};
+}
 ```  
 
 ![Skip_List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_SkipList.png?raw=true)     
@@ -164,7 +167,7 @@ struct Node
     int numElements;
     int array[maxElements];
     Node *next;
-};
+}
 ```
 
 ![Unrolled_Linked_List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_Unrolled.JPG?raw=true)   
@@ -183,7 +186,7 @@ struct Node
     int data;
     Node *next;
     Node *child;
-};
+}
 ```
 
 ![Multilevel Linked List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_Multilevel.png?raw=true)
