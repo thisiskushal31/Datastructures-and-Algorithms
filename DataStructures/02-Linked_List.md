@@ -37,7 +37,7 @@ Linked list can be visualized as a chain of nodes, where every node points to th
 ### Types of Linked List
 
 Following are the various types of linked list.
-- **Simple Linked List** - Item navigation is forward only.
+- **Singly Linked List** - Item navigation is forward only.
 - **Doubly Linked List** - Items can be navigated forward and backward.
 - **Circular Linked List** − Last item contains link of the first element as next and the first element has a link to the last element as previous.
 - **Skip List** - Create multiple layers so that we can skip some nodes faster searching.
@@ -45,9 +45,25 @@ Following are the various types of linked list.
 - **Unrolled Linked List** - Storing multiple elements at each node and it also has the advantage of fast insertion and deletion as that of a linked list.
 - **Multilevel Linked List** - 2D data structure that comprises several linked lists and each node in a multilevel linked list has a next and child pointer.
 
+### Declaration of Linked List
+
+There is major difference between declaration of linked list in java and Cpp, as java mainly a object oriented Language and in java every thing is object for java checkout [this blog](https://www.geeksforgeeks.org/linked-list-in-java/).    
+
+In C language, a linked list can be implemented using structure and pointers.      
+
+```cpp
+struct LinkedList{
+    int data;
+    struct LinkedList *next;
+ };
+```
+To know more on Creating, Traversing the list in C++ see this [blog](https://www.hackerearth.com/practice/data-structures/linked-list/singly-linked-list/tutorial/)     
+
 ### Simple Linked List
 
+
 ### Doubly Linked List
+
 
 ### Circular Linked List
 
