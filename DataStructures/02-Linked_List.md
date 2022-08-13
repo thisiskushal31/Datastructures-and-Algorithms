@@ -40,14 +40,14 @@ Following are the various types of linked list.
 - **Singly Linked List** - Item navigation is forward only.
 - **Doubly Linked List** - Items can be navigated forward and backward.
 - **Circular Linked List** − Last item contains link of the first element as next and the first element has a link to the last element as previous.
-- **Skip List** - Create multiple layers so that we can skip some nodes faster searching.
 - **Doubly Circular Linked List** - Two consecutive elements are linked or connected by previous and next pointer and the last node points to first node by next pointer and also the first node points to last node by the previous pointer.
+- **Skip List** - Create multiple layers so that we can skip some nodes faster searching.
 - **Unrolled Linked List** - Storing multiple elements at each node and it also has the advantage of fast insertion and deletion as that of a linked list.
 - **Multilevel Linked List** - 2D data structure that comprises several linked lists and each node in a multilevel linked list has a next and child pointer.
 
 ### Declaration of Linked List
 
-There is major difference between declaration of linked list in java and Cpp, as java mainly a object oriented Language and in java every thing is object for java checkout [this blog](https://www.geeksforgeeks.org/linked-list-in-java/).    
+There is major difference between declaration of linked list in java and Cpp, as java mainly a object oriented Language and in java every thing is object for java checkout [This Blog](https://www.geeksforgeeks.org/linked-list-in-java/).    
 
 In C language, a linked list can be implemented using structure and pointers.      
 
@@ -57,20 +57,87 @@ struct LinkedList{
     struct LinkedList *next;
  };
 ```
-To know more on Creating, Traversing the list in C++ see this [blog](https://www.hackerearth.com/practice/data-structures/linked-list/singly-linked-list/tutorial/)     
+To know more on *Creating, Traversing the list in C++* see [This Blog](https://www.hackerearth.com/practice/data-structures/linked-list/singly-linked-list/tutorial/) and for more *Graphical Representation* see [this blog](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)    
 
 ### Simple Linked List
 
+It is the commonly used linked list in programs. If we are talking about the linked list, it means it is a singly linked list. The singly linked list is a data structure that *contains two parts, i.e., one is the data part, and the other one is the address part, which contains the address of the next or the successor node.* The address part in a node is also known as a pointer.   
 
+Suppose we have three nodes, and the addresses of these three nodes are 100, 200 and 300 respectively. The representation of three nodes as a linked list is shown in the below figure:   
+
+![Single_Linked_List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/single-linked-list.png?raw=true)   
+
+**Representation of the node in a singly linked list**     
+```cpp
+    struct node  
+    {  
+       int data;  
+       struct node *next;  
+    }  
+```    
+
+More Information on various [Operation on Singly Linked List](https://www.javatpoint.com/singly-linked-list)    
 ### Doubly Linked List
 
+As the name suggests, the doubly linked list contains two pointers. We can define the doubly linked list as a linear data structure with *three parts: the data part and the other two address part. In other words, a doubly linked list is a list that has three parts in a single node, includes one data part, a pointer to its previous node, and a pointer to the next node.*    
 
+Suppose we have three nodes, and the address of these nodes are 100, 200 and 300, respectively. The representation of these nodes in a doubly-linked list is shown below:   
+
+![Doubly_Linked_List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/double-linked-list.png?raw=true)     
+
+**Representation of the node in a doubly linked list**     
+```cpp
+    struct node  
+    {  
+    int data;  
+    struct node *next;  
+    struct node *prev;   
+    }
+```    
+
+More Information on various [Operation on Double Linked List](https://www.javatpoint.com/doubly-linked-list)   
 ### Circular Linked List
 
-### Skip List
+A circular linked list is a variation of a singly linked list. The only difference between the singly linked list and a circular linked list is that the last node does not point to any node in a singly linked list, so its link part contains a NULL value. On the other hand, the circular linked list is a list in which *the last node connects to the first node, so the link part of the last node holds the first node's address. The circular linked list has no starting and ending node.* We can traverse in any direction, i.e., either backward or forward. The diagrammatic representation of the circular linked list is shown below:  
 
+```cpp
+    struct node  
+    {  
+       int data;  
+       struct node *next;  
+    }  
+```
+
+A circular linked list is a sequence of elements in which each node has a link to the next node, and the last node is having a link to the first node. The representation of the circular linked list will be similar to the singly linked list, as shown below:   
+
+![Circular Linked List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/circular-linked-list.png?raw=true)    
+
+More Information on various [Operation on Circular Linked List](https://www.javatpoint.com/circular-singly-linked-list)    
 ### Doubly Circular Linked List 
 
+The doubly circular linked list has the features of both the circular linked list and doubly linked list.   
+
+![Doubly Circular Linked List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/double-circular-linked-list.png?raw=true)   
+
+The above figure shows the representation of the doubly circular linked list in which the last node is attached to the first node and thus creates a circle. It is a doubly linked list also because each node holds the address of the previous node also. The main difference between the doubly linked list and doubly circular linked list is that the *doubly circular linked list does not contain the NULL value in the previous field of the node. As the doubly circular linked contains three parts, i.e., two address parts and one data part* so its representation is similar to the doubly linked list.     
+
+```cpp
+    struct node  
+    {  
+      int data;  
+      struct node *next;  
+     struct node *prev;   
+    }  
+```    
+
+More Information on various [Operation on Doubly Circular Linked List](https://www.javatpoint.com/circular-doubly-linked-list)   
+### Skip List
+
+Skips list creates multiple layers so that we can skip some nodes. See the following example list with 16 nodes and two layers. The *upper layer works as an “express lane” that connects only the main outer stations, and the lower layer works as a “normal lane” that connects every station*.
+
+Suppose we want to search for 50, we start from the first node of the “express lane” and keep moving on the “express lane” till we find a node whose next is greater than 50. Once we find such a node (30 is the node in the following example) on “express lane”, we move to “normal lane” using a pointer from this node, and linearly search for 50 on “normal lane”. In the following example, we start from 30 on the “normal lane” and with linear search, we find 50.     
+
+![]()
 ### Unrolled Linked List
 
 ### Multilevel Linked List
