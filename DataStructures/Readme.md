@@ -32,6 +32,7 @@ A data structure is a particular way of organizing data in a computer so that it
 ### Language Resources & Cheatsheat
 
 | Language | Resources |
+| ----- | ----- |
 | Java | [Click Here for Resources](https://github.com/thisiskushal31/Commands-and-Cheatsheets/tree/main/Langauges/java) |
 | C++ | [Click Here for Resources](https://github.com/thisiskushal31/Commands-and-Cheatsheets/tree/main/Langauges/cpp) |
 #### Resources links
