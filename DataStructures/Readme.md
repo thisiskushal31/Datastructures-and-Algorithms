@@ -29,6 +29,11 @@ A data structure is a particular way of organizing data in a computer so that it
 | 021 | K Dimensional Tree | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/21-K_Dimensional_Tree.md) | ⬜️ |
 | 022 | Others | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/22-Others.md) | ⬜️ |
 
+### Language Resources & Cheatsheat
+
+| Language | Resources |
+| Java | [Click Here for Resources](https://github.com/thisiskushal31/Commands-and-Cheatsheets/tree/main/Langauges/java) |
+| C++ | [Click Here for Resources](https://github.com/thisiskushal31/Commands-and-Cheatsheets/tree/main/Langauges/cpp) |
 #### Resources links
 
 > [Geeks for Geeks](https://www.geeksforgeeks.org/data-structures)
