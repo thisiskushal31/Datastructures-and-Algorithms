@@ -10,6 +10,14 @@
 
 This is my curated list of all the DSA basic to advanced concept and question with their solutions. Here my approach is add most optimized code possible and explain the logic behind it.
 
+## Quick Links 
+
+- [Algorithms](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Algorithms)
+- [DataStructures](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/DataStructures)
+- [GeekforGeeks Solved Questions](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/GeekforGeeks)
+- [Leetcode Solved Questions](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode)
+- [Templates](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template)
+
 ## Folder layout
 
     .
@@ -30,19 +38,12 @@ This is my curated list of all the DSA basic to advanced concept and question wi
     ├── .gitignore                        # Ignore files                   
     └── README.md
 
-## Quick Links 
-
-- [Algorithms](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Algorithms)
-- [DataStructures](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/DataStructures)
-- [GeekforGeeks Solved Questions](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/GeekforGeeks)
-- [Leetcode Solved Questions](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode)
-- [Templates](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template)
-
 ## Resources 
 
 > GeeksForGeeks : https://practice.geeksforgeeks.org/    
 > Leetcode : https://leetcode.com/    
 > Github: https://github.com/    
+
 
 ## About Me
 
