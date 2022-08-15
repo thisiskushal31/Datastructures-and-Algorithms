@@ -8,8 +8,8 @@ A data structure is a particular way of organizing data in a computer so that it
 | - | ------------- | ------------- | ----- |
 | 001 | Array & String  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/01-Array_&_String.md) | ✅ |
 | 002 | Linked List  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/02-Linked_List.md) | ✅ |
-| 003 | Stack  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/03-Stack.md) | ⬜️ |
-| 004 | Queue  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/04-Queue.md) | ⬜️ |
+| 003 | Stack  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/03-Stack.md) | ✅ |
+| 004 | Queue  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/04-Queue.md) | ✅ |
 | 005 | Binary Tree  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/05-Binary_Tree.md) | ⬜️ |
 | 006 | Binary Search Tree  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/06-Binary-Search-Tree.md) | ⬜️ |
 | 007 | Heap  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/07-Heap.md) | ⬜️ |
