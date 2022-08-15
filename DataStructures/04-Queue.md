@@ -5,7 +5,7 @@ The Queue in data structure is an ordered, linear sequence of items. It is a FIF
 
 ![Queue_Representation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Queue_Representation.jpg?raw=true)    
 
-A real-world example of queue can be a single-lane one-way road, where the vehicle enters first, exits first. More real-world examples can be seen as queues at the ticket windows and bus-stops.     
+A real-world example of queue can be a single-lane one-way road, where the vehicle enters first, exits first. More real-world examples can be seen as queues at the ticket windows and bus-stops.   
 
 ### Working of Queue
 
@@ -241,8 +241,8 @@ There are two types of deque that are discussed as follows -
 ### Applications of Queue
 
 Queue is used when things don’t have to be processed immediately, but have to be processed in *First In First Out* order like *Breadth First Search*. This property of Queue makes it also useful in following kind of scenarios.
-1. When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling. 
-2. When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes. Examples include IO Buffers, pipes, file IO, etc. 
+1. When a resource is shared among multiple consumers. Examples include *CPU scheduling, Disk Scheduling*. 
+2. When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes. Examples include *IO Buffers, pipes, file IO, etc*. 
 3. Queue can be used as an essential component in various other data structures.
 
 **More Details on this Topic:**
