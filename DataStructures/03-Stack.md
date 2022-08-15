@@ -7,6 +7,7 @@ A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) pri
 - A Stack is an abstract data type with a pre-defined capacity, which means that it can store the elements of a limited size.
 - It is a data structure that follows some order to insert and delete the elements, and that order can be LIFO or FILO.
 
+**You can Implement Stack using Array and Linked_List:** For [Linked_List](https://www.javatpoint.com/ds-linked-list-implementation-of-stack) and [Array](https://www.javatpoint.com/ds-array-implementation-of-stack) view respective blog.  
 ### Working of Stack
 
 Stack works on the LIFO pattern. In programming terms, putting an item on top of the stack is called push and removing an item is called pop.  
@@ -93,7 +94,7 @@ void push (int stack[ ] , int x , int n) {
     Prefix to infix
     Prefix to postfix
     Postfix to infix
-```
+```  
 ### Expression Parsing & Operators Precedence
 
 The way to write arithmetic expression is known as a notation. An arithmetic expression can be written in three different but equivalent notations, i.e., without changing the essence or output of an expression. These notations are −
