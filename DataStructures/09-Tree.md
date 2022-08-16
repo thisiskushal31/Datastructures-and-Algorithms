@@ -48,11 +48,74 @@ And that is how a tree contains multiple trees in itself, and this proves that i
 - **Height of node x:** Height of a node represents the number of edges on the longest path between that node and a leaf.
 ### Basic Operation Of Tree
 
-### Types of Tree data structures
+**These are Tree Data Structure's fundamental operations.**   
+
+- **Create** – create a tree in data structure.
+- **Insert** − Inserts data in a tree.
+- **Search** − Searches specific data  in a tree to check it is present or not.
+- **Preorder Traversal** – perform Traveling a tree in a pre-order manner in data structure .
+- **In order Traversal** – perform Traveling a tree in an in-order manner.
+- **Post order Traversal** –perform Traveling a tree in a post-order manner.
+
+In order to perform any operation on a tree, you need to reach to the specific node. The tree traversal algorithm helps in visiting a required node in the tree.
+
+To learn more, please visit [tree traversal](https://www.programiz.com/dsa/tree-traversal) we gonna learn this in binary tree and there we gonna also talking about the trick to traversal of tree for now you can see thhis two blog post for more idea [Simplest Trick for Binary Tree Traversal](https://aspiringcoders.com/simplest-trick-for-binary-tree-traversal/) and [Binary Trees Traversal Recursive vs. Iterative](http://www.crystaltenn.com/2020/04/binary-trees-traversal-recursive-vs.html)
 
 ### Implementation of Tree in Data Structure
 
+![Tree_Implementation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_Implementation.png?raw=true)
+
+The above representation depicts what a tree looks like on a memory. According to it, each node consists of three fields. *Left part of the node consists of the memory address of the left child, the right part of the node consists of the memory address of the right child and the center part holds the data for this node*.   
+
+Relating to the above representation, each node can be programmatically defined as a class as follows:   
+
+```cpp
+struct Node
+{
+   int data;
+   struct Node *left_child;
+   struct Node *right_child;
+};
+```   
+Here *left_child* will contain the reference to the *Node* that has value which is just smaller to the value in the current *Node*. Similarly *right_child* will contain reference to the *Node* that has value greater than the current *Node*.    
+
+What we’re discussing here is in reference to a *binary tree** as a binary tree has two *children (utmost)*. That means, either a node has *0, 1 or max 2 children*. A generic tree can have *more than 2 children* as well.   
+### Types of Tree data structures
+
+**The following are the types of a tree data structure:**   
+
+#### General tree
+
+#### Binary tree
+
+#### Binary Search tree
+
+#### AVL tree
+
+#### B-tree
+
+#### Treap
+
+#### Balanced tree
+
+#### Self Balancing Binary Search Trees
+
+#### Red-Black Tree
+
+#### Splay tree
+
+#### Suffix Tree
+
+#### Segment Tree
+
 ### Applications of Tree data structure
+
+**Here are a few uses for the tree data structure:**   
+- Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.
+- Heap is a kind of tree that is used for heap sort.
+A modified version of a tree called Tries is used in modern routers to store routing information.
+- Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data
+- Compilers use a syntax tree to validate the syntax of every program you write.
 
 **More Details on this Topic:**
 > [Tree on JavaTpoint](https://www.javatpoint.com/tree)   
