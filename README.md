@@ -5,7 +5,7 @@
 <p align="center">
 <a href="https://github.com/thisiskushal31/Datastructures-and-Algorithms"><img src="https://img.shields.io/github/workflow/status/dwyl/auth_plug/Elixir%20CI?label=build&style=flat-square&logo=github"></a>
 <a href="https://github.com/thisiskushal31/Datastructures-and-Algorithms"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
-<a href="hhttps://github.com/thisiskushal31/Datastructures-and-Algorithms"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
+<a href="https://github.com/thisiskushal31/Datastructures-and-Algorithms"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
 </p>   
 
 This is my curated list of all the DSA basic to advanced concept and question with their solutions. Here my approach is add most optimized code possible and explain the logic behind it.
