@@ -82,8 +82,7 @@ Here *left_child* will contain the reference to the *Node* that has value which 
 What we’re discussing here is in reference to a *binary tree** as a binary tree has two *children (utmost)*. That means, either a node has *0, 1 or max 2 children*. A generic tree can have *more than 2 children* as well.   
 ### Types of Tree data structures
 
-**The following are the types of a tree data structure:**   
-
+*The following are the types of a tree data structure:*   
 
 #### General Tree
 
@@ -92,6 +91,7 @@ A general tree is characterised by the lack of any configuration or limitations 
 The data structure below is a classic example of a general tree, with ‘2′ at the top as the root node.   
 
 ![Tree_General](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_General.png?raw=true)
+
 #### Binary Tree
 
 #### Binary Search Tree
