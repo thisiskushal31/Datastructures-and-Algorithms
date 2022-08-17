@@ -84,29 +84,39 @@ What we’re discussing here is in reference to a *binary tree** as a binary tre
 
 **The following are the types of a tree data structure:**   
 
-#### General tree
 
-#### Binary tree
+#### General Tree
 
-#### Binary Search tree
+A general tree is characterised by the lack of any configuration or limitations on the number of children a node can have. Any tree with a hierarchical structure can be described as a general tree. A node can have any number of children, and the tree’s orientation can be any combination of these. The degree of the nodes can range from 0 to n.     
 
-#### AVL tree
+The data structure below is a classic example of a general tree, with ‘2′ at the top as the root node.   
 
-#### B-tree
+![Tree_General](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_General.png?raw=true)
+#### Binary Tree
+
+#### Binary Search Tree
+
+#### AVL Tree
 
 #### Treap
 
-#### Balanced tree
-
-#### Self Balancing Binary Search Trees
+#### B-Tree
 
 #### Red-Black Tree
 
-#### Splay tree
+#### Splay Tree
+
+#### Balanced Tree
+
+#### Self Balancing Binary Search Trees
 
 #### Suffix Tree
 
 #### Segment Tree
+
+#### Spanning Tree
+
+#### n-ary Tree
 
 ### Applications of Tree data structure
 
