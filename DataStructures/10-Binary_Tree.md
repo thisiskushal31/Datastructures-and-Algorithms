@@ -1,16 +1,50 @@
 ### Binary Tree -Concept
 
-### Introduction to Binary Tree 
+In a binary tree, every node or every vertex has two child nodes or single child nodes, or no child node. Basically, a binary tree is a very important class in a data structure in which nodes of a binary tree have at most two children nodes. In the binary tree, the left side is called the left child node and the right side of the binary tree is called the right child node.    
 
 ### Binary Tree Representation
 
+A tree is represented by a pointer to the topmost node of the tree. If the tree is empty, then the value of the root is NULL. 
+A Tree node contains the following parts:
+1. Data 
+2. Pointer to the left child 
+3. Pointer to the right child
+
+```java
+// Class containing left and right child
+// of current node and key value
+class Node
+{
+    int key;
+    Node left, right;
+ 
+    public Node(int item)
+    {
+        key = item;
+        left = right = null;
+    }
+}
+```
+
+![Tree_BinaryTree](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_BinaryTree.png?raw=true)      
+
 ### Basic Operation On Binary Tree
 
-### Binary Tree Traversals
+**These are basic operation on binary tree:**   
+- Inserting an element.
+- Removing an element.
+- Searching for an element.
+- Traversing an element. There are three types of traversals in a binary tree which will be discussed ahead.
+
+#### Binary Tree Inserting Element
+
+#### Binary Tree Removing Element
+#### Binary Tree Searching Element
+#### Binary Tree Traversal of Element
 
 ### Binary Tree Properties
 
-**Properties of a Binary tree**
+**These are properties of a binary tree:**
 
 - A binary tree is either an empty tree or consists of a node called the root node, a left subtree, and a right subtree. The subtrees will also act as a binary tree once.
 - The top-most node is called the root.

@@ -59,7 +59,7 @@ And that is how a tree contains multiple trees in itself, and this proves that i
 
 In order to perform any operation on a tree, you need to reach to the specific node. The tree traversal algorithm helps in visiting a required node in the tree.
 
-To learn more, please visit [tree traversal](https://www.programiz.com/dsa/tree-traversal) we gonna learn this in binary tree and there we gonna also talking about the trick to traversal of tree for now you can see thhis two blog post for more idea [Simplest Trick for Binary Tree Traversal](https://aspiringcoders.com/simplest-trick-for-binary-tree-traversal/) and [Binary Trees Traversal Recursive vs. Iterative](http://www.crystaltenn.com/2020/04/binary-trees-traversal-recursive-vs.html)
+To learn more, please visit [tree traversal](https://www.programiz.com/dsa/tree-traversal) we gonna learn this in binary tree and there we gonna also talking about the trick to traversal of tree for now you can see this two blog post for more idea [Simplest Trick for Binary Tree Traversal](https://aspiringcoders.com/simplest-trick-for-binary-tree-traversal/) and [Binary Trees Traversal Recursive vs. Iterative](http://www.crystaltenn.com/2020/04/binary-trees-traversal-recursive-vs.html)
 
 ### Implementation of Tree in Data Structure
 
@@ -102,9 +102,10 @@ In a binary tree, every element/parent node has at most 2 children. Each node ca
 
 A basic diagram of a binary tree is a data structure is shown below:   
 
-![Tree_BinaryTree](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_BinaryTree.png?raw=true)
+![Tree_BinaryTree](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_BinaryTree.png?raw=true)    
 
-**For more information visit this markdown for more information:**  [Binary_Tree.md](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/10-Binary_Tree.md)
+**For more information visit this markdown for more information:**  [Binary_Tree.md](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/10-Binary_Tree.md)    
+
 #### Binary Search Tree
 
 #### AVL Tree
