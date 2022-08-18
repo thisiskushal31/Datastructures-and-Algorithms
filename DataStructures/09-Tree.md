@@ -96,24 +96,15 @@ The data structure below is a classic example of a general tree, with ‘2′ at
 
 In a binary tree, every element/parent node has at most 2 children. Each node can have either 0, 1, or 2 children. Typically, the 2 children are called the left child and the right child.   
 
-They are most commonly used in data structures for two reasons:
-
-1) For obtaining nodes and categorising them, as observed in Binary Search Trees.
-
-2) For representing data through a bifurcating structure.
+**They are most commonly used in data structures for two reasons:**   
+1. For obtaining nodes and categorising them, as observed in Binary Search Trees.
+2. For representing data through a bifurcating structure.
 
 A basic diagram of a binary tree is a data structure is shown below:   
 
-**Properties of a Binary tree**
+![Tree_BinaryTree](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_BinaryTree.png?raw=true)
 
-A binary tree is either an empty tree or consists of a node called the root node, a left subtree, and a right subtree. The subtrees will also act as a binary tree once.
-The top-most node is called the root.
-A node without children is called a leaf node or terminal node.
-The maximum number of nodes at each level of i is 2i.
-Height of the tree = the longest path from the root node to the leaf node.
-Depth of a node = the length of the path to its root.
-
-
+**For more information visit this markdown for more information:**  [Binary_Tree.md](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/10-Binary_Tree.md)
 #### Binary Search Tree
 
 #### AVL Tree
