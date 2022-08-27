@@ -38,17 +38,161 @@ class Node
 
 #### Binary Tree Inserting Element
 
+Given a binary tree and a key, insert the key into the binary tree at the first position available in [level order](https://www.geeksforgeeks.org/level-order-tree-traversal/).   
 
-[More Details in this Topic](https://www.geeksforgeeks.org/insertion-in-a-binary-tree-in-level-order/)
+![Binary Tree Insertion](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Insertion.png?raw=true)   
+
+The idea is to do an iterative level order traversal of the given tree using queue. If we find a node whose left child is empty, we make a new key as the left child of the node. Else if we find a node whose right child is empty, we make the new key as the right child. We keep traversing the tree until we find a node whose either left or right child is empty.   
+
+```cpp
+// Function to insert element in binary tree
+Node* InsertNode(Node* root, int data)
+{
+    // If the tree is empty, assign new node address to root
+    if (root == NULL) {
+        root = CreateNode(data);
+        return root;
+    }
+
+    // Else, do level order traversal until we find an empty place, i.e. either left child or right child of some node is pointing to NULL.
+    queue<Node*> q;
+    q.push(root);
+ 
+    while (!q.empty()) {
+        Node* temp = q.front();
+        q.pop();
+ 
+        if (temp->left != NULL)
+            q.push(temp->left);
+        else {
+            temp->left = CreateNode(data);
+            return root;
+        }
+ 
+        if (temp->right != NULL)
+            q.push(temp->right);
+        else {
+            temp->right = CreateNode(data);
+            return root;
+        }
+    }
+}
+```   
+
+- **Time Complexity:** $O(V)$ where $V$ is the number of nodes.  
+- **Space Complexity:** $O(B)$, where $B$ is the width of the tree and in the worst case we need to hold all vertices of a level in the queue.  
+
+> [More Details in this Topic](https://www.geeksforgeeks.org/insertion-in-a-binary-tree-in-level-order/)
 #### Binary Tree Removing Element
 
-[More Details in this Topic](https://www.geeksforgeeks.org/deletion-binary-tree/)
+Given a binary tree, delete a node from it by making sure that the tree shrinks from the bottom (i.e. the deleted node is replaced by the bottom-most and rightmost node). This is different from BST deletion. Here we do not have any order among elements, so we replace them with the last element.    
+
+![Binary Tree Deletion](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Deletion.png?raw=true)
+
+**Algorithm:**
+
+1. *Starting at the root, find the deepest and rightmost node in the binary tree and the node which we want to delete.* 
+2. *Replace the deepest rightmost node’s data with the node to be deleted.* 
+3. *Then delete the deepest rightmost node.*
+
+```cpp
+// function to delete the given deepest node (d_node) in binary tree
+void deletDeepest(struct Node* root, struct Node* d_node)
+{
+    queue<struct Node*> q;
+    q.push(root);
+ 
+    // Do level order traversal until last node
+    struct Node* temp;
+    while (!q.empty()) {
+        temp = q.front();
+        q.pop();
+        if (temp == d_node) {
+            temp = NULL;
+            delete (d_node);
+            return;
+        }
+        if (temp->right) {
+            if (temp->right == d_node) {
+                temp->right = NULL;
+                delete (d_node);
+                return;
+            }
+            else
+                q.push(temp->right);
+        }
+        if (temp->left) {
+            if (temp->left == d_node) {
+                temp->left = NULL;
+                delete (d_node);
+                return;
+            }
+            else
+                q.push(temp->left);
+        }
+    }
+}
+
+// Function to delete given element
+// in binary tree
+static void delete(Node root, int key)
+{
+    if (root == null)
+        return;
+         
+    if (root.left == null &&
+       root.right == null)
+    {
+        if (root.key == key)
+        {
+              root=null;
+              return;
+        }
+        else
+            return;
+    }
+     
+    Queue<Node> q = new LinkedList<Node>();
+    q.add(root);
+    Node temp = null, keyNode = null;
+     
+    // Do level order traversal until
+    // we find key and last node.
+    while (!q.isEmpty())
+    {
+        temp = q.peek();
+        q.remove();
+         
+        if (temp.key == key)
+            keyNode = temp;
+ 
+        if (temp.left != null)
+            q.add(temp.left);
+ 
+        if (temp.right != null)
+            q.add(temp.right);
+    }
+ 
+    if (keyNode != null)
+    {
+        int x = temp.key;
+        deleteDeepest(root, temp);
+        keyNode.key = x;
+    }
+}
+```
+- **Time complexity:** *O(n) where n is no number of nodes*
+- **Auxiliary Space:** *O(n) size of queue*
+
+> [More Details in this Topic](https://www.geeksforgeeks.org/deletion-binary-tree/)
 #### Binary Tree Searching Element
 
-[More Details in this Topic](https://www.geeksforgeeks.org/search-a-node-in-binary-tree/)
+
+
+> [More Details in this Topic](https://www.geeksforgeeks.org/search-a-node-in-binary-tree/)
 #### Binary Tree Traversal of Element
 
-[More Details in this Topic](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+> [More Details in this Topic](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
 ### Binary Tree Properties
 
 **These are properties of a binary tree:**
