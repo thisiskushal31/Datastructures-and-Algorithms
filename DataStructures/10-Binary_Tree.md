@@ -187,12 +187,91 @@ static void delete(Node root, int key)
 > [More Details in this Topic](https://www.geeksforgeeks.org/deletion-binary-tree/)
 #### Binary Tree Searching Element
 
+For Binary Tree Searching Element idea is to use any of the tree traversals to traverse the tree and while traversing check if the current node matches with the given node. If any node matches with the given node and stop traversing further and if the tree is completely traversed and none of the node matches with the given node then print element not found.    
 
+```cpp 
+// Function to traverse the tree in preorder
+// and check if the given node exists in it
+static boolean ifNodeExists( Node node, int key)
+{
+    if (node == null)
+        return false;
+ 
+    if (node.data == key)
+        return true;
+ 
+    // then recur on left subtree /
+    boolean res1 = ifNodeExists(node.left, key);
+   
+    // node found, no need to look further
+    if(res1) return true;
+ 
+    // node is not found in left,
+    // so recur on right subtree /
+    boolean res2 = ifNodeExists(node.right, key);
+ 
+    return res2;
+}
+```  
+- **Time Complexity:** *O(N), as we are using recursion to traverse N nodes of the tree.*
+- **Auxiliary Space:** *O(N), we are not using any explicit extra space but as we are using recursion there will be extra space allocated for recursive stack.*
 
 > [More Details in this Topic](https://www.geeksforgeeks.org/search-a-node-in-binary-tree/)
 #### Binary Tree Traversal of Element
 
-> [More Details in this Topic](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+Unlike linear data structures (Array, Linked List, Queues, Stacks, etc) which have only one logical way to traverse them, trees can be traversed in different ways. Following are the generally used ways for traversing trees.   
+
+There are three types of Depth-First Traversals: 
+(a) Inorder (Left, Root, Right) : 4 2 5 1 3 
+(b) Preorder (Root, Left, Right) : 1 2 4 5 3 
+(c) Postorder (Left, Right, Root) : 4 5 2 3 1
+
+```cpp
+       1
+     /   \         
+    2     3
+   /\      
+  4  5    
+```
+##### Inorder Traversal
+*Uses of Inorder*
+In the case of binary search trees (BST), Inorder traversal gives nodes in non-decreasing order. To get nodes of BST in non-increasing order, a variation of Inorder traversal where Inorder traversal s reversed can be used.   
+*Example: In order traversal for the above-given figure is 4 2 5 1 3.* 
+
+*Algorithm: Inorder(tree)*
+1. Traverse the left subtree, i.e., call Inorder(left-subtree)
+2. Visit the root.
+3. Traverse the right subtree, i.e., call Inorder(right-subtree)
+
+> For InOrder Traversal see : [Inorder_Tree_Traversal_without_Recursion](https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion/)  & [Inorder_Tree Traversal_without_recursion_and_without_stack!](https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/)
+
+##### Preorder Traversal 
+*Uses of Preorder*
+
+Preorder traversal is used to create a copy of the tree. Preorder traversal is also used to get prefix expression on an expression tree.
+*Example: Preorder traversal for the above-given figure is 1 2 4 5 3.*
+
+*Algorithm Preorder(tree)*
+1. Visit the root.
+2. Traverse the left subtree, i.e., call Preorder(left-subtree)
+3. Traverse the right subtree, i.e., call Preorder(right-subtree) 
+
+> For Preorder Traversal see : [Iterative_Preorder_Traversal](https://www.geeksforgeeks.org/iterative-preorder-traversal/) & [Morris_traversal_for_Preorder](https://www.geeksforgeeks.org/morris-traversal-for-preorder/)
+
+##### Postorder Traversal
+*Uses of Postorder* 
+
+Postorder traversal is used to delete the tree. Please see the question for the deletion of a tree for details. Postorder traversal is also useful to get the postfix expression of an expression tree.
+*Example: Postorder traversal for the above-given figure is 4 5 2 3 1.*
+
+*Algorithm Postorder(tree)*
+1. Traverse the left subtree, i.e., call Postorder(left-subtree)
+2. Traverse the right subtree, i.e., call Postorder(right-subtree)
+3. Visit the root.
+
+> For Postorder Traversal see : [Iterative_Postorder_Traversal](https://www.geeksforgeeks.org/iterative-postorder-traversal/)
+
+> [More Details in Traversal](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
 ### Binary Tree Properties
 
 **These are properties of a binary tree:**
