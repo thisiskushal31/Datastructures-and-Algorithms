@@ -314,15 +314,9 @@ A Binary Tree is a full binary tree if every node has 0 or 2 children. A full Bi
 - The minimum height of the full binary tree is $log{_2}{(n+1) - 1}$.
 - The maximum height of the full binary tree can be computed as: $(n= 2*h - 1)$ | $(n+1 = 2*h)$ | $(h = n+1/2)$.
 
-```cpp
-This is example of Full Binary Tree:
-             18
-           /    \  
-         15      30  
-        /  \     /  \
-      40    50 100   40
-```
+![Binary_Tree_Full](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Full.png?raw=true)
 
+> For Implementation see: [Full Binary Tree by Programiz](https://www.programiz.com/dsa/full-binary-tree)
 #### Complete Binary Tree
 
 In Complete Binary Tree has all levels completely filled with nodes except the last level and in the last level, all the nodes are as left side as possible. It is also called as 
@@ -337,51 +331,127 @@ A complete binary tree is just like a full binary tree, but with two major diffe
 - The minimum number of nodes in complete binary tree is $2h$.
 - The minimum height of a complete binary tree is $log{_2}{(n+1) - 1}$.
 
-```cpp
-The following are examples of Complete Binary Trees.  
-               18                      18
-           /       \                /      \  
-         15         30            15        30  
-        /  \        /  \         /  \      /  \
-      40    50    100   40     40    50  100   40
-                              /  \   /
-                             8    7  9 
-```
+![Binary_Tree_Complete](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Complete.png?raw=true)
 
 *Note:* Binary Heap is an important use case of Complete Binary tree. 
+
+> For Implementation see: [Complete Binary Tree by Programiz](https://www.programiz.com/dsa/complete-binary-tree)
 #### Perfect Binary Tree
 
 A Perfect Binary Tree in which all the internal nodes have two children and all leaf nodes are at the same level. A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.    
 
 ```cpp
 The following are the examples of Perfect Binary Trees.
-              18
-           /     \  
-         15       30  
-        /  \     /  \
-      40    50 100   40
-
-
-             18
-           /    \  
-         15      30  
+              18                 18
+           /     \             /    \  
+         15       30         15      30  
+        /  \     /  \       
+      40    50 100   40     
 ```
 
 In a Perfect Binary Tree, the number of leaf nodes is the number of internal nodes plus 1.  
 *L = I + 1 Where L = Number of leaf nodes, I = Number of internal nodes.*
 
 A Perfect Binary Tree of height h (where the height of the binary tree is the number of edges in the longest path from the root node to any leaf node in the tree, height of root node is 0) has $(2h+1)–1$ node. 
+
+> For Implementation see: [Perfect Binary Tree by Programiz](https://www.programiz.com/dsa/perfect-binary-tree)
 #### Balanced Binary Tree
 
-A binary tree is balanced if the height of the tree is O(Log n) where n is the number of nodes. For Example, the AVL tree maintains O(Log n) height by making sure that the difference between the heights of the left and right subtrees is at most 1. Red-Black trees maintain O(Log n) height by making sure that the number of Black nodes on every root to leaf paths is the same and there are no adjacent red nodes. Balanced Binary Search trees are performance-wise good as they provide O(log n) time for search, insert and delete.   
+Balanced Binary Tree is a Binary tree in which height of the left and the right sub-trees of every node may differ by at most 1.    
 
+![Binary_Tree_Balanced](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Balanced.png?raw=true)
+
+**Note:** *AVL Tree* and *Red-Black Tree* are well-known data structure to generate/maintain Balanced Binary Search Tree. Search, insert and delete operations cost $O(log n)$ time in that.     
+
+> For Implementation see: [Balanced Binary Tree by Programiz](https://www.programiz.com/dsa/balanced-binary-tree)
 #### A degenerate (or pathological) tree
 
+A degenerate or pathological tree is the tree having a single child either left or right.   
+
+```cpp
+      10     10               10     
+     /        \               /
+    20         20           20
+     \          \          /
+      30         30      30
+       \          \     /
+        40         40 40 
+```
+
+**Note:** Height of a Degenerate Binary Tree is equal to Total number of nodes in that tree.  
 #### Skewed Binary Tree
 
-### Handshaking Lemma and Interesting Tree Properties
+A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: *left-skewed binary tree* and *right-skewed binary tree*.   
+
+```cpp
+      10                   10
+      /                     \
+    20                       20
+    /                         \
+  30                           30
+  /                             \
+ 40                              40
+Left-Skewed Binary Tree    Right-Skewed Binary Tree
+```
+
+### Handshaking Lemma and Tree Properties
+
+**What is Handshaking Lemma?**  
+[Handshaking lemma](https://en.wikipedia.org/wiki/Handshaking_lemma) is about an undirected graph. In every finite undirected graph, an even number of vertices will always have an odd degree. The handshaking lemma is a consequence of the degree sum formula (also sometimes called the handshaking lemma). 
+
+**How is Handshaking Lemma useful in Tree Data structure?** 
+Following are some interesting facts that can be proved using the Handshaking lemma. 
+
+1. **In a k-ary tree where every node has either 0 or k children, the following property is always true.** 
+
+```cpp
+    L = (k - 1)*I + 1
+Where L = Number of leaf nodes
+      I = Number of internal nodes  
+```
+
+2. **In a Binary tree, the number of leaf nodes is always one more than nodes with two children.**
+
+```cpp
+   L = T + 1
+Where L = Number of leaf nodes
+      T = Number of internal nodes with two children 
+```
+> For proof of (1,2) see: [Tree_Properties_By_GFG](https://www.,geeksforgeeks.org/handshaking-lemma-and-interesting-tree-properties/)
+
+3. **Maximum number of nodes in a binary tree:**
+
+```cpp
+If the height of the binary tree is h, then the maximum total number of nodes will be 20 + 21 + 22 + ……….+ 2h-1 which will give out 2h-1 number of nodes.
+Thus, the maximum number of nodes in a binary tree of height h is 2h-1.
+```
+
+4. **Maximum number of nodes at a particular level:**
+
+```cpp
+In the case of the root node, level = 0. The number of nodes at level=0 is 20. At level=1, the number of nodes = 21.
+Similarly, at level = l, the number of nodes = 2l.
+```
+
+5. **Number of levels with given leaves:**
+
+```cpp
+For a binary tree, the number of leaves will be maximum when all the levels are completely filled.
+Let the number of leaves be L. Then, L ≤ 2l-1(From point 2)
+
+l = log2 L + 1. Here, l = minimum number of levels.
+```
+
+6. **Minimum possible height or level:**
+
+```cpp
+If the height of the root node is taken to be zero, then the minimum possible height comes out to be log2(N+1) – 1.
+```
 
 ### Diameter of a Binary Tree
+
+The diameter of a tree (sometimes called the width) is the number of nodes on the longest path between two end nodes. The diagram below shows two trees each with diameter nine, the leaves that form the ends of the longest path are shaded (note that there is more than one path in each tree of length nine, but no path longer than nine nodes).    
+
 
 ### Enumeration of Binary Trees
 
