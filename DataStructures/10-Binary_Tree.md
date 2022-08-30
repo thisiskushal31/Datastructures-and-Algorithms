@@ -369,13 +369,13 @@ Balanced Binary Tree is a Binary tree in which height of the left and the right 
 A degenerate or pathological tree is the tree having a single child either left or right.   
 
 ```cpp
-      10     10               10     
-     /        \               /
-    20         20           20
-     \          \          /
-      30         30      30
-       \          \     /
-        40         40 40 
+      10     10                 10     
+     /        \                 /
+    20         20             20
+     \          \            /
+      30         30        30
+       \          \       /
+        40         40   40 
 ```
 
 **Note:** Height of a Degenerate Binary Tree is equal to Total number of nodes in that tree.  
@@ -390,7 +390,7 @@ A skewed binary tree is a pathological/degenerate tree in which the tree is eith
     /                         \
   30                           30
   /                             \
- 40                              40
+40                               40
 Left-Skewed Binary Tree    Right-Skewed Binary Tree
 ```
 
@@ -450,17 +450,36 @@ If the height of the root node is taken to be zero, then the minimum possible he
 
 ### Diameter of a Binary Tree
 
-The diameter of a tree (sometimes called the width) is the number of nodes on the longest path between two end nodes. The diagram below shows two trees each with diameter nine, the leaves that form the ends of the longest path are shaded (note that there is more than one path in each tree of length nine, but no path longer than nine nodes).    
+*The diameter of a binary tree can be defined as the number of edges between the longest paths connecting any two nodes in a binary tree.* The diameter of the binary tree is also known as the *width of the binary tree*. The path represents the diameter of the binary tree may or may not pass through the root of the binary tree. The path includes two of the leaf nodes, among which the diameter is getting calculated.
 
+There can be two possibilities for the longest path between two nodes representing the diameter of the binary tree:
 
+1. **Via Root Node:** It will pass through the root node of the binary tree also counts the root node.
+2. ***Not via a Root Node:** In this case, the chosen path will not pass through the root node of the binary tree and will not count the root node in the path.
+
+![Binary_Tree_Diameter](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Diameter.jpg?raw=true)
+
+In the above figure 1, the longest path is between leaf node 4 and leaf node 6 that will pass through the root node 1. The diameter of the binary tree shown in figure 1 is 6, starting from leaf node 4 to leaf node 6 i.e. node 4 - node 2 - node 1 - node 3 - node 5 - node 6 also covering the root node.   
+
+Whereas in the binary tree shown in figure 2, the longest path for getting the diameter of the binary tree is starting from the leaf node 5 to the leaf node 6, but not including the root node 1. The diameter of this binary tree is 5 following the path node 5 - node 3 - node 2 - node 4 - node 6 excluding the root node 1.   
+
+**Ways to Find Diameter of Binary Tree:** There are two different ways of solving this problem recursive way and iterative way. Both ways have different approaches and different time and space complexities.    
+
+For *Recursive Way* - Time Complexity: $O(n^2)$ | Space Complexity: $O(log n)$       
+For *Iterative Way*(Implemented using DFS) - Time Complexity: $O(n)$ | Space Complexity: $O(n)$     
+
+> For Above Implementation [Diameter of Binary Tree in Java](https://www.javatpoint.com/diameter-of-binary-tree)
 ### Enumeration of Binary Trees
+
+A Binary Tree is labeled if every node is assigned a label and a Binary Tree is unlabelled if nodes are not assigned any label.
+
 
 ### Binary Tree (Array implementation)
 
 ### Foldable Binary Trees
 
 **More Details on this Topic:**
-> [Binary Tree on Javatpoint](https://www.javatpoint.com/binary-tree)
-> [Binary Tree on Programiz](https://www.programiz.com/dsa/binary-tree)
-> [Binary Tree on Scaler](https://www.scaler.com/topics/data-structures/binary-tree-in-data-structure/)
-> [Binary Tree on GeeksforGeeks](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/)
+> [Binary Tree on Javatpoint](https://www.javatpoint.com/binary-tree)    
+> [Binary Tree on Programiz](https://www.programiz.com/dsa/binary-tree)   
+> [Binary Tree on Scaler](https://www.scaler.com/topics/data-structures/binary-tree-in-data-structure/)    
+> [Binary Tree on GeeksforGeeks](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/)    
