@@ -471,12 +471,125 @@ For *Iterative Way*(Implemented using DFS) - Time Complexity: $O(n)$ | Space Com
 > For Above Implementation [Diameter of Binary Tree in Java](https://www.javatpoint.com/diameter-of-binary-tree)
 ### Enumeration of Binary Trees
 
-A Binary Tree is labeled if every node is assigned a label and a Binary Tree is unlabelled if nodes are not assigned any label.
+The enumeration of a binary tree can be defined as the number of distinct binary trees created from a given number of nodes or a binary tree.
+
+These distinct binary trees can be different according to the labelling of the nodes of the binary tree. Depending upon the labelling of the nodes present in a binary tree, there are two types of a binary tree:   
+
+- **Labelled Binary Tree:** All the nodes present in a binary tree are labelled with proper labels in the Labelled Binary tree. It means all the nodes in a labelled binary tree are arranged in a particular order or sequence.
+- **Unlabelled Binary Tree:** In the unlabelled binary tree, the nodes are not given specific labels. The order or sequence of the nodes in the binary tree is not relevant because there is no specific parameter to distinctly identify the various nodes of a binary tree.
+
+#### Enumeration of Labelled Binary Tree
+
+The enumeration of the labelled binary tree can be defined as the number of distinct unlabeled binary trees formed from a given labelled binary tree or set of labelled nodes.  
+
+The main difference between the enumeration of the labelled binary tree and the enumeration of the unlabelled binary tree is that for a given number of nodes, there is the only structure of the new tree created in an unlabelled tree, but in the labelled, there will be two different trees with the same number of nodes because the positioning node does in the tree can be different from all the nodes and not identical.   
+
+Formula for the summation of all these numbers of distinct binary trees by the number of nodes,
+Number of distinct unlabelled trees = $N! \times {\frac{(2N)!}{((N+1)! \times N!)}}$ Where N is the number of nodes.     
 
 
+```
+Let's calculate it for N=3,
+
+Number of distinct unlabelled trees = 3! ((2*3)! / ((3+1)! * 3!))  
+                                    =  3! (6! / 4! * 3!)  
+                                    = 6 * (720 / 144)  
+                                    = 6 * 5  
+                                    = 30  
+```
+#### Enumeration of Unlabelled Binary Tree
+
+The enumeration of the unlabelled binary tree can be defined as the number of distinct unlabeled binary trees formed from a given unlabelled binary tree or set of unlabelled nodes.   
+
+Formula for the summation of all these numbers of distinct binary trees by the number of nodes.
+
+Number of distinct unlabelled trees = ${\frac{(2N)!}{((N+1)!  \times N!)}}$ Where N is the number of nodes.
+
+```
+Let's calculate it for N=3,
+
+Number of distinct unlabelled trees = (2*3)! / ((3+1)! * 3!)  
+                                    =  6! / 4! * 3!  
+                                    = 720 / 144  
+                                    = 5  
+```
+
+> For Code Implementation of Enumeration see [Enumeration of Binary Trees by JavaTpoint](https://www.javatpoint.com/enumeration-of-binary-trees) & [Enumeration of Binary Trees by GFG](https://www.geeksforgeeks.org/enumeration-of-binary-trees/)    
 ### Binary Tree (Array implementation)
 
+**Trees can be represented in two ways as listed below:**     
+
+- *Dynamic Node Representation (Linked Representation).*
+- *Array Representation (Sequential Representation).*
+
+Previous we are using Linked Representation which uses node as integral part of the program but we are going to use Sequential Representation which uses an array that represents a tree in such a way that array indexes are values in tree nodes and array values give the parent node of that particular index (or node). The value of the root node index would always be -1 as there is no parent for root.    
+
+In order to represent a tree using an array, the numbering of nodes can start either from 0–(n-1) or 1– n, consider the below illustration as follows:    
+
+*Illustration:*   
+
+```cpp
+        A(0)    
+        /   \
+        B(1)  C(2)  
+    /   \      \
+    D(3)  E(4)   F(6) 
+    OR,
+        A(1)    
+        /   \
+        B(2)  C(3)  
+    /   \      \
+    D(4)  E(5)   F(7)  
+```
+*Procedure:*   
+
+```cpp
+Note: father, left_son and right_son are the values of indices of the array.
+```   
+
+**Case 1: (0—n-1)** 
+
+```cpp
+if (say)father=p; 
+then left_son=(2*p)+1; 
+and right_son=(2*p)+2;
+```   
+
+**Case 2: 1—n**
+
+```cpp
+if (say)father=p; 
+then left_son=(2*p); 
+and right_son=(2*p)+1; 
+```   
+
+**For Above Code Implementation See:** [Binary Tree (Array implementation)](https://www.geeksforgeeks.org/binary-tree-array-implementation/)    
+
 ### Foldable Binary Trees
+
+A binary tree is foldable if the left subtree and right subtree are mirror images of each other. An empty tree is also foldable. Below binary trees are foldable since both have a left subtree that is the mirror image of right subtree.    
+
+```java
+Consider the below trees:
+(a) and (b) can be folded.
+(c) and (d) cannot be folded.
+
+(a)             (b)
+       10               10
+     /    \            /  \
+    7      15         7    15
+     \    /          /      \
+      9  11         9       11
+
+(c)             (d)
+        10               10
+       /  \             /   \
+      7   15           7     15
+     /    /          /  \    /
+    5   11          9   10  12
+```   
+
+**For code implementation see this two article:** [Foldable Binary Trees By GFG](https://www.geeksforgeeks.org/foldable-binary-trees/) & [Foldable Binary Trees By OpenGenus](https://iq.opengenus.org/checking-if-binary-tree-is-foldable/)   
 
 **More Details on this Topic:**
 > [Binary Tree on Javatpoint](https://www.javatpoint.com/binary-tree)    
