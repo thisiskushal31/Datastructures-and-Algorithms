@@ -15,7 +15,7 @@ A data structure is a particular way of organizing data in a computer so that it
 | 007 | Graph  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/07-Graph.md) | ⬜️ |
 | 008 | Matrix  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/08-Matrix.md) | ⬜️ |
 | 009 | Tree  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/09-Tree.md) | ✅ |
-| 010 | Binary Tree  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/10-Binary_Tree.md) | ⬜️ |
+| 010 | Binary Tree  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/10-Binary_Tree.md) | ✅ |
 | 011 | Binary Search Tree  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/11-Binary-Search-Tree.md) | ⬜️ |
 | 012 | Segment Tree  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/12-Segment_Tree.md) | ⬜️ |
 | 013 | Trie  | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/13-Trie.md) | ⬜️ |
