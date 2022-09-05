@@ -22,7 +22,8 @@ Before we start we need to understand the concept of [Time Complexity and Space 
 | 11 | Graph Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/11_Graph_Algorithms.md) | ⬜️ |
 | 12 | Randomized Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/12_Randomized_Algorithms.md) | ⬜️ |
 | 13 | Branch_and_Bound | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/13_Branch_and_Bound.md) | ⬜️ |
-
+| 14 | Two Pointer Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/14_Two_Pointer_Algorithm.md) | ⬜️ |
+| 15 | Game Theory | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/15_Game_Theory.md) | ⬜️ |
 
 ##### Credit
 
