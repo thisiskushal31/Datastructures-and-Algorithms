@@ -24,6 +24,7 @@ Before we start we need to understand the concept of [Time Complexity and Space 
 | 13 | Branch_and_Bound | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/13_Branch_and_Bound.md) | ⬜️ |
 | 14 | Two Pointer Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/14_Two_Pointer_Algorithm.md) | ⬜️ |
 | 15 | Game Theory | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/15_Game_Theory.md) | ⬜️ |
+| 16 | Utility Techniques and Algorithms | [Click Here](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/16_Utility_Algorithms.md) | ⬜️ |
 
 ##### Credit
 
