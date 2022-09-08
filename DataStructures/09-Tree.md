@@ -108,10 +108,13 @@ A basic diagram of a binary tree is a data structure is shown below:
 
 #### Binary Search Tree
 
-Binary search tree is a non-linear data structure in which one node is connected to n number of nodes. It is a node-based data structure. A node can be represented in a binary search tree with three fields, i.e., data part, left-child, and right-child. A node can be connected to the utmost two child nodes in a binary search tree, so the node contains two pointers (left child and right child pointer).
-Every node in the left subtree must contain a value less than the value of the root node, and the value of each node in the right subtree must be bigger than the value of the root node.   
+Binary search tree is a non-linear data structure in which one node is connected to n number of nodes. It is a node-based data structure. A node can be represented in a binary search tree with three fields, i.e., data part, left-child, and right-child. A node can be connected to the utmost two child nodes in a binary search tree, so the node contains two pointers (left child and right child pointer).     
+*Every node in the left subtree must contain a value less than the value of the root node, and the value of each node in the right subtree must be bigger than the value of the root node.*     
+
+![Tree_BinarySearchTree.png](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_BinarySearchTree.png?raw=true)     
 
 **For more information visit this markdown for more information:**  [Binary_Search_Tree.md](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/11-Binary-Search-Tree.md)    
+
 #### AVL Tree
 
 #### Treap
