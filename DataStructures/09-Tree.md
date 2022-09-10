@@ -113,7 +113,7 @@ Binary search tree is a non-linear data structure in which one node is connected
 
 ![Tree_BinarySearchTree.png](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_BinarySearchTree.png?raw=true)     
 
-**For more information visit this markdown for more information:**  [Binary_Search_Tree.md](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/11-Binary-Search-Tree.md)    
+**For more information visit this markdown for more information:**  [Binary_Search_Tree.md](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/11-Binary_Search_Tree.md)    
 
 #### AVL Tree
 
