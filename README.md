@@ -49,7 +49,7 @@ This is my curated list of all the DSA basic to advanced concept and question wi
 
 I am CS Student learning Web Development and trying out trending technologies.             
 
-## Lets Connect
+## Let's Connect
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thisiskushalgupta/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thisis_kushal)
 [![github](https://img.shields.io/badge/github-3d4653?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thisiskushal31/)
