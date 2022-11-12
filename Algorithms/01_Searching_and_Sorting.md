@@ -1485,7 +1485,7 @@ Here is list of all the algorithm discussed above with there time and space comp
 | **Insertion Sort** | Yes | Stable | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ |
 | **Merge Sort**     | No | Stable | $O(nlogn)$ | $O(nlogn)$ | $O(nlogn)$ | $O(n)$ |
 | **Heap Sort**      | Yes | Unstable | $O(nlogn)$ | $O(nlogn)$ | $O(nlogn)$ | $O(1)$ |
-| **Quick Sort**     | No | Unstable | $O(nlogn)$ | $O(nlogn)$ | $O(n^2)$ | Worst-$O(n)$ Best-$O(logn)$ |
+| **Quick Sort**     | No | Unstable | $O(nlogn)$ | $O(nlogn)$ | $O(n^2)$ | Worst- $O(n)$ Best- $O(logn)$ |
 | **Radix Sort(1)**     | No | Stable | $O(n*k)$ | $O(n*k)$ | $O(n*k)$ | $O(n+k)$ |
 | **Counting Sort(2)**  | No | Stable | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | $O(k)$ |
 | **Bucket Sort(3)**    | No | Depends on the sorting algorithm used to sort the bucket | $O(n)$ | $O(n+n^{2}/k + k)$ | $O(n^2)$ | $O(n*k)$ |
