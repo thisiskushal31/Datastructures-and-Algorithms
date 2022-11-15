@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ### Tree - Concept
+=======
+### Tree - Concepts
+>>>>>>> 8657c503443dc29bf835b50e2bef2800d9b41cd2
 
 Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.   
 
