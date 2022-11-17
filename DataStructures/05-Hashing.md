@@ -1,4 +1,4 @@
-### Hashing - Concepts
+### Hashing
 
 Hashing is the process of transforming any given key or a string of characters into another value. This is usually represented by a shorter, fixed-length value or key that represents and makes it easier to find or employ the original string.   
 

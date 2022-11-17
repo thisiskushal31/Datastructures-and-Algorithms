@@ -1,4 +1,4 @@
-### Binary Search Tree - Concept
+### Binary Search Tree
 
 ### Binary Search Tree Representation
 

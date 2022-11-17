@@ -1,4 +1,4 @@
-### Binary Tree - Concept
+### Binary Tree
 
 In a binary tree, every node or every vertex has two child nodes or single child nodes, or no child node. Basically, a binary tree is a very important class in a data structure in which nodes of a binary tree have at most two children nodes. In the binary tree, the left side is called the left child node and the right side of the binary tree is called the right child node.
 
