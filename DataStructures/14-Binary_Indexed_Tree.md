@@ -1,1 +1,1 @@
-# Binary Indexed Tree
+### Binary Indexed Tree
