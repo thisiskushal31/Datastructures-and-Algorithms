@@ -1502,7 +1502,7 @@ Here is list of all the algorithm discussed above with there time and space comp
 
 **References**   
 
-- [Sorting Algorithm CheatSheat](https://www.interviewcake.com/sorting-algorithm-cheat-sheet)  
+- [Sorting Algorithm CheatSheat](https://www.interviewcake.com/sorting-algorithm-cheat-sheet)       
 
 
 > **Source:** *GeeksforGeeks*           
