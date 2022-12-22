@@ -10,7 +10,7 @@ Different tree data structures allow quicker and easier access to the data as it
 
 ### Tree Terminologies
 
-![Tree_Terminologies](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_Terminology.png?raw=true)   
+![Tree_Terminologies](./assets/Tree_Terminology.png)   
 
 Tree is a hierarchical data structure that is defined as a collection of nodes. In a tree nodes represent the values and are connected by edges. Following are the terminologies and properties of a tree:   
 
@@ -39,7 +39,7 @@ Tree is a hierarchical data structure that is defined as a collection of nodes. 
 
 Following is a tree that has ‘A’ as the root node. Similarly if we look at ‘C’ node, that is another tree in itself. And the tree no 3 i.e. that starts with ‘D’ node is also a tree in itself.    
 
-![Tree_Properties.png](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_Properties.png?raw=true)    
+![Tree_Properties.png](./assets/Tree_Properties.png)    
 
 And that is how a tree contains multiple trees in itself, and this proves that it's a recursive data structure as a recursive data structure contains itself.    
 ***Note:*** *Even the leaf nodes are a tree in itself i.e. they can be seen from a perspective as trees without any child nodes.*    
@@ -63,7 +63,7 @@ To learn more, please visit [tree traversal](https://www.programiz.com/dsa/tree-
 
 ### Implementation of Tree in Data Structure
 
-![Tree_Implementation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_Implementation.png?raw=true)
+![Tree_Implementation](./assets/Tree_Implementation.png)
 
 The above representation depicts what a tree looks like on a memory. According to it, each node consists of three fields. *Left part of the node consists of the memory address of the left child, the right part of the node consists of the memory address of the right child and the center part holds the data for this node*.   
 
@@ -90,7 +90,7 @@ A general tree is characterised by the lack of any configuration or limitations 
 
 The data structure below is a classic example of a general tree, with ‘2′ at the top as the root node.   
 
-![Tree_General](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_General.png?raw=true)
+![Tree_General](./assets/Tree_General.png)
 
 #### Binary Tree
 
@@ -102,18 +102,18 @@ In a binary tree, every element/parent node has at most 2 children. Each node ca
 
 A basic diagram of a binary tree is a data structure is shown below:   
 
-![Tree_BinaryTree](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_BinaryTree.png?raw=true)    
+![Tree_BinaryTree](./assets/Tree_BinaryTree.png)    
 
-**For more information visit this markdown for more information:**  [Binary_Tree.md](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/10-Binary_Tree.md)    
+**For more information visit this markdown for more information:**  [Binary_Tree.md](./10-Binary_Tree.md)    
 
 #### Binary Search Tree
 
 Binary search tree is a non-linear data structure in which one node is connected to n number of nodes. It is a node-based data structure. A node can be represented in a binary search tree with three fields, i.e., data part, left-child, and right-child. A node can be connected to the utmost two child nodes in a binary search tree, so the node contains two pointers (left child and right child pointer).     
 *Every node in the left subtree must contain a value less than the value of the root node, and the value of each node in the right subtree must be bigger than the value of the root node.*     
 
-![Tree_BinarySearchTree.png](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_BinarySearchTree.png?raw=true)     
+![Tree_BinarySearchTree.png](./assets/Tree_BinarySearchTree.png)     
 
-**For more information visit this markdown for more information:**  [Binary_Search_Tree.md](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/11-Binary_Search_Tree.md)    
+**For more information visit this markdown for more information:**  [Binary_Search_Tree.md](./11-Binary_Search_Tree.md)    
 
 #### AVL Tree
 

@@ -12,7 +12,7 @@ Linked List is a sequence of links which contains items. Each link contains a co
 
 Linked list can be visualized as a chain of nodes, where every node points to the next node.   
 
-![Linked List Representation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_Single.png?raw=true)
+![Linked List Representation](./assets/LinkedList_Single.png)
 
 *As per the above illustration, following are the important points to be considered.*
 - Linked List contains a link element called first.
@@ -65,7 +65,7 @@ It is the commonly used linked list in programs. If we are talking about the lin
 
 Suppose we have three nodes, and the addresses of these three nodes are 100, 200 and 300 respectively. The representation of three nodes as a linked list is shown in the below figure:   
 
-![Single_Linked_List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_Single1.png?raw=true)   
+![Single_Linked_List](./assets/LinkedList_Single1.png)   
 
 **Representation of the node in a singly linked list**     
 
@@ -84,7 +84,7 @@ As the name suggests, the doubly linked list contains two pointers. We can defin
 
 Suppose we have three nodes, and the address of these nodes are 100, 200 and 300, respectively. The representation of these nodes in a doubly-linked list is shown below:   
 
-![Doubly_Linked_List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_Double.png?raw=true)     
+![Doubly_Linked_List](./assets/LinkedList_Double.png)     
 
 **Representation of the node in a doubly linked list**   
 
@@ -112,14 +112,14 @@ struct node
 
 A circular linked list is a sequence of elements in which each node has a link to the next node, and the last node is having a link to the first node. The representation of the circular linked list will be similar to the singly linked list, as shown below:   
 
-![Circular Linked List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_Circular.png?raw=true)    
+![Circular Linked List](./assets/LinkedList_Circular.png)    
 
 More Information on various [Operation on Circular Linked List](https://www.javatpoint.com/circular-singly-linked-list)    
 ### Doubly Circular Linked List 
 
 The doubly circular linked list has the features of both the circular linked list and doubly linked list.   
 
-![Doubly Circular Linked List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_doubleCircular.png?raw=true)   
+![Doubly Circular Linked List](./assets/LinkedList_doubleCircular.png)   
 
 The above figure shows the representation of the doubly circular linked list in which the last node is attached to the first node and thus creates a circle. It is a doubly linked list also because each node holds the address of the previous node also. The main difference between the doubly linked list and doubly circular linked list is that the *doubly circular linked list does not contain the NULL value in the previous field of the node. As the doubly circular linked contains three parts, i.e., two address parts and one data part* so its representation is similar to the doubly linked list.     
 
@@ -151,7 +151,7 @@ struct Node
 }
 ```  
 
-![Skip_List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_SkipList.png?raw=true)     
+![Skip_List](./assets/LinkedList_SkipList.png)     
 
 More Information on various *[operation on Skip List](https://www.geeksforgeeks.org/skip-list/)* like *[Insertion](https://www.geeksforgeeks.org/skip-list-set-2-insertion/), [Searching and Deletion](https://www.geeksforgeeks.org/skip-list-set-3-searching-deletion/)*     
 ### Unrolled Linked List
@@ -170,7 +170,7 @@ struct Node
 }
 ```
 
-![Unrolled_Linked_List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_Unrolled.JPG?raw=true)   
+![Unrolled_Linked_List](./assets/LinkedList_Unrolled.JPG)   
 
 More Information on [Operation on Unrolled Linked List](https://www.geeksforgeeks.org/unrolled-linked-list-set-1-introduction/)   
 
@@ -189,7 +189,7 @@ struct Node
 }
 ```
 
-![Multilevel Linked List](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/LinkedList_Multilevel.png?raw=true)
+![Multilevel Linked List](./assets/LinkedList_Multilevel.png)
 
 More Information on [Operation on Multilevel Linked List](https://www.geeksforgeeks.org/multilevel-linked-list/)    
 

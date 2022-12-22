@@ -27,7 +27,7 @@ class Node
 }
 ```
 
-![Tree_BinaryTree](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Tree_BinaryTree.png?raw=true)
+![Tree_BinaryTree](./assets/Tree_BinaryTree.png)
 
 ### Basic Operation On Binary Tree
 
@@ -42,7 +42,7 @@ class Node
 
 Given a binary tree and a key, insert the key into the binary tree at the first position available in [level order](https://www.geeksforgeeks.org/level-order-tree-traversal/).
 
-![Binary Tree Insertion](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Insertion.png?raw=true)
+![Binary Tree Insertion](./assets/Binary_Tree_Insertion.png)
 
 The idea is to do an iterative level order traversal of the given tree using queue. If we find a node whose left child is empty, we make a new key as the left child of the node. Else if we find a node whose right child is empty, we make the new key as the right child. We keep traversing the tree until we find a node whose either left or right child is empty.
 
@@ -90,7 +90,7 @@ Node* InsertNode(Node* root, int data)
 
 Given a binary tree, delete a node from it by making sure that the tree shrinks from the bottom (i.e. the deleted node is replaced by the bottom-most and rightmost node). This is different from BST deletion. Here we do not have any order among elements, so we replace them with the last element.
 
-![Binary Tree Deletion](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Deletion.png?raw=true)
+![Binary Tree Deletion](./assets/Binary_Tree_Deletion.png)
 
 **Algorithm:**
 
@@ -314,7 +314,7 @@ A Binary Tree is a full binary tree if every node has 0 or 2 children. A full Bi
 - The minimum height of the full binary tree is $log{_2}{(n+1) - 1}$.
 - The maximum height of the full binary tree can be computed as: $(n= 2*h - 1)$ | $(n+1 = 2*h)$ | $(h = n+1/2)$.
 
-![Binary_Tree_Full](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Full.png?raw=true)
+![Binary_Tree_Full](./assets/Binary_Tree_Full.png)
 
 > For Implementation see: [Full Binary Tree by Programiz](https://www.programiz.com/dsa/full-binary-tree)
 #### Complete Binary Tree
@@ -331,7 +331,7 @@ A complete binary tree is just like a full binary tree, but with two major diffe
 - The minimum number of nodes in complete binary tree is $2h$.
 - The minimum height of a complete binary tree is $log{_2}{(n+1) - 1}$.
 
-![Binary_Tree_Complete](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Complete.png?raw=true)
+![Binary_Tree_Complete](./assets/Binary_Tree_Complete.png)
 
 *Note:* Binary Heap is an important use case of Complete Binary tree. 
 
@@ -359,7 +359,7 @@ A Perfect Binary Tree of height h (where the height of the binary tree is the nu
 
 Balanced Binary Tree is a Binary tree in which height of the left and the right sub-trees of every node may differ by at most 1.    
 
-![Binary_Tree_Balanced](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Balanced.png?raw=true)
+![Binary_Tree_Balanced](./assets/Binary_Tree_Balanced.png)
 
 **Note:** *AVL Tree* and *Red-Black Tree* are well-known data structure to generate/maintain Balanced Binary Search Tree. Search, insert and delete operations cost $O(log n)$ time in that.     
 
@@ -457,7 +457,7 @@ There can be two possibilities for the longest path between two nodes representi
 1. **Via Root Node:** It will pass through the root node of the binary tree also counts the root node.
 2. ***Not via a Root Node:** In this case, the chosen path will not pass through the root node of the binary tree and will not count the root node in the path.
 
-![Binary_Tree_Diameter](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Binary_Tree_Diameter.jpg?raw=true)
+![Binary_Tree_Diameter](./assets/Binary_Tree_Diameter.jpg)
 
 In the above figure 1, the longest path is between leaf node 4 and leaf node 6 that will pass through the root node 1. The diameter of the binary tree shown in figure 1 is 6, starting from leaf node 4 to leaf node 6 i.e. node 4 - node 2 - node 1 - node 3 - node 5 - node 6 also covering the root node.   
 

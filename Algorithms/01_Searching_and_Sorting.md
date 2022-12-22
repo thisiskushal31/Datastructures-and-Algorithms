@@ -24,7 +24,7 @@ int search(int arr[], int n, int x)
 }
 ```
 
-![Linear Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Linear_Search.png?raw=true)         
+![Linear Search](./assets/Linear_Search.png)         
 
 > Note-But in case we wanna make Linear Search more efficient we can also use Divide_and_Conquer and then we gonna do a linear search.     
 
@@ -45,7 +45,7 @@ int search(int arr[], int n, int x)
 - Otherwise, narrow it to the upper half.
 - Repeatedly check from the second point until the value is found or the interval is empty.
 
-![Binary Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Binary_Search.jpg?raw=true)      
+![Binary Search](./assets/Binary_Search.jpg)      
 
 **Step-by-step Binary Search Algorithm:** We basically ignore half of the elements just after one comparison.
    
@@ -119,7 +119,7 @@ Let’s consider the following array: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 
 - Step 4: Since the element at index 12 is greater than 55, we will jump back a step to come to index 8. 
 - Step 5: Perform a linear search from index 8 to get the element 55.
 
-![Jump Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Jump_Search.jpg?raw=true)
+![Jump Search](./assets/Jump_Search.jpg)
 
 [More Detail on Jump Search](https://www.geeksforgeeks.org/jump-search/)
 
@@ -156,7 +156,7 @@ lo    ==> Starting index in arr[]
 hi    ==> Ending index in arr[]
 ```      
 
-![Interpolation Search](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Interpolation_Search_Formula.png?raw=true)        
+![Interpolation Search](./assets/Interpolation_Search_Formula.png)        
 
 *The formula for pos can be derived as follows.*      
 
@@ -452,7 +452,7 @@ Selection sort algorithm starts by comparing first two elements of an array and 
 
 *Lets consider the following array as an example: **arr[ ] = {20, 12, 10, 15, 2}***      
 
-![Selection Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Selection_Sort.jpg?raw=true)
+![Selection Sort](./assets/Selection_Sort.jpg)
 
 **Approach:**    
 - Initialize minimum value(min_idx) to location 0
@@ -506,7 +506,7 @@ Consider an array arr[] = **[ 6, 2, 8, 4, 10 ]**
 
 Bubble sort starts with very first two elements, comparing them to check which one is greater swap if needed and then move to next two elements and compare them and swap if needed and so on until its done with all the elements.
 
-![Bubble Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Bubble_Sort.png?raw=true)
+![Bubble Sort](./assets/Bubble_Sort.png)
 
 Following are the implementations of Bubble Sort.    
 
@@ -577,7 +577,7 @@ void bubbleSort(int arr[], int n)
 - Compare the current element (key) to its predecessor.    
 - If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.   
 
-![Insertion Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Insertion_Sort.jpg?raw=true)
+![Insertion Sort](./assets/Insertion_Sort.jpg)
 
 Below is the implementation of Insertion Sort.    
 
@@ -626,7 +626,7 @@ void insertionSort(int arr[], int n)
 •    Then call merge function to perform merge sort.
 ```   
 
-![Merge Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Merge_Sort.png?raw=true)          
+![Merge Sort](./assets/Merge_Sort.png)          
 
 Below is the implementation of Merge Sort.    
 
@@ -735,7 +735,7 @@ if(Root != Largest)
 
 *So, Basically we make a binary tree with the given unordered array and make it max heap and convert it back to array or given data structure*    
 
-![Heap Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Heap_Sort.png?raw=true)   
+![Heap Sort](./assets/Heap_Sort.png)   
 
 *Below is Code Implementation*
 
@@ -811,7 +811,7 @@ QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and pa
 
 *The key process in **quickSort** is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.*     
 
-![Quick Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Quick_Sort_Partition.png?raw=true)
+![Quick Sort](./assets/Quick_Sort_Partition.png)
 
 **Partitioning Algorithm:** There is lots of Partition work best for this Sort. Start from the leftmost element and keep track of index of smaller (or equal to) elements as i. While traversing, if we find a smaller element, we swap current element with arr[i]. Otherwise we ignore current element.   
 
@@ -929,7 +929,7 @@ The idea of Radix Sort is to do digit by digit sort starting from least signific
 - Find the number of digits in $max$, let it be $k$.
 - For each, $i$ ranging from $1$ To $k$, apply the counting sort algorithm for the $i^{th}$ least-significant digit of each element. If any element has less than $i$ digits consider $0$ at its place (Because $29$ can also be represented as $029$).    
 
-![Radix Sort Algorithm](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Radix_Sort_Format.png?raw=true)    
+![Radix Sort Algorithm](./assets/Radix_Sort_Format.png)    
 
 **Radix Sort Pseudocode**     
 
@@ -950,7 +950,7 @@ RadixSort(a[], n):
 
 **Example :**   
 
-![Radix Sort Example](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Radix_Sort_Example.png?raw=true)    
+![Radix Sort Example](./assets/Radix_Sort_Example.png)    
 
 **Explanation :**    
 
@@ -1023,7 +1023,7 @@ Counting sort is a linear time sorting technique based on keys between a specifi
 - *Because the original array has nine inputs, you will create another empty array with nine places to store the sorted data, place the elements in their correct positions, and reduce the count by one.*
 - *As a result, the sorted array is: shown below*
 
-![Count Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/countingsort.gif?raw=true)
+![Count Sort](./assets/countingsort.gif)
 
 **Pseudocode of Counting Sort**
 
@@ -1131,7 +1131,7 @@ bucketSort(arr[], n)
 - After that, sort each bucket individually by applying a sorting algorithm.    
 - And at last, concatenate all the sorted buckets.   
 
-![Bucket Sort Image](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Bucket_Sort.png?raw=true)   
+![Bucket Sort Image](./assets/Bucket_Sort.png)   
 
 Below is code implementation.    
 
@@ -1193,7 +1193,7 @@ Shell sort is mainly a variation of Insertion Sort. In insertion sort, we move e
 **Step 6** – Print a sorted list.
 **Step 7** – Stop.
 
-![Shell Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Shell_Sort.png?raw=true)   
+![Shell Sort](./assets/Shell_Sort.png)   
 
 Below is code implementation
 
@@ -1248,7 +1248,7 @@ Comb Sort is mainly an improvement over Bubble Sort. Bubble sort always compares
 - While Iterate over data set and compare each item with gap item then {Swap the element if require else}
 - At last print the array when gap value==1 Print the sorted array or not if not needed.
 
-![Comb Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Comb_Sort.png?raw=true)   
+![Comb Sort](./assets/Comb_Sort.png)   
 
 Below is code implementation.    
 
@@ -1318,7 +1318,7 @@ To perform this sort, we need to make some holes. The number of holes needed is 
 - Visit each element of the array and then put each element in its pigeonhole. An element arr[i] is put in hole at index arr[i] – min.
 - Start the loop all over the pigeonhole array in order and put the elements from non- empty holes back into the original array. 
 
-![Pigeonhole Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Pigeonhole_Sort.jpg?raw=true)
+![Pigeonhole Sort](./assets/Pigeonhole_Sort.jpg)
 
 Below is code implementation.    
 
@@ -1380,7 +1380,7 @@ Suppose there is an array arr with n distinct elements. Given an element A, we c
 
 The above-illustrated process constitutes a cycle. Repeat this cycle for every element of the list until the list is sorted.
 
-![Cycle Sort](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/Cycle_Sort.png?raw=true)   
+![Cycle Sort](./assets/Cycle_Sort.png)   
 
 Below is code implementation.    
 

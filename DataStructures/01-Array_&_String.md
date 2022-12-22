@@ -17,18 +17,18 @@ The above image can be looked at as a top-level view of a staircase where you ar
 #### Types of Arrays
 
 1. **One dimensional array (1-D arrays):** You can imagine a 1d array as a row, where elements are stored one after another.      
-![1D_Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Arrays_1D.png?raw=true)    
+![1D_Array](./assets/Arrays_1D.png)    
 2. **Multidimensional array:** These multi-dimensional arrays are again of two types. They are:
     - **Two-Dimensional Arrays:** You can imagine it like a table where each cell contains elements.
-    ![2D_Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Arrays_2D.png?raw=true)   
+    ![2D_Array](./assets/Arrays_2D.png)   
     - **Three-Dimensional Arrays:** You can imagine it like a cuboid made up of smaller cuboids where each cuboid can contain an element.
-    ![3D_Array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Arrays_3D.png?raw=true)    
+    ![3D_Array](./assets/Arrays_3D.png)    
 
 ### Strings - Concepts 
 
 In programming, a String is used as a datatype just like int or float as above. H!owever, the difference here is that, String deals with textual kind of data. It can consist of alphabets, numbers, spaces and special characters. Strings are often enclosed in double quotation marks(“This is a String”). Strings can be thought of as a thread connecting various letters as shown below.    
 
-![String](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/String.png?raw=true)
+![String](./assets/String.png)
 
 ### Difference between Arrays in C++ and Java
 

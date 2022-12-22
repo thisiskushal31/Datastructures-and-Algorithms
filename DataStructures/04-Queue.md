@@ -3,7 +3,7 @@
 The Queue in data structure is an ordered, linear sequence of items. It is a FIFO (First In First Out) data structure, which means that we can insert an item to the rear end of the queue and remove from the front of the queue only.    
 - *A Queue is a sequential data type, unlike an array, in an array, we can access any of its elements using indexing, but we can only access the element at the front of the queue at a time.*   
 
-![Queue_Representation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Queue_Representation.jpg?raw=true)    
+![Queue_Representation](./assets/Queue_Representation.jpg)    
 
 A real-world example of queue can be a single-lane one-way road, where the vehicle enters first, exits first. More real-world examples can be seen as queues at the ticket windows and bus-stops.   
 
@@ -11,7 +11,7 @@ A real-world example of queue can be a single-lane one-way road, where the vehic
 
 The Queue in data structure uses the *FIFO (First In First Out)* approach. Initially, we will set a front pointer to keep track of the front most element of the queue. Then the queue is initialized to -1 as its front, as we will add (enqueue) elements to the queue, the front gets updated to point to its front most element and if we remove (dequeue) elements from the queue, the front gets reduced.    
 
-![Queue_Working](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Queue_Working.png?raw=true)   
+![Queue_Working](./assets/Queue_Working.png)   
 
 **You can Implement Queue using Array and Linked_List:** For [Linked List](https://www.javatpoint.com/linked-list-implementation-of-queue) and [Array](https://www.javatpoint.com/array-representation-of-queue) view respective blog.   
 
@@ -188,7 +188,7 @@ For Java Implementation see [Queue on Freecodecamp using Java](https://www.freec
 
 In Linear Queue, an insertion takes place from one end while the deletion occurs from another end. The end at which the insertion takes place is known as the rear end, and the end at which the deletion takes place is known as front end. It strictly follows the FIFO rule.    
 
-![Queue_Linear](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Queue_Linear.png?raw=true)   
+![Queue_Linear](./assets/Queue_Linear.png)   
 
 The major drawback of using a linear Queue is that insertion is done only from the rear end. If the first three elements are deleted from the Queue, we cannot insert more elements even though the space is available in a Linear Queue. In this case, the linear Queue shows the overflow condition as the rear is pointing to the last element of the Queue.   
 
@@ -197,7 +197,7 @@ To know more about the queue in data structure, you can click the link - [https:
 
 In Circular Queue, all the nodes are represented as circular. It is similar to the linear Queue except that the last element of the queue is connected to the first element. It is also known as Ring Buffer, as all the ends are connected to another end. The representation of circular queue is shown in the below image -   
 
-![Queue_Circular](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Queue_Circular.png?raw=true)   
+![Queue_Circular](./assets/Queue_Circular.png)   
 
 The drawback that occurs in a linear queue is overcome by using the circular queue. If the empty space is available in a circular queue, the new element can be added in an empty space by simply incrementing the value of rear. The main advantage of using the circular queue is better memory utilization.   
 
@@ -206,7 +206,7 @@ To know more about the circular queue, you can click the link - [https://www.jav
 
 It is a special type of queue in which the elements are arranged based on the priority. It is a special type of queue data structure in which every element has a priority associated with it. Suppose some elements occur with the same priority, they will be arranged according to the FIFO principle. The representation of priority queue is shown in the below image -    
 
-![Queue_Priority](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Queue_Priority.png?raw=true)   
+![Queue_Priority](./assets/Queue_Priority.png)   
 
 Insertion in priority queue takes place based on the arrival, while deletion in the priority queue occurs based on the priority. Priority queue is mainly used to implement the CPU scheduling algorithms.   
 
@@ -225,7 +225,7 @@ Deque can be used both as stack and queue as it allows the insertion and deletio
 
 The representation of the deque is shown in the below image -   
 
-![Queue_Double](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Queue_Double.png?raw=true)   
+![Queue_Double](./assets/Queue_Double.png)   
 
 To know more about the deque, you can click the link - [https://www.javatpoint.com/ds-deque](https://www.javatpoint.com/ds-deque)
 
@@ -233,11 +233,11 @@ There are two types of deque that are discussed as follows -
 
 - **Input restricted deque** - As the name implies, in input restricted queue, insertion operation can be performed at only one end, while deletion can be performed from both ends.   
 
-![Queue_Double_Input](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Queue_Double_Input.png?raw=true)   
+![Queue_Double_Input](./assets/Queue_Double_Input.png)   
 
 - **Output restricted deque** - As the name implies, in output restricted queue, deletion operation can be performed at only one end, while insertion can be performed from both ends.   
 
-![Queue_Double_Output](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Queue_Double_Output.png?raw=true)   
+![Queue_Double_Output](./assets/Queue_Double_Output.png)   
 ### Applications of Queue
 
 Queue is used when things don’t have to be processed immediately, but have to be processed in *First In First Out* order like *Breadth First Search*. This property of Queue makes it also useful in following kind of scenarios.

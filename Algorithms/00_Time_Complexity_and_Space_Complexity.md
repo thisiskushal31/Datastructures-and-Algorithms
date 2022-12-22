@@ -80,7 +80,7 @@ Lets take the following implementation of Linear Search.
 
 > **Worst Case Analysis (Usually Done):** In the worst-case analysis, we calculate the upper bound on the running time of an algorithm. We say that the running time of an algorithm is upper bounded by the running time of the worst case. The worst case is the case in which the algorithm takes the maximum amount of time to execute. So, the worst-case time complexity of linear search would be Θ(n) when element is not found or at the last of the array.               
 > **Average Case Analysis (Sometimes done):** In average case analysis, we take all possible inputs and calculate computing time for all of the inputs. Sum all the calculated values and divide the sum by the total number of inputs. We must know (or predict) the distribution of cases. For the linear search problem, let us assume that all cases are uniformly distributed (including the case of x not being present in the array). So we sum all the cases and divide the sum by (n+1). Following is the value of average-case time complexity.         
-![Average Case Analysis](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/formula_average_case.png?raw=true)            
+![Average Case Analysis](./assets/formula_average_case.png)            
 > **Best Case Analysis (Bogus):** In the best case analysis, we calculate the lower bound on the running time of an algorithm, that is not helpful as it lower bound does not tell us anything about the efficiency of the algorithm.        
 
 ##### Which case to use for analysis of algorithms? 
@@ -92,7 +92,7 @@ Answer is: *Use the worst case analysis* as the worst case analysis gives us at 
 Asymptotic notations are used to represent the complexities of algorithms for asymptotic analysis. These notations are mathematical tools to represent the complexities. There are three notations that are commonly used.      
 
 **1. Big-Oh(O) Notation:** Big-Oh (O) notation gives an upper bound for a function f(n) to within a constant factor.     
-![Big Oh Notation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/big_oh_notation.jpg?raw=true)       
+![Big Oh Notation](./assets/big_oh_notation.jpg)       
 
 We write f(n) = O(g(n)), If there are positive constants n0  and c such that, to the right of n0 the f(n) always lies on or below c*g(n).   
    
@@ -100,7 +100,7 @@ We write f(n) = O(g(n)), If there are positive constants n0  and c such that, to
 
 **2. Big-Omega(Ω) Notation:** Big-Omega (Ω) notation gives a lower bound for a function f(n) to within a constant factor.     
 
-![big_omega_notation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/big_omega_notation.jpg?raw=true)     
+![big_omega_notation](./assets/big_omega_notation.jpg)     
 
 We write f(n) = Ω(g(n)), If there are positive constantsn0  and c such that, to the right of n0 the f(n) always lies on or above c*g(n).     
 
@@ -108,7 +108,7 @@ We write f(n) = Ω(g(n)), If there are positive constantsn0  and c such that, to
 
 **3. Big-Theta(Θ) Notation:** Big-Theta(Θ) notation gives bound for a function f(n) to within a constant factor.     
 
-![big_theta_notation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/big_theta_notation.jpg?raw=true)     
+![big_theta_notation](./assets/big_theta_notation.jpg)     
 
 We write f(n) = Θ(g(n)), If there are positive constantsn0  and c1 and c2 such that, to the right of n0 the f(n) always lies between c1*g(n) and c2*g(n) inclusive.       
 
@@ -300,7 +300,7 @@ There are following three cases:
 
 Master method is mainly derived from recurrence tree method. If we draw recurrence tree of T(n) = aT(n/b) + f(n), we can see that the work done at root is f(n) and work done at all leaves is Θ(n<sup>c</sup>) where c is $Log{_b}{a}$. And the height of recurrence tree is $Log{_b}{n}$    
 
-![Masters Theorem](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/AlgoAnalysis.png?raw=true)          
+![Masters Theorem](./assets/AlgoAnalysis.png)          
 
 In recurrence tree method, we calculate total work done. If the work done at leaves is polynomially more, then leaves are the dominant part, and our result becomes the work done at leaves (Case 1). If work done at leaves and root is asymptotically same, then our result becomes height multiplied by work done at any level (Case 2). If work done at root is asymptotically more, then our result becomes work done at root (Case 3).       
 
@@ -325,7 +325,7 @@ In the Hash-table, the most of the time the searching time complexity is O(1), b
 The aggregate method is used to find the total cost. If we want to add a bunch of data, then we need to find the amortized cost by this formula.    
 
 For a sequence of n operations, the cost is −     
-![Aggregate Method](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/Algorithms/assets/costnoperations.jpg?raw=true)
+![Aggregate Method](./assets/costnoperations.jpg)
 
 [For More Practical Big-O Implementation By Bealdung](https://www.baeldung.com/java-algorithm-complexity)
 

@@ -12,7 +12,7 @@ A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) pri
 
 Stack works on the LIFO pattern. In programming terms, putting an item on top of the stack is called push and removing an item is called pop.  
 
-![Stack_Working](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Stack_Working.jpg?raw=true)
+![Stack_Working](./assets/Stack_Working.jpg)
 
 In the above image, although item 3 was kept last, it was removed first. This is exactly how the LIFO (Last In First Out) Principle works.    
 ### Standard Stack Operations

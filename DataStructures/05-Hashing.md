@@ -41,7 +41,7 @@ Hash tables support functions that include the following:
     get (key)
     delete (key)
 
-![DataRetrieval](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Hashing_Data_Retrieval.png?raw=true)  
+![DataRetrieval](./assets/Hashing_Data_Retrieval.png)  
 
 ##### Digital signatures
 
@@ -49,7 +49,7 @@ In addition to enabling rapid data retrieval, hashing helps encrypt and decrypt 
 
 Upon receipt, the same hash function derives the message digest from the signature, which is then compared with the transmitted message digest to ensure both are the same. In a one-way hashing operation, the hash function indexes the original value or key and enables access to data associated with a specific value or key that is retrieved.   
 
-![DigitalSignatures](https://github.com/thisiskushal31/Datastructures-and-Algorithms/blob/main/DataStructures/assets/Hashing_Digital_Signature_Process.png?raw=true)
+![DigitalSignatures](./assets/Hashing_Digital_Signature_Process.png)
 
     When someone creates and encrypts a digital signature with a private 
     key, hash data is also created and encrypted. The signer's public key 
