@@ -8,8 +8,12 @@ This workflow automatically triggers the DocHub documentation site to update whe
 
 1. **Create a GitHub Personal Access Token (PAT)**:
    - Go to GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)
-   - Generate a new token with `repo` scope
-   - Copy the token
+   - Click "Generate new token (classic)"
+   - Give it a descriptive name (e.g., "DocHub Trigger Token")
+   - **IMPORTANT**: Select the `repo` scope (this gives full access to repositories)
+   - Set expiration as needed
+   - Click "Generate token"
+   - **Copy the token immediately** (you won't be able to see it again)
 
 2. **Add the token as a secret in this repository**:
    - Go to this repository's Settings → Secrets and variables → Actions
@@ -20,7 +24,21 @@ This workflow automatically triggers the DocHub documentation site to update whe
 
 3. **Verify the dochub repository name**:
    - The workflow is configured to trigger `thisiskushal31/dochub`
-   - If your dochub repository has a different name, update the `repository` field in `.github/workflows/trigger-dochub.yml`
+   - If your dochub repository has a different name, update the repository name in `.github/workflows/trigger-dochub.yml`
+
+### Troubleshooting
+
+**Error: "Resource not accessible by personal access token"**
+
+This usually means:
+1. The PAT doesn't have the `repo` scope - make sure you selected `repo` when creating the token
+2. The PAT doesn't have access to the target repository - ensure the token was created by a user who has access to `thisiskushal31/dochub`
+3. The token might be expired - check the token expiration date in GitHub Settings
+
+**To fix:**
+- Create a new PAT with the `repo` scope
+- Make sure you're logged in as a user who has write access to the dochub repository
+- Update the `DOCHUB_TRIGGER_TOKEN` secret with the new token
 
 ### How it works
 
