@@ -1,0 +1,26 @@
+name: Trigger DocHub Update
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  trigger-dochub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger DocHub Content Update
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.DOCHUB_TRIGGER_TOKEN }}
+          repository: thisiskushal31/dochub
+          event-type: content-updated
+          client-payload: |
+            {
+              "source_repo": "Datastructures-and-Algorithms",
+              "source_branch": "${{ github.ref_name }}",
+              "source_commit": "${{ github.sha }}",
+              "triggered_by": "${{ github.actor }}",
+              "triggered_at": "${{ github.event.head_commit.timestamp }}"
+            }
+
