@@ -13,7 +13,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.DOCHUB_TRIGGER_TOKEN }}
         run: |
-          curl -X POST \
+          echo "Triggering DocHub update workflow..."
+          response=$(curl -s -w "\n%{http_code}" -X POST \
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: token $GITHUB_TOKEN" \
             https://api.github.com/repos/thisiskushal31/dochub/dispatches \
@@ -26,5 +27,23 @@ jobs:
                 "triggered_by": "${{ github.actor }}",
                 "triggered_at": "${{ github.event.head_commit.timestamp }}"
               }
-            }'
+            }')
+          
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+          
+          echo "Response code: $http_code"
+          echo "Response body: $body"
+          
+          if [ "$http_code" -eq 204 ]; then
+            echo "✅ Successfully triggered DocHub workflow!"
+          elif [ "$http_code" -eq 403 ]; then
+            echo "❌ Error: PAT doesn't have required permissions"
+            echo "Please ensure the PAT has 'repo' scope and access to thisiskushal31/dochub"
+            exit 1
+          else
+            echo "❌ Error: Failed to trigger workflow (HTTP $http_code)"
+            echo "$body"
+            exit 1
+          fi
 
