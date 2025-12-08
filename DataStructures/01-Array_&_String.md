@@ -176,7 +176,7 @@ In a dynamic array, the area usually doubles in size. A simple dynamic array can
 - Since the elements in the array are stored at contiguous memory locations it is easy to iterate in this data structure and unit time is required to access an element if the index is known. 
 
 **More Details on this Topic:**     
-> [Scaler String in Data Structure](https://www.scaler.com/topics/data-structures/string-in-data-structure/)
-> [GeeksforGeeks String in Data Structure](https://www.geeksforgeeks.org/string-data-structure/)
+> [Scaler String in Data Structure](https://www.scaler.com/topics/data-structures/string-in-data-structure/)        
+> [GeeksforGeeks String in Data Structure](https://www.geeksforgeeks.org/string-data-structure/)          
 > [GeeksforGeeks Array Data Structure](https://www.geeksforgeeks.org/array-data-structure/)
-> [Java Arrays in Javatpoint](https://www.javatpoint.com/array-in-java)  
+> [Java Arrays in Javatpoint](https://www.javatpoint.com/array-in-java)         

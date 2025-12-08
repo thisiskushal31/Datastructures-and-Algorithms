@@ -120,9 +120,9 @@ These notations are named as how they use operator in expression and Operator pr
 - The total of size of the stack must be defined before.
 - If the stack falls outside the memory it can lead to abnormal termination.
 
-**More Details on this Topic:**  
-> [Stack on GeeksforGeeks](https://www.geeksforgeeks.org/stack-data-structure/)
-> [Stack on JavaTpoint](https://www.javatpoint.com/data-structure-stack)
-> [Stack on Tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)
-> [Stack on Hackerearth](https://www.hackerearth.com/practice/data-structures/stacks/basics-of-stacks/tutorial/)
-> [Stack on Simplilearn](https://www.simplilearn.com/tutorials/data-structure-tutorial/stacks-in-data-structures)
+**More Details on this Topic:**         
+> [Stack on GeeksforGeeks](https://www.geeksforgeeks.org/stack-data-structure/)     
+> [Stack on JavaTpoint](https://www.javatpoint.com/data-structure-stack)        
+> [Stack on Tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)       
+> [Stack on Hackerearth](https://www.hackerearth.com/practice/data-structures/stacks/basics-of-stacks/tutorial/)       
+> [Stack on Simplilearn](https://www.simplilearn.com/tutorials/data-structure-tutorial/stacks-in-data-structures)        
