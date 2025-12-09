@@ -125,4 +125,4 @@ These notations are named as how they use operator in expression and Operator pr
 > [Stack on JavaTpoint](https://www.javatpoint.com/data-structure-stack)        
 > [Stack on Tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)       
 > [Stack on Hackerearth](https://www.hackerearth.com/practice/data-structures/stacks/basics-of-stacks/tutorial/)       
-> [Stack on Simplilearn](https://www.simplilearn.com/tutorials/data-structure-tutorial/stacks-in-data-structures)        
+> [Stack on Simplilearn](https://www.simplilearn.com/tutorials/data-structure-tutorial/stacks-in-data-structures)         
