@@ -591,8 +591,8 @@ Consider the below trees:
 
 **For code implementation see this two article:** [Foldable Binary Trees By GFG](https://www.geeksforgeeks.org/foldable-binary-trees/) & [Foldable Binary Trees By OpenGenus](https://iq.opengenus.org/checking-if-binary-tree-is-foldable/)   
 
-**More Details on this Topic:**
-> [Binary Tree on Javatpoint](https://www.javatpoint.com/binary-tree)    
-> [Binary Tree on Programiz](https://www.programiz.com/dsa/binary-tree)   
-> [Binary Tree on Scaler](https://www.scaler.com/topics/data-structures/binary-tree-in-data-structure/)    
-> [Binary Tree on GeeksforGeeks](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/)    
+**More Details on this Topic:**     
+> [Binary Tree on Javatpoint](https://www.javatpoint.com/binary-tree)     
+> [Binary Tree on Programiz](https://www.programiz.com/dsa/binary-tree)     
+> [Binary Tree on Scaler](https://www.scaler.com/topics/data-structures/binary-tree-in-data-structure/)     
+> [Binary Tree on GeeksforGeeks](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/)      

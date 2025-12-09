@@ -146,9 +146,9 @@ A modified version of a tree called Tries is used in modern routers to store rou
 - Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data
 - Compilers use a syntax tree to validate the syntax of every program you write.
 
-**More Details on this Topic:**
+**More Details on this Topic:**    
 > [Tree on JavaTpoint](https://www.javatpoint.com/tree)   
 > [Tree on Programiz](https://www.programiz.com/dsa/trees)   
 > [Tree on Scaler](https://www.scaler.com/topics/data-structures/tree-data-structure/)   
-> [Tree on Tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)   
+> [Tree on Tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)     
 > [Tree on GeeksforGeeks](https://www.geeksforgeeks.org/introduction-to-tree-data-structure/)   
