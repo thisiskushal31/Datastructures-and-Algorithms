@@ -1,6 +1,12 @@
 ### Two Pointer Algorithm
 
-In many problems involving arrays, we have to analyze each element of the array compared to its other elements.     
+In many problems involving arrays, we have to analyze each element of the array compared to its other elements.
+
+![Two Pointer Technique](./assets/Two_Pointer_Technique.png)
+
+> **Image Credit:** [GeeksforGeeks - Two Pointers Technique](https://www.geeksforgeeks.org/two-pointers-technique/)
+
+**The Two Pointer Technique** is an efficient approach for solving array and string problems by using two pointers that traverse the data structure in a coordinated manner. This technique reduces time complexity from O(n²) to O(n) in many cases.     
 
 *To solve problems like these we usually start from the first index and loop through the array one or more times depending on our implementation. Sometimes, we also have to create a temporary array depending on our problem's requirements.*    
 

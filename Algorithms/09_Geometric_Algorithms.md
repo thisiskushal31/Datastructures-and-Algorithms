@@ -2,6 +2,14 @@
 
 **Geometric Algorithms** are algorithms designed to solve problems involving geometric objects like points, lines, polygons, and shapes in 2D or 3D space.
 
+**Geometric Computing:** These algorithms solve problems in computational geometry, computer graphics, robotics, and geographic information systems. They involve operations like finding convex hulls, computing distances, determining point locations relative to polygons, and solving intersection problems. Geometric algorithms are fundamental in areas requiring spatial reasoning and geometric computations.
+
+![Convex Hull](./assets/Convex_Hull.png)
+
+![Convex Hull using Jarvis Algorithm](./assets/Convex_Hull_Jarvis.png)
+
+> **Image Credit:** [GeeksforGeeks - Convex Hull using Jarvis' Algorithm](https://www.geeksforgeeks.org/dsa/convex-hull-using-jarvis-algorithm-or-wrapping/)
+
 ### Basic Geometric Concepts
 
 #### 1. Point Representation

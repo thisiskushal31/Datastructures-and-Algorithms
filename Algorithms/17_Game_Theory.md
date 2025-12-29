@@ -2,6 +2,12 @@
 
 **Game Theory** in algorithms deals with optimal strategies in competitive scenarios where players make decisions to maximize their outcomes. It's used in competitive programming and algorithm design.
 
+**Optimal Play:** Game theory problems involve determining winning strategies for players in competitive games. Common problems include Nim game, stone games, and impartial games. The key is to identify patterns, calculate game states, and determine optimal moves using techniques like XOR operations, Grundy numbers, and dynamic programming.
+
+![Game Theory Payoff Matrix](./assets/Game_Theory_Payoff_Matrix.png)
+
+> **Image Credit:** [Wikipedia - Game Theory](https://en.wikipedia.org/wiki/Game_theory)
+
 **Key Concepts:**
 - **Players:** Entities making decisions
 - **Strategies:** Choices available to players

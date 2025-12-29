@@ -2,6 +2,16 @@
 
 **Branch and Bound** is an algorithmic technique for solving optimization problems by systematically exploring the solution space. It's similar to backtracking but uses bounds to prune branches that cannot lead to optimal solutions.
 
+**Optimization Strategy:** Branch and Bound works by dividing the problem into subproblems (branching), calculating bounds for each subproblem, and eliminating branches that cannot improve the current best solution (pruning). This technique is particularly effective for integer programming, traveling salesman problem, and knapsack problems, as it avoids exploring the entire solution space.
+
+![Branch and Bound State Space Tree](./assets/Branch_and_Bound_Tree.png)
+
+> **Image Credit:** [GeeksforGeeks - Introduction to Branch and Bound](https://www.geeksforgeeks.org/introduction-to-branch-and-bound-data-structures-and-algorithms-tutorial/)
+
+![Branch and Bound Knapsack Example](./assets/Branch_and_Bound_Knapsack.png)
+
+> **Image Credit:** [GeeksforGeeks - 0/1 Knapsack using Branch and Bound](https://www.geeksforgeeks.org/0-1-knapsack-using-branch-and-bound/)
+
 **Key Concepts:**
 - **Branching:** Divide problem into subproblems
 - **Bounding:** Calculate bounds (upper/lower) for subproblems

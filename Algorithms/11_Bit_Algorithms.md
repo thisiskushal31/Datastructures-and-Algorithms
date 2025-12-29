@@ -2,6 +2,12 @@
 
 **Bit Manipulation** is the act of algorithmically manipulating bits or binary digits. It's a fundamental technique used in competitive programming and system-level programming.
 
+**Bitwise Operations:** Bit manipulation involves operations on individual bits using bitwise operators (AND, OR, XOR, NOT, left shift, right shift). These operations are extremely fast and space-efficient, making them ideal for optimization problems, set operations, and low-level programming. Understanding bit manipulation is crucial for competitive programming and system design.
+
+![Bitwise Operators Table](./assets/Bitwise_Operators_Table.png)
+
+> **Image Credit:** [Wikipedia - Bitwise Operations](https://en.wikipedia.org/wiki/Bitwise_operation)
+
 **Key Concepts:**
 - Operations on individual bits
 - Efficient operations using bitwise operators
