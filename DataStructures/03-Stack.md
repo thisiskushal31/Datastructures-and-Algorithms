@@ -106,6 +106,353 @@ These notations are named as how they use operator in expression and Operator pr
 
 **BONUS TIP: Power(In Level 1), Divide/Multiple(In Level 2), Plus/Minus(In Level 3) First check the precedence then if same precedence is found then check associativity**
 
+### Postfix Expression Evaluation
+
+Postfix (Reverse Polish) notation is easier to evaluate using a stack. The algorithm scans the expression from left to right:
+
+**Algorithm:**
+1. Scan the expression from left to right
+2. If operand is encountered, push it onto the stack
+3. If operator is encountered, pop two operands, perform operation, push result back
+4. Final result is at the top of the stack
+
+**Example:** Evaluate `2 3 4 * +` (which is `2 + 3 * 4` in infix)
+
+```cpp
+#include <iostream>
+#include <stack>
+#include <string>
+#include <cctype>
+using namespace std;
+
+int evaluatePostfix(string expression) {
+    stack<int> st;
+    
+    for (int i = 0; i < expression.length(); i++) {
+        char c = expression[i];
+        
+        // Skip spaces
+        if (c == ' ') continue;
+        
+        // If operand, push to stack
+        if (isdigit(c)) {
+            int num = 0;
+            while (i < expression.length() && isdigit(expression[i])) {
+                num = num * 10 + (expression[i] - '0');
+                i++;
+            }
+            i--; // Adjust for loop increment
+            st.push(num);
+        }
+        // If operator, pop two operands and perform operation
+        else {
+            int operand2 = st.top(); st.pop();
+            int operand1 = st.top(); st.pop();
+            
+            switch(c) {
+                case '+': st.push(operand1 + operand2); break;
+                case '-': st.push(operand1 - operand2); break;
+                case '*': st.push(operand1 * operand2); break;
+                case '/': st.push(operand1 / operand2); break;
+            }
+        }
+    }
+    
+    return st.top();
+}
+
+// Example usage
+int main() {
+    string exp = "2 3 4 * +"; // Equivalent to 2 + 3 * 4 = 14
+    cout << "Postfix Evaluation: " << evaluatePostfix(exp) << endl;
+    return 0;
+}
+```
+
+- **Time Complexity:** O(n) where n is the length of expression
+- **Space Complexity:** O(n) for the stack
+
+### Prefix Expression Evaluation
+
+Prefix (Polish) notation evaluation is similar but we scan from right to left:
+
+**Algorithm:**
+1. Scan the expression from right to left
+2. If operand is encountered, push it onto the stack
+3. If operator is encountered, pop two operands, perform operation, push result back
+4. Final result is at the top of the stack
+
+```cpp
+int evaluatePrefix(string expression) {
+    stack<int> st;
+    
+    // Scan from right to left
+    for (int i = expression.length() - 1; i >= 0; i--) {
+        char c = expression[i];
+        
+        if (c == ' ') continue;
+        
+        if (isdigit(c)) {
+            int num = 0, multiplier = 1;
+            int j = i;
+            while (j >= 0 && isdigit(expression[j])) {
+                num = num + (expression[j] - '0') * multiplier;
+                multiplier *= 10;
+                j--;
+            }
+            i = j + 1;
+            st.push(num);
+        }
+        else {
+            int operand1 = st.top(); st.pop();
+            int operand2 = st.top(); st.pop();
+            
+            switch(c) {
+                case '+': st.push(operand1 + operand2); break;
+                case '-': st.push(operand1 - operand2); break;
+                case '*': st.push(operand1 * operand2); break;
+                case '/': st.push(operand1 / operand2); break;
+            }
+        }
+    }
+    
+    return st.top();
+}
+```
+
+### Infix to Postfix Conversion
+
+Converting infix to postfix using stack is a common problem. We use operator precedence:
+
+```cpp
+#include <iostream>
+#include <stack>
+#include <string>
+#include <cctype>
+using namespace std;
+
+int precedence(char op) {
+    if (op == '+' || op == '-') return 1;
+    if (op == '*' || op == '/') return 2;
+    if (op == '^') return 3;
+    return 0;
+}
+
+string infixToPostfix(string infix) {
+    stack<char> st;
+    string postfix = "";
+    
+    for (int i = 0; i < infix.length(); i++) {
+        char c = infix[i];
+        
+        // If operand, add to output
+        if (isalnum(c)) {
+            postfix += c;
+        }
+        // If '(', push to stack
+        else if (c == '(') {
+            st.push(c);
+        }
+        // If ')', pop until '('
+        else if (c == ')') {
+            while (!st.empty() && st.top() != '(') {
+                postfix += st.top();
+                st.pop();
+            }
+            st.pop(); // Remove '('
+        }
+        // If operator
+        else {
+            while (!st.empty() && precedence(st.top()) >= precedence(c)) {
+                postfix += st.top();
+                st.pop();
+            }
+            st.push(c);
+        }
+    }
+    
+    // Pop remaining operators
+    while (!st.empty()) {
+        postfix += st.top();
+        st.pop();
+    }
+    
+    return postfix;
+}
+
+// Example: "a+b*c" -> "abc*+"
+```
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
+
+### Infix to Prefix Conversion
+
+For prefix conversion, we reverse the infix, convert to postfix, then reverse again:
+
+```cpp
+string infixToPrefix(string infix) {
+    // Reverse the infix expression
+    reverse(infix.begin(), infix.end());
+    
+    // Replace '(' with ')' and vice versa
+    for (int i = 0; i < infix.length(); i++) {
+        if (infix[i] == '(') infix[i] = ')';
+        else if (infix[i] == ')') infix[i] = '(';
+    }
+    
+    // Convert to postfix
+    string postfix = infixToPostfix(infix);
+    
+    // Reverse to get prefix
+    reverse(postfix.begin(), postfix.end());
+    
+    return postfix;
+}
+```
+
+### Monotonic Stack
+
+A **Monotonic Stack** is a stack that maintains elements in a monotonic (either strictly increasing or strictly decreasing) order. It's extremely useful for solving problems like:
+- Next Greater Element
+- Next Smaller Element
+- Largest Rectangle in Histogram
+- Trapping Rain Water
+- Stock Span Problem
+
+#### Monotonic Increasing Stack
+
+Maintains elements in increasing order (from bottom to top):
+
+```cpp
+// Monotonic Increasing Stack - finds next smaller element
+vector<int> nextSmallerElement(vector<int>& arr) {
+    int n = arr.size();
+    vector<int> result(n, -1);
+    stack<int> st; // Monotonic increasing stack
+    
+    for (int i = 0; i < n; i++) {
+        // Pop elements until we find smaller element or stack is empty
+        while (!st.empty() && arr[st.top()] > arr[i]) {
+            result[st.top()] = arr[i]; // Next smaller element
+            st.pop();
+        }
+        st.push(i);
+    }
+    
+    return result;
+}
+```
+
+#### Monotonic Decreasing Stack
+
+Maintains elements in decreasing order (from bottom to top):
+
+```cpp
+// Monotonic Decreasing Stack - finds next greater element
+vector<int> nextGreaterElement(vector<int>& arr) {
+    int n = arr.size();
+    vector<int> result(n, -1);
+    stack<int> st; // Monotonic decreasing stack
+    
+    for (int i = 0; i < n; i++) {
+        // Pop elements until we find greater element or stack is empty
+        while (!st.empty() && arr[st.top()] < arr[i]) {
+            result[st.top()] = arr[i]; // Next greater element
+            st.pop();
+        }
+        st.push(i);
+    }
+    
+    return result;
+}
+```
+
+#### Example: Next Greater Element Problem
+
+**Problem:** Given an array, find the next greater element for each element.
+
+```cpp
+vector<int> nextGreaterElements(vector<int>& nums) {
+    int n = nums.size();
+    vector<int> result(n, -1);
+    stack<int> st; // Store indices
+    
+    for (int i = 0; i < n; i++) {
+        while (!st.empty() && nums[st.top()] < nums[i]) {
+            result[st.top()] = nums[i];
+            st.pop();
+        }
+        st.push(i);
+    }
+    
+    return result;
+}
+
+// Example: [4, 5, 2, 25] -> [5, 25, 25, -1]
+```
+
+#### Example: Largest Rectangle in Histogram
+
+**Problem:** Find the largest rectangle area in a histogram.
+
+```cpp
+int largestRectangleArea(vector<int>& heights) {
+    stack<int> st; // Monotonic increasing stack
+    int maxArea = 0;
+    int n = heights.size();
+    
+    for (int i = 0; i <= n; i++) {
+        int h = (i == n) ? 0 : heights[i];
+        
+        while (!st.empty() && heights[st.top()] > h) {
+            int height = heights[st.top()];
+            st.pop();
+            int width = st.empty() ? i : i - st.top() - 1;
+            maxArea = max(maxArea, height * width);
+        }
+        st.push(i);
+    }
+    
+    return maxArea;
+}
+```
+
+#### Example: Stock Span Problem
+
+**Problem:** Calculate the span of stock prices (number of consecutive days where price <= current price).
+
+```cpp
+vector<int> calculateSpan(vector<int>& prices) {
+    int n = prices.size();
+    vector<int> span(n, 1);
+    stack<int> st; // Monotonic decreasing stack (stores indices)
+    
+    for (int i = 0; i < n; i++) {
+        // Pop until we find a price greater than current
+        while (!st.empty() && prices[st.top()] <= prices[i]) {
+            st.pop();
+        }
+        
+        // Calculate span
+        span[i] = st.empty() ? i + 1 : i - st.top();
+        st.push(i);
+    }
+    
+    return span;
+}
+```
+
+**Key Points about Monotonic Stack:**
+- **Time Complexity:** O(n) - each element is pushed and popped at most once
+- **Space Complexity:** O(n) for the stack
+- **When to use:** Problems involving finding next/previous greater/smaller elements, range queries, histogram problems
+- **Pattern:** Maintain stack in monotonic order while processing elements
+
+**More Details on this Topic:**
+> [Monotonic Stack on GeeksforGeeks](https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithms/)
+> [Next Greater Element on LeetCode](https://leetcode.com/problems/next-greater-element-i/)
+
 **Advantages of Stack:**    
 
 - The linked list implementation of a stack can grow and shrink according to the needs at runtime.
