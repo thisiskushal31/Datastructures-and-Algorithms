@@ -1,6 +1,6 @@
 ### Two Pointer Algorithm
 
-In many problems involving arrays, we have to analyze each element of the array compared to its other elements.
+In many problems involving arrays, we have to analyze each element of the array compared to its other elements.     
 
 ![Two Pointer Technique](./assets/Two_Pointer_Technique.png)
 
