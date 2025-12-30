@@ -6,7 +6,7 @@
 
 ![Randomized Quicksort](./assets/Randomized_Quicksort.png)
 
-> **Image Credit:** [Wikipedia - Quicksort](https://en.wikipedia.org/wiki/Quicksort)
+> **Image Credit:** [Geek Factorial - Randomized Quick Sort Algorithm](https://geekfactorial.blogspot.com/2016/08/randomized-quick-sort-algorithm.html)
 
 **Key Properties:**
 - Use random number generation
@@ -54,7 +54,13 @@ double randomDouble() {
 
 #### 1. Randomized Quick Sort
 
-Randomize pivot selection to avoid worst case.
+The worst case time complexity of a typical implementation of Quick Sort is O(n²). The worst case occurs when the picked pivot is always an extreme (smallest or largest) element, which happens when the input array is either sorted or reversely sorted and either first or last element is picked as pivot.
+
+**Randomized Quick Sort algorithm (with random pivot):**
+
+In the randomized version of Quick sort we impose a distribution on input by picking the pivot element randomly. Randomized Quick Sort works well even when the array is sorted/reversely sorted and the complexity is more towards O(n log n). (Yet, there is still a possibility that the randomly picked element is always an extreme.)
+
+Here, we will pick a random pivot position with the help of `rand()` function (defined in `stdlib.h` header file). Then we can swap pivot element with the element at the `Left` position (or the `Right` position in some implementations) and Quick Sort the array.
 
 ```cpp
 #include <iostream>
@@ -63,35 +69,56 @@ Randomize pivot selection to avoid worst case.
 #include <ctime>
 using namespace std;
 
-int randomPartition(vector<int>& arr, int low, int high) {
-    srand(time(0));
-    int random = low + rand() % (high - low + 1);
-    swap(arr[random], arr[high]);
-    
-    int pivot = arr[high];
-    int i = low - 1;
-    
-    for (int j = low; j < high; j++) {
-        if (arr[j] < pivot) {
-            i++;
-            swap(arr[i], arr[j]);
-        }
-    }
-    swap(arr[i + 1], arr[high]);
-    return i + 1;
+void swap(vector<int>& A, int x, int y) {
+    int temp = A[x];
+    A[x] = A[y];
+    A[y] = temp;
 }
 
-void randomizedQuickSort(vector<int>& arr, int low, int high) {
-    if (low < high) {
-        int pi = randomPartition(arr, low, high);
-        randomizedQuickSort(arr, low, pi - 1);
-        randomizedQuickSort(arr, pi + 1, high);
+int getPivot(int Left, int Right) {
+    return (rand() % (Right - Left + 1)) + Left;
+}
+
+void quickSort(vector<int>& A, int Left, int Right) {
+    if (Left > Right)
+        return;
+    
+    int i, pos, pivot;
+
+    // Choosing pivot element randomly:
+    pivot = getPivot(Left, Right);  // Get a random pivot
+    swap(A, Left, pivot);           // Take A[pivot] to Left index and then do Quick Sort
+
+    // Quick Sort the array:
+    pos = Left;
+        
+    for (i = Left + 1; i <= Right; i++)
+        if (A[i] < A[Left])
+            swap(A, ++pos, i);
+
+    swap(A, Left, pos);  // By now, pos must be at proper position for A[Left].
+                         // So we swap A[Left] with A[pos]
+
+    quickSort(A, Left, pos - 1);     // Sort left sub-list
+    quickSort(A, pos + 1, Right);    // Sort right sub-list
+}
+
+int main() {
+    vector<int> arr = {10, 7, 8, 9, 1, 5};
+    srand(time(0));
+    quickSort(arr, 0, arr.size() - 1);
+    
+    for (int x : arr) {
+        cout << x << " ";
     }
+    return 0;
 }
 ```
 
-**Time Complexity:** O(n log n) average, O(n²) worst case (rare)  
+**Time Complexity:** O(n log n) average case, O(n log n) expected worst case (rare O(n²) still possible but highly unlikely)  
 **Space Complexity:** O(log n)
+
+**Key Advantage:** By randomizing the pivot selection, we avoid the worst-case scenario that occurs with sorted or reverse-sorted arrays, making the algorithm more robust and predictable in practice.
 
 #### 2. Randomized Selection (Quick Select)
 
@@ -253,3 +280,4 @@ bool isPrimeMonteCarlo(long long n, int k) {
 ### References
 
 - [GeeksforGeeks - Randomized Algorithms](https://www.geeksforgeeks.org/randomized-algorithms/)
+- [Geek Factorial - Randomized Quick Sort Algorithm](https://geekfactorial.blogspot.com/2016/08/randomized-quick-sort-algorithm.html)

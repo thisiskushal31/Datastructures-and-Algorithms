@@ -1,1 +1,184 @@
-File not found: /v1/AUTH_mw/wikipedia-commons-local-public.8b/8/8b/Payoff_matrix.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="451.53574"
+   height="465.83994"
+   viewBox="0 0 361.22858 372.67195"
+   id="svg2">
+  <metadata
+     id="metadata117">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4"
+     style="stroke-linecap:butt;stroke-linejoin:round">
+    <style
+       type="text/css"
+       id="style6" />
+  </defs>
+  <rect
+     width="144"
+     height="144"
+     x="200.02858"
+     y="211.47195"
+     id="rect3149"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.4000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <rect
+     width="144"
+     height="144"
+     x="56.028584"
+     y="211.47195"
+     id="rect3151"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.4000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <rect
+     width="144"
+     height="144"
+     x="200.02858"
+     y="67.471962"
+     id="rect3147"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.4000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <rect
+     width="144"
+     height="144"
+     x="56.028584"
+     y="67.471962"
+     id="rect3051"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.4000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <defs
+     id="defs110" />
+  <text
+     x="93.793869"
+     y="184.5945"
+     id="text3473"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="93.793869"
+       y="184.5945"
+       id="tspan3079">2</tspan>
+  </text>
+  <text
+     x="141.25848"
+     y="120.57661"
+     id="text3479"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="141.25848"
+       y="120.57661"
+       id="tspan3077">2</tspan>
+  </text>
+  <text
+     x="141.25848"
+     y="42.2272"
+     id="text3165"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="141.25848"
+       y="42.2272"
+       id="tspan3185">C</tspan>
+  </text>
+  <text
+     x="237.79388"
+     y="184.5945"
+     id="text3097"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="237.79388"
+       y="184.5945"
+       id="tspan3153">0</tspan>
+  </text>
+  <text
+     x="285.25851"
+     y="120.57661"
+     id="text3101"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="285.25851"
+       y="120.57661"
+       id="tspan3155">3</tspan>
+  </text>
+  <text
+     x="285.25851"
+     y="41.804798"
+     id="text3169"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="285.25851"
+       y="41.804798"
+       id="tspan3187">D</tspan>
+  </text>
+  <text
+     x="93.793869"
+     y="328.59451"
+     id="text3127"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="93.793869"
+       y="328.59451"
+       id="tspan3157">3</tspan>
+  </text>
+  <text
+     x="141.25848"
+     y="264.5766"
+     id="text3131"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="141.25848"
+       y="264.5766"
+       id="tspan3159">0</tspan>
+  </text>
+  <text
+     x="237.79388"
+     y="328.59451"
+     id="text3137"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="237.79388"
+       y="328.59451"
+       id="tspan3161">1</tspan>
+  </text>
+  <text
+     x="285.25848"
+     y="264.5766"
+     id="text3141"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="285.25848"
+       y="264.5766"
+       id="tspan3163">1</tspan>
+  </text>
+  <text
+     x="14.348795"
+     y="184.5945"
+     id="text3189"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="14.348795"
+       y="184.5945"
+       id="tspan3201">C</tspan>
+  </text>
+  <text
+     x="14.847996"
+     y="328.59451"
+     id="text3197"
+     style="font-size:38.40000153px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter">
+    <tspan
+       x="14.847996"
+       y="328.59451"
+       id="tspan3203">D</tspan>
+  </text>
+</svg>
