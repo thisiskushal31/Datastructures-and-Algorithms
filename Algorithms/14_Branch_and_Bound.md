@@ -6,8 +6,6 @@
 
 ![Branch and Bound State Space Tree](./assets/Branch_and_Bound_Tree.png)
 
-> **Image Credit:** [GeeksforGeeks - Introduction to Branch and Bound](https://www.geeksforgeeks.org/introduction-to-branch-and-bound-data-structures-and-algorithms-tutorial/)
-
 ![Branch and Bound Knapsack Example](./assets/Branch_and_Bound_Knapsack.png)
 
 > **Image Credit:** [GeeksforGeeks - 0/1 Knapsack using Branch and Bound](https://www.geeksforgeeks.org/0-1-knapsack-using-branch-and-bound/)
