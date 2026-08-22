@@ -10,13 +10,17 @@
 
 This is my curated list of all the DSA basic to advanced concept and question with their solutions. Here my approach is add most optimized code possible and explain the logic behind it.
 
-## Quick Links 
+**Start here:** [0_Start_Here.md](./0_Start_Here.md) · **Write order:** [CONTENT_WRITE_ORDER.md](./CONTENT_WRITE_ORDER.md) · **Problem tracker:** [PLANNED_PROBLEMS.md](./PLANNED_PROBLEMS.md) · **SD bridge:** [system-design-bridge/](./system-design-bridge/README.md)
+
+## Quick Links
 
 - [Algorithms](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Algorithms)
 - [DataStructures](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/DataStructures)
 - [GeekforGeeks Solved Questions](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/GeekforGeeks)
 - [Leetcode Solved Questions](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode)
-- [Template](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template)
+- [Foundation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Foundation) — coding patterns
+- [system-design-bridge/](./system-design-bridge/README.md) — patterns → System Design
+- [Entry-Points/](./Entry-Points/README.md) — sister repos
 
 ## Folder layout
 
