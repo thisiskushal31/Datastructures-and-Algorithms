@@ -59,7 +59,7 @@ bool isValid(int item, vector<int>& solution) {
 
 Select maximum number of activities that can be performed by a single person, assuming one activity at a time.
 
-![Activity Selection Problem](./assets/Activity_Selection.png)
+![Activity Selection Problem](./Assets/Activity_Selection.png)
 
 > **Image Credit:** [GeeksforGeeks - Activity Selection Problem](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)
 
@@ -190,7 +190,7 @@ int main() {
 
 Find minimum cost spanning tree using greedy approach.
 
-![Kruskal's MST Algorithm](./assets/Kruskal_MST.png)
+![Kruskal's MST Algorithm](./Assets/Kruskal_MST.png)
 
 > **Image Credit:** [GeeksforGeeks - Kruskal's Minimum Spanning Tree Algorithm](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
 

@@ -4,7 +4,7 @@
 
 **String Processing:** String algorithms are crucial for text processing, pattern matching, and data analysis. They involve operations like finding longest common substrings, palindromic substrings, string compression, and advanced pattern matching techniques. Understanding these algorithms is essential for solving real-world problems involving text data.
 
-![String Algorithms Visualization](./assets/String_Algorithms_Visualization.png)
+![String Algorithms Visualization](./Assets/String_Algorithms_Visualization.png)
 
 > **Image Credit:** [Wikipedia - Aho-Corasick Algorithm](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm)
 

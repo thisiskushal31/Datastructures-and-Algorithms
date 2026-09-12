@@ -2,7 +2,7 @@
 
 In many problems involving arrays, we have to analyze each element of the array compared to its other elements.     
 
-![Two Pointer Technique](./assets/Two_Pointer_Technique.png)
+![Two Pointer Technique](./Assets/Two_Pointer_Technique.png)
 
 > **Image Credit:** [GeeksforGeeks - Two Pointers Technique](https://www.geeksforgeeks.org/two-pointers-technique/)
 

@@ -2,9 +2,9 @@
 
 **Dynamic Programming (DP)** is an algorithmic technique for solving optimization problems by breaking them down into simpler subproblems and storing the results to avoid redundant calculations. It's based on the principle of optimal substructure and overlapping subproblems.
 
-![Dynamic Programming Overview](./assets/Dynamic_Programming_1.png)
+![Dynamic Programming Overview](./Assets/Dynamic_Programming_1.png)
 
-![Dynamic Programming Approaches](./assets/Dynamic_Programming_2.png)
+![Dynamic Programming Approaches](./Assets/Dynamic_Programming_2.png)
 
 > **Image Credit:** [GeeksforGeeks - Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/)
 

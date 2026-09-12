@@ -41,7 +41,7 @@ returnType divideAndConquer(problem) {
 
 #### 1. Merge Sort
 
-![Merge Sort Visualization](./assets/Merge_Sort_Visualization.png)
+![Merge Sort Visualization](./Assets/Merge_Sort_Visualization.png)
 
 > **Image Credit:** [GeeksforGeeks - Merge Sort](https://www.geeksforgeeks.org/merge-sort/)
 
@@ -105,7 +105,7 @@ int main() {
 
 #### 2. Quick Sort
 
-![Quick Sort Visualization](./assets/Quick_Sort_Visualization.png)
+![Quick Sort Visualization](./Assets/Quick_Sort_Visualization.png)
 
 > **Image Credit:** [GeeksforGeeks - Quick Sort](https://www.geeksforgeeks.org/quick-sort/)
 

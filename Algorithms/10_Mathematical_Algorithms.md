@@ -59,7 +59,7 @@ int lcm(int a, int b) {
 
 ##### Sieve of Eratosthenes
 
-![Sieve of Eratosthenes](./assets/Sieve_of_Eratosthenes.png)
+![Sieve of Eratosthenes](./Assets/Sieve_of_Eratosthenes.png)
 
 > **Image Credit:** [GeeksforGeeks - Sieve of Eratosthenes](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)
 

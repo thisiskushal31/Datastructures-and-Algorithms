@@ -62,7 +62,7 @@ int main() {
 
 Efficient pattern searching using failure function (LPS array).
 
-![KMP Algorithm Example](./assets/KMP_Algorithm_Example.png)
+![KMP Algorithm Example](./Assets/KMP_Algorithm_Example.png)
 
 > **Image Credit:** [GeeksforGeeks - KMP Algorithm for Pattern Searching](https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/)
 
