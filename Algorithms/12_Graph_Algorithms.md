@@ -2,7 +2,7 @@
 
 **Graph Algorithms** are algorithms designed to solve problems on graphs. They are fundamental in computer science and used in many real-world applications like social networks, routing, scheduling, and more.
 
-**Note:** Basic graph concepts and representations are covered in [Graph Data Structure](./../DataStructures/07-Graph.md). This file focuses on graph algorithms.
+**Note:** Basic graph concepts and representations are covered in [Graph Data Structure](./../DataStructures/07_Graph.md). This file focuses on graph algorithms.
 
 ### Graph Traversal Algorithms
 
@@ -10,7 +10,7 @@
 
 Explore as far as possible along each branch before backtracking.
 
-![DFS Graph Traversal](./assets/DFS_Graph_Traversal.png)
+![DFS Graph Traversal](./Assets/DFS_Graph_Traversal.png)
 
 > **Image Credit:** [GeeksforGeeks - Depth First Search or DFS for a Graph](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
 
@@ -84,7 +84,7 @@ int main() {
 
 Explore all neighbors at current depth before moving to next level.
 
-![BFS Graph Traversal](./assets/BFS_Graph_Traversal.png)
+![BFS Graph Traversal](./Assets/BFS_Graph_Traversal.png)
 
 > **Image Credit:** [GeeksforGeeks - Breadth First Search or BFS for a Graph](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
@@ -156,7 +156,7 @@ int main() {
 
 Find shortest path from source to all vertices (non-negative weights).
 
-![Dijkstra's Algorithm Visualization](./assets/Dijkstra_Algorithm.png)
+![Dijkstra's Algorithm Visualization](./Assets/Dijkstra_Algorithm.png)
 
 > **Image Credit:** [GeeksforGeeks - Dijkstra's Shortest Path Algorithm](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
 
@@ -357,7 +357,7 @@ int primMST(vector<vector<pair<int, int>>>& graph) {
 
 Order vertices such that for every edge (u, v), u comes before v.
 
-![Topological Sort Visualization](./assets/Topological_Sort.png)
+![Topological Sort Visualization](./Assets/Topological_Sort.png)
 
 > **Image Credit:** [GeeksforGeeks - Topological Sorting](https://www.geeksforgeeks.org/topological-sorting/)
 

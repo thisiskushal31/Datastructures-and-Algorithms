@@ -2,9 +2,9 @@
 
 **Recursion** is a programming technique where a function calls itself directly or indirectly to solve a problem. It's a powerful method for solving problems that can be broken down into smaller, similar subproblems.
 
-![Recursion Tree](./assets/Recursion_Tree.png)
+![Recursion Tree](./Assets/Recursion_Tree.png)
 
-![Factorial Recursion](./assets/Recursion_Factorial.png)
+![Factorial Recursion](./Assets/Recursion_Factorial.png)
 
 > **Image Credit:** [GeeksforGeeks - Introduction to Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/)
 

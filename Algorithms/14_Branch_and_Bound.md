@@ -4,9 +4,9 @@
 
 **Optimization Strategy:** Branch and Bound works by dividing the problem into subproblems (branching), calculating bounds for each subproblem, and eliminating branches that cannot improve the current best solution (pruning). This technique is particularly effective for integer programming, traveling salesman problem, and knapsack problems, as it avoids exploring the entire solution space.
 
-![Branch and Bound State Space Tree](./assets/Branch_and_Bound_Tree.png)
+![Branch and Bound State Space Tree](./Assets/Branch_and_Bound_Tree.png)
 
-![Branch and Bound Knapsack Example](./assets/Branch_and_Bound_Knapsack.png)
+![Branch and Bound Knapsack Example](./Assets/Branch_and_Bound_Knapsack.png)
 
 > **Image Credit:** [GeeksforGeeks - 0/1 Knapsack using Branch and Bound](https://www.geeksforgeeks.org/0-1-knapsack-using-branch-and-bound/)
 

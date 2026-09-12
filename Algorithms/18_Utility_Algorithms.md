@@ -6,7 +6,7 @@
 
 **Sliding Window** is a technique for solving problems involving arrays/strings by maintaining a window that slides through the array.
 
-![Sliding Window Technique](./assets/Sliding_Window_Technique.png)
+![Sliding Window Technique](./Assets/Sliding_Window_Technique.png)
 
 > **Image Credit:** [GeeksforGeeks - Window Sliding Technique](https://www.geeksforgeeks.org/window-sliding-technique/)
 

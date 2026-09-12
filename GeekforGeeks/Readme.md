@@ -2,24 +2,24 @@
 
 #### List of Topics
 
-    01-Arrays-&-Strings
-    02-Linked-List
-    03-Stacks-&-Queues
-    04-Trees
-    05-Binary-Tree
-    06-Binary-Search-Tree(BST)
-    07-Heap
-    08-Hashing
-    09-Two-Pointers
-    10-Searching-&-Sorting
-    11-Hash-Table
-    12-DFS
-    13-BFS
-    14-Trie
-    15-Dynamic-Programming
-    17-Bit-Manipulation
-    18-Divide-&-Conquer
-    19-Mathmatical
+    01_Arrays_and_Strings
+    02_Linked_List
+    03_Stacks_and_Queues
+    04_Trees
+    05_Binary_Tree
+    06_Binary_Search_Tree_BST
+    07_Heap
+    08_Hashing
+    09_Two_Pointers
+    10_Searching_and_Sorting
+    11_Hash_Table
+    12_DFS
+    13_BFS
+    14_Trie
+    15_Dynamic_Programming
+    17_Bit_Manipulation
+    18_Divide_and_Conquer
+    19_Mathematical
 
 #### [Templates](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template)  
 
@@ -28,7 +28,7 @@
 [Segment Tree](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Template/SegmentTree)  
 [Inverse_Element](https://thisiskushal31/Datastructures-and-Algorithms/tree/main/Template/Inverse_Element)  
 [Graph](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template/Graph)  
-[Bit_Manipulation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template/Bit_manipulation)  
+[Bit_Manipulation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template/Bit_Manipulation)  
 [RB_Tree](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template/RB_Tree)  
 [2D Submatrix Summation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Template/Sub_Rect_Sum_2D)
 [2D difference array](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/master/Template/Diff_Array_2D)

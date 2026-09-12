@@ -8,7 +8,7 @@ Game theory can be divided into two main branches: **cooperative** and **non-coo
 
 **Optimal Play:** Game theory problems involve determining winning strategies for players in competitive games. Common problems include Nim game, stone games, and impartial games. The key is to identify patterns, calculate game states, and determine optimal moves using techniques like XOR operations, Grundy numbers, and dynamic programming.
 
-![Game Theory Payoff Matrix](./assets/Game_Theory_Payoff_Matrix.png)
+![Game Theory Payoff Matrix](./Assets/Game_Theory_Payoff_Matrix.png)
 
 > **Image Credit:** [Wikimedia Commons - Prisoner's Dilemma](https://commons.wikimedia.org/wiki/Category:Payoff_matrices)
 

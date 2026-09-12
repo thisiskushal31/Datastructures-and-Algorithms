@@ -44,7 +44,7 @@ When reading a problem statement, look for these **keywords** to quickly identif
 - `recursion`
 - `backtrack`
 - `stack`
-- `tree/graph`
+- `tree/Graph`
 - `path`
 - `explore deeply`
 
@@ -140,7 +140,7 @@ When reading a problem statement, look for these **keywords** to quickly identif
 - `queue`
 - `shortest path`
 - `level order`
-- `tree/graph`
+- `tree/Graph`
 - `traverse layers`
 - `neighbors`
 
@@ -190,7 +190,7 @@ When reading a problem statement, look for these **keywords** to quickly identif
 - `overlapping`
 - `memoization`
 - `optimal`
-- `cache`
+- `Cache`
 - `state transition`
 
 **When to Use:**
@@ -284,7 +284,7 @@ When reading a problem statement, look for these **keywords** to quickly identif
 ## 📋 Topological Sort
 
 **Keywords to Look For:**
-- `directed acyclic graph`
+- `directed acyclic Graph`
 - `course schedule`
 - `dependency`
 - `in-degree`

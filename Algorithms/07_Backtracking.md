@@ -2,7 +2,7 @@
 
 **Backtracking** is an algorithmic technique for solving problems recursively by trying to build a solution incrementally, removing solutions that fail to satisfy the constraints of the problem at any point in time.
 
-![Backtracking Algorithm](./assets/Backtracking_Banner.png)
+![Backtracking Algorithm](./Assets/Backtracking_Banner.png)
 
 > **Image Credit:** [GeeksforGeeks - Backtracking Algorithms](https://www.geeksforgeeks.org/backtracking-algorithms/)
 

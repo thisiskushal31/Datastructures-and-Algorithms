@@ -4,7 +4,7 @@
 
 **Randomization in Algorithms:** Randomized algorithms use randomness as a tool to achieve better average-case performance or simplify algorithm design. They fall into two categories: Las Vegas algorithms (always correct, random running time) and Monte Carlo algorithms (fixed running time, small error probability). Examples include randomized quicksort, hash functions, and probabilistic data structures.
 
-![Randomized Quicksort](./assets/Randomized_Quicksort.png)
+![Randomized Quicksort](./Assets/Randomized_Quicksort.png)
 
 > **Image Credit:** [Geek Factorial - Randomized Quick Sort Algorithm](https://geekfactorial.blogspot.com/2016/08/randomized-quick-sort-algorithm.html)
 

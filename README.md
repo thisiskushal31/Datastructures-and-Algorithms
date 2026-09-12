@@ -8,19 +8,20 @@
 <a href="https://github.com/thisiskushal31/Datastructures-and-Algorithms"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
 </p>   
 
-This is my curated list of all the DSA basic to advanced concept and question with their solutions. Here my approach is add most optimized code possible and explain the logic behind it.
+Interview coding prep and pattern reference. Theory and solutions live **here**; scale trade-offs live in [System-Design-Concepts](https://github.com/thisiskushal31/System-Design-Concepts). The join between a coding pattern and a design interview is [SystemDesignBridge](./SystemDesignBridge/README.md).
 
-**Start here:** [0_Start_Here.md](./0_Start_Here.md) · **Write order:** [CONTENT_WRITE_ORDER.md](./CONTENT_WRITE_ORDER.md) · **Problem tracker:** [PLANNED_PROBLEMS.md](./PLANNED_PROBLEMS.md) · **SD bridge:** [system-design-bridge/](./system-design-bridge/README.md)
+New here? Start at [Foundation](./Foundation/Readme.md) (coding patterns), then [Algorithms/00 — Logic Building](./Algorithms/00_Logic_Building.md) and [time / space complexity](./Algorithms/01_Time_Complexity_and_Space_Complexity.md).
 
 ## Quick Links
 
-- [Algorithms](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Algorithms)
-- [DataStructures](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/DataStructures)
-- [GeekforGeeks Solved Questions](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/GeekforGeeks)
-- [Leetcode Solved Questions](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Leetcode)
-- [Foundation](https://github.com/thisiskushal31/Datastructures-and-Algorithms/tree/main/Foundation) — coding patterns
-- [system-design-bridge/](./system-design-bridge/README.md) — patterns → System Design
-- [Entry-Points/](./Entry-Points/README.md) — sister repos
+- [Foundation](./Foundation/Readme.md) — 16 coding patterns
+- [DataStructures](./DataStructures/Readme.md) — Array through Graph, plus advanced structures
+- [Algorithms](./Algorithms/Readme.md) — searching, DP, graphs, and the rest
+- [Leetcode](./Leetcode/Readme.md) — solved questions, topic folders
+- [GeekforGeeks](./GeekforGeeks/Readme.md) — solved questions, topic folders
+- [SystemDesignBridge](./SystemDesignBridge/README.md) — LRU, consistent hashing, token bucket, and other patterns that show up in system design
+
+Sister repos: [System-Design-Concepts](https://github.com/thisiskushal31/System-Design-Concepts) · [Commands-and-Cheatsheets](https://github.com/thisiskushal31/Commands-and-Cheatsheets) · [DevOps-Handbook](https://github.com/thisiskushal31/DevOps-Handbook)
 
 ## Folder layout
 
@@ -37,6 +38,7 @@ This is my curated list of all the DSA basic to advanced concept and question wi
     ├── Leetcode                          # Compiled question and solutions from Leetcode
             ├── Topicwise_Folder          # Topicwise folder
             └── README.md
+    ├── SystemDesignBridge                # DSA patterns → System Design
     ├── assets                            # Assets for readme and other files
     ├── Template                          # Template for all the problems in C++ and java
     ├── .gitignore                        # Ignore files                   

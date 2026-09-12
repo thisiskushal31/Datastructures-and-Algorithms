@@ -10,6 +10,7 @@ This folder is designed to help beginners build a strong foundation before divin
 |------|-------------|
 | [Coding_Patterns.md](./Coding_Patterns.md) | 16 Essential coding patterns for solving DSA problems during interviews |
 | [Pattern_Identification_Cheatsheet.md](./Pattern_Identification_Cheatsheet.md) | Keyword-based pattern identification guide for quick problem recognition |
+| [Paper_And_Timer/](./Paper_And_Timer/README.md) | Practice with paper + timer |
 
 #### Key Topics
 
