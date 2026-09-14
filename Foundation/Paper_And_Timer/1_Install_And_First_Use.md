@@ -15,5 +15,5 @@
 - [ ] A reader who knows nothing can finish this file
 - [ ] Install / first command if this is a tool
 - [ ] Next file in this repo (basic → advanced)
-- [ ] Sister home linked if the deep *slice* lives elsewhere
+- [ ] Related home linked if the deep *slice* lives elsewhere
 

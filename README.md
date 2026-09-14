@@ -21,7 +21,7 @@ New here? Start at [Foundation](./Foundation/Readme.md) (coding patterns), then 
 - [GeekforGeeks](./GeekforGeeks/Readme.md) — solved questions, topic folders
 - [SystemDesignBridge](./SystemDesignBridge/README.md) — LRU, consistent hashing, token bucket, and other patterns that show up in system design
 
-Sister repos: [System-Design-Concepts](https://github.com/thisiskushal31/System-Design-Concepts) · [Commands-and-Cheatsheets](https://github.com/thisiskushal31/Commands-and-Cheatsheets) · [DevOps-Handbook](https://github.com/thisiskushal31/DevOps-Handbook)
+Related repos: [System-Design-Concepts](https://github.com/thisiskushal31/System-Design-Concepts) · [Commands-and-Cheatsheets](https://github.com/thisiskushal31/Commands-and-Cheatsheets) · [DevOps-Handbook](https://github.com/thisiskushal31/DevOps-Handbook)
 
 ## Folder layout
 
